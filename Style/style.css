@@ -113,3 +113,53 @@ body {
 .back-button:active {
     background-color: #003f7f;
 }
+
+
+
+
+.error-panel {
+    display: none; /* Hidden by default */
+    position: fixed; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    z-index: 4000; /* High z-index to ensure it's on top */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+}
+
+.error-content {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%; /* Responsive width */
+}
+
+.error-content h2 {
+    margin-bottom: 10px;
+    font-size: 48px; /* Increase font size */
+    color: #ff4757; /* Red color for the text */
+}
+
+.error-content p {
+    margin-bottom: 20px;
+}
+
+.close-error {
+    padding: 10px 20px;
+    background-color: #ff4757; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-error:hover {
+    background-color: #ff6b81; /* Lighter red on hover */
+}

