@@ -70,9 +70,16 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
 
-        .gallery img.blur {
-            filter: blur(5px);
-        }
+ .gallery img.blur {
+    filter: blur(8px);
+    transition: filter 0.3s ease; /* Adaugă o tranziție pentru a face blurul mai suav */
+}
+
+/* Adaugă o clasă pentru a elimina efectul blur pe hover */
+.gallery img.blur:hover {
+    filter: blur(0px); /* Elimină blurul la hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Adaugă un shadow pentru efect vizual */
+}
 
         .button-container {
             text-align: center;
@@ -133,7 +140,7 @@
         }
 
         .lightbox img.blur {
-            filter: blur(5px);
+            filter: blur(8px);
         }
 
         .lightbox .close {
