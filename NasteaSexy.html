@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NasteaSexy - Landing Page</title>
-  
+    <link rel="stylesheet" href="Style/style.css">
     <style>
         body {
             margin: 0;
@@ -232,6 +232,12 @@
             <img class="blur" src="Resources/NasteaSexy/Img_6.png" alt="Image 6">
             <img class="blur" src="Resources/NasteaSexy/Img_7.png" alt="Image 7">
             <img class="blur" src="Resources/NasteaSexy/Img_8.png" alt="Image 8">
+            <img class="blur" src="Resources/NasteaSexy/Img_9.png" alt="Image 8">
+            <img class="blur" src="Resources/NasteaSexy/Img_10.png" alt="Image 8">
+            <img class="blur" src="Resources/NasteaSexy/Img_11.png" alt="Image 8">
+            <img class="blur" src="Resources/NasteaSexy/Img_12.png" alt="Image 8">
+            <img class="blur" src="Resources/NasteaSexy/Img_13.png" alt="Image 8">
+            <img class="blur" src="Resources/NasteaSexy/Img_14.png" alt="Image 8">
         </div>
     </div>
 
@@ -246,6 +252,37 @@
         <img id="lightbox-img" src="" alt="Preview">
         <span class="arrow right" onclick="changeImage(1)">&#10095;</span>
     </div>
+
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="payment-form-container" id="paymentFormContainer">
+        <form class="payment-form" id="paymentForm">
+            <h2>Formular de Plată</h2>
+            <h2>Catre Plată 1 MDL</h2>
+            <label for="card-name">Numele Deținătorului</label>
+            <input type="text" id="card-name" name="card-name" placeholder="Ion Popescu" required>
+
+            <label for="card-number">Numărul Cardului</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" maxlength="19"
+                required>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expiry-date">Data Expirării</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+                </div>
+            </div>
+
+            <button type="submit">Plătește acum</button>
+            <button type="button" class="back-button" onclick="closePaymentForm()">Înapoi</button>
+        </form>
+    </div>
+
 
     <script>
         const lightbox = document.getElementById('lightbox');
@@ -279,7 +316,10 @@
             const nextImg = images[currentIndex];
             showLightbox(nextImg.src, nextImg.classList.contains('blur'));
         }
+
+
     </script>
 </body>
+<script src="js/jsmain.js"></script>
 
 </html>

