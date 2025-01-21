@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,36 +79,128 @@
         }
 
         .unlock-button {
-    position: fixed;
-    bottom: 20px; /* distanța față de marginea de jos */
-    left: 50%; /* pentru a-l centra orizontal */
-    transform: translateX(-50%); /* corectare pentru centrul perfect */
-    padding: 15px 30px;
-    background-color: #7fdd2d;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, transform 0.3s;
-    z-index: 1000; /* pentru a se asigura că butonul rămâne deasupra */
-}
-
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 30px;
+            background-color: #7fdd2d;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            /* Fontul este acum bold */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+            z-index: 2001;
+        }
 
         .unlock-button:hover {
             background-color: #68b624;
-            transform: translateY(-2px);
+            /* Schimbare doar a culorii */
         }
 
+
         .unlock-button:active {
-            transform: translateY(0);
+            background-color: #55971c;
+            /* Schimbare doar a culorii */
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        .lightbox img.blur {
+            filter: blur(5px);
+        }
+
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 2100;
+
+            /* Fundal cerc alb cu transparență */
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Alb cu transparență de 10% */
+            border-radius: 50%;
+            /* Face fundalul circular */
+            width: 50px;
+            /* Dimensiunea cercului */
+            height: 50px;
+            /* Dimensiunea cercului */
+            display: flex;
+            justify-content: center;
+            /* Center text horizontally */
+            align-items: center;
+            /* Center text vertically */
+        }
+
+
+        .lightbox .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            z-index: 2100;
+
+            /* Fundal cerc alb cu transparență */
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Alb cu transparență de 10% */
+            border-radius: 50%;
+            /* Face fundalul circular */
+            width: 50px;
+            /* Dimensiunea cercului */
+            height: 50px;
+            /* Dimensiunea cercului */
+            display: flex;
+            justify-content: center;
+            /* Center text horizontally */
+            align-items: center;
+            /* Center text vertically */
+        }
+
+        .lightbox .arrow.left {
+            left: 20px;
+            /* Ajustează poziția pe partea stângă */
+        }
+
+        .lightbox .arrow.right {
+            right: 20px;
+            /* Ajustează poziția pe partea dreaptă */
         }
 
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
             }
+
             .gallery {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -117,12 +210,14 @@
             h1 {
                 font-size: 1.5rem;
             }
+
             .gallery {
                 grid-template-columns: repeat(1, 1fr);
             }
         }
     </style>
 </head>
+
 <body>
     <h1>Nastea 21 Samp</h1>
 
@@ -140,7 +235,50 @@
     </div>
 
     <div class="button-container">
-        <button class="unlock-button" onclick="window.location.href='payment.html'">Deblochează-le pe toate 1 MDL</button>
+        <button class="unlock-button" onclick="window.location.href='payment.html'">Deblochează-le pe toate 1
+            MDL</button>
     </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <span class="arrow left" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="" alt="Preview">
+        <span class="arrow right" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const images = document.querySelectorAll('.gallery img');
+        let currentIndex = 0;
+
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentIndex = index;
+                showLightbox(img.src, img.classList.contains('blur'));
+            });
+        });
+
+        function showLightbox(src, isBlur) {
+            lightboxImg.src = src;
+            if (isBlur) {
+                lightboxImg.classList.add('blur');
+            } else {
+                lightboxImg.classList.remove('blur');
+            }
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+        }
+
+        function changeImage(direction) {
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+            const nextImg = images[currentIndex];
+            showLightbox(nextImg.src, nextImg.classList.contains('blur'));
+        }
+    </script>
 </body>
+
 </html>
