@@ -11,149 +11,121 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background: linear-gradient(to bottom right, #ff7f50, #ff1493);
             font-family: 'Arial', sans-serif;
-            overflow: hidden;
+            overflow-x: hidden;
         }
+
         h1 {
             color: #fff;
-            font-size: 40px;
+            font-size: 2.5rem;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-top: 20px;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
             text-align: center;
-            padding: 15px 25px;
+            padding: 10px 20px;
             border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.3);
             transition: background-color 0.3s, transform 0.3s;
-            position: absolute;
-            top: 5%;
         }
+
         h1:hover {
             background-color: rgba(255, 255, 255, 0.5);
             transform: scale(1.05);
         }
+
         .gallery-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80%;
-            height: 70vh;
-            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-            position: absolute;
-            top: 20%;
+            padding: 20px;
         }
+
         .gallery {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 15px;
             width: 100%;
-            height: 100%;
-            overflow-y: auto;
         }
+
         .gallery img {
             width: 100%;
             height: auto;
             border-radius: 10px;
-            transition: filter 0.3s, transform 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
         }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
         .gallery img.blur {
             filter: blur(5px);
         }
+
         .button-container {
-            position: fixed;
-            bottom: 70px;
-            left: 50%;
-            transform: translateX(-50%);
             text-align: center;
+            margin: 20px 0;
         }
+
         .unlock-button {
-            padding: 15px 40px;
-            background-color: #7fdd2d;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s, transform 0.3s;
-        }
+    position: fixed;
+    bottom: 20px; /* distanța față de marginea de jos */
+    left: 50%; /* pentru a-l centra orizontal */
+    transform: translateX(-50%); /* corectare pentru centrul perfect */
+    padding: 15px 30px;
+    background-color: #7fdd2d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000; /* pentru a se asigura că butonul rămâne deasupra */
+}
+
+
         .unlock-button:hover {
             background-color: #68b624;
             transform: translateY(-2px);
         }
+
         .unlock-button:active {
             transform: translateY(0);
         }
 
-        /* Modal styles */
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
-        .modal img {
-            max-width: 90%;
-            max-height: 80%;
-            border-radius: 10px;
-        }
-        .modal img.blur {
-            filter: blur(10px);
-        }
-        .modal .close, .modal .prev, .modal .next {
-            position: absolute;
-            color: white;
-            font-size: 30px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            border-radius: 50%;
-        }
-        .modal .close {
-            top: 10px;
-            right: 10px;
-        }
-        .modal .prev {
-            left: 20px;
-        }
-        .modal .next {
-            right: 20px;
-        }
-        .modal .unlock-button {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 15px 40px;
-            background-color: #7fdd2d;
-            color: white;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        .modal .unlock-button:hover {
-            background-color: #68b624;
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
     </style>
 </head>
 <body>
     <h1>Nastea 21 Samp</h1>
+
     <div class="gallery-container">
         <div class="gallery">
             <img src="Resources/NasteaSexy/Img_1.jpg" alt="Image 1">
@@ -162,84 +134,13 @@
             <img src="Resources/NasteaSexy/Img_4.png" alt="Image 4">
             <img class="blur" src="Resources/NasteaSexy/Img_5.png" alt="Image 5">
             <img class="blur" src="Resources/NasteaSexy/Img_6.png" alt="Image 6">
-            <img class="blur" src="Resources/NasteaSexy/Img_7.png" alt="Image 6">
-            <img class="blur" src="Resources/NasteaSexy/Img_8.png" alt="Image 6">
-            <img class="blur" src="Resources/NasteaSexy/Img_9.png" alt="Image 6">
-            <img class="blur" src="Resources/NasteaSexy/Img_10.png" alt="Image 6">
-            <img class="blur" src="Resources/NasteaSexy/Img_11.png" alt="Image 6">
-            <img class="blur" src="Resources/NasteaSexy/Img_12.png" alt="Image 6">
-            <img class="blur" src="Resources/NasteaSexy/Img_13.png" alt="Image 6">
-            <img class="blur" src="Resources/NasteaSexy/Img_14.png" alt="Image 6">
+            <img class="blur" src="Resources/NasteaSexy/Img_7.png" alt="Image 7">
+            <img class="blur" src="Resources/NasteaSexy/Img_8.png" alt="Image 8">
         </div>
     </div>
+
     <div class="button-container">
         <button class="unlock-button" onclick="window.location.href='payment.html'">Deblochează-le pe toate 1 MDL</button>
     </div>
-
-    <!-- Modal for image preview -->
-    <div class="modal" id="imageModal">
-        <button class="close">&times;</button>
-        <button class="prev">&#8249;</button>
-        <img src="" alt="Preview">
-        <button class="next">&#8250;</button>
-        <button class="unlock-button" onclick="window.location.href='payment.html'">Deblochează-le pe toate 1 MDL</button>
-    </div>
-
-    <script>
-        const images = document.querySelectorAll('.gallery img');
-        const modal = document.getElementById('imageModal');
-        const modalImg = modal.querySelector('img');
-        const closeBtn = modal.querySelector('.close');
-        const prevBtn = modal.querySelector('.prev');
-        const nextBtn = modal.querySelector('.next');
-        const unlockBtn = modal.querySelector('.unlock-button');
-        
-        let currentIndex = 0;
-
-        function openModal(index) {
-            currentIndex = index;
-            updateModalImage();
-            modal.style.display = 'flex';
-        }
-
-        function closeModal() {
-            modal.style.display = 'none';
-        }
-
-        function showPrev() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateModalImage();
-        }
-
-        function showNext() {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateModalImage();
-        }
-
-        function updateModalImage() {
-            modalImg.src = images[currentIndex].src;
-            if (images[currentIndex].classList.contains('blur')) {
-                modalImg.classList.add('blur');
-            } else {
-                modalImg.classList.remove('blur');
-            }
-        }
-
-        images.forEach((img, index) => {
-            img.addEventListener('click', () => openModal(index));
-        });
-
-        closeBtn.addEventListener('click', closeModal);
-        prevBtn.addEventListener('click', showPrev);
-        nextBtn.addEventListener('click', showNext);
-
-        window.addEventListener('keydown', (e) => {
-            if (modal.style.display === 'flex') {
-                if (e.key === 'ArrowLeft') showPrev();
-                if (e.key === 'ArrowRight') showNext();
-                if (e.key === 'Escape') closeModal();
-            }
-        });
-    </script>
 </body>
 </html>
