@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(135deg, #1e2a38, #171b24);
+            background: radial-gradient(circle, #2c3e50, #000000);
             margin: 0;
             height: 100vh;
             display: flex;
@@ -54,7 +54,7 @@
             transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             margin-top: 10px;
-            background: linear-gradient(135deg, #681ce3, #8a35f1);
+            background: linear-gradient(135deg, #ff4b1f, #ff9068);
         }
 
         .btn-success-custom:hover {
@@ -157,9 +157,6 @@
             <img src="Resources/MoneyDev/image4.png" alt="Image 4">
         </div>
         <div class="text-content white-text">
-            <p id="channel-title"></p>
-        </div>
-        <div class="text-content white-text">
             <p id="channel-title">👑 MONEY DEV MD 👑</p>
         </div>
         <div class="text-content">
@@ -171,21 +168,18 @@
     </div>
 
     <script>
-        // Animația de fade-in la încărcare
         window.addEventListener('load', function () {
             document.body.classList.add('fade-in');
-            countUp(0, 3500, 1000, 'money-amount'); // Pornim animația de numărare pentru +3500 MDL
-            typingEffect('free-text', 'БЕСПЛАТНО', 150, 'typing-emoji'); // Pornim efectul de scriere pentru "БЕСПЛАТНО"
-            startSlideshow(); // Pornim slideshow-ul automat
+            countUp(0, 3500, 1000, 'money-amount');
+            typingEffect('free-text', 'БЕСПЛАТНО', 150, 'typing-emoji');
+            startSlideshow();
         });
 
-        // Redirecționare la apăsarea butonului
         function trackButtonClick() {
-            fbq('track', 'ButtonClicked'); // Track event for Meta Pixel
+            fbq('track', 'ButtonClicked');
             window.location.href = "https://t.me/moneydevmd";
         }
 
-        // Funcție pentru numărarea crescentă
         function countUp(start, end, duration, elementId) {
             const element = document.getElementById(elementId);
             let startTime = null;
@@ -203,7 +197,6 @@
             requestAnimationFrame(animateCount);
         }
 
-        // Funcție pentru efectul de scriere (typing) cu emoji la final și eliminarea emoji-ului ✏️
         function typingEffect(elementId, text, speed, emojiId) {
             const element = document.getElementById(elementId);
             const emoji = document.getElementById(emojiId);
@@ -215,7 +208,6 @@
                     index++;
                     setTimeout(type, speed);
                 } else {
-                    // După terminarea scrierii, eliminăm emoji-ul
                     emoji.style.display = 'none';
                 }
             }
@@ -223,7 +215,6 @@
             type();
         }
 
-        // Funcție pentru slideshow automat
         function startSlideshow() {
             const images = document.querySelectorAll('.image-container img');
             let currentIndex = 0;
@@ -234,7 +225,7 @@
                 images[currentIndex].classList.add('active');
             }
 
-            setInterval(showNextImage, 3000); // Schimbă imaginea la fiecare 3 secunde
+            setInterval(showNextImage, 3000);
         }
     </script>
 
