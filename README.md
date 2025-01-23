@@ -1,1 +1,0 @@
-# temkatut-lading
