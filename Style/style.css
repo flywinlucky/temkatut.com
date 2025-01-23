@@ -82,6 +82,7 @@ body {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+ 
 }
 
 .payment-form button:hover {
@@ -163,3 +164,4 @@ body {
 .close-error:hover {
     background-color: #ff6b81; /* Lighter red on hover */
 }
+
