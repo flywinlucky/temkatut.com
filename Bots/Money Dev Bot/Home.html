@@ -2,41 +2,52 @@
 <html lang="en">
 
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();
-    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
- 
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
     ym(99095536, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true,
-         webvisor:true
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
     });
- </script>
- <noscript><div><img src="https://mc.yandex.ru/watch/99095536" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
- <!-- /Yandex.Metrika counter -->
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/99095536" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One:wght=400&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One:wght=400&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
     <style>
         /* Stil pentru notificare */
         .notification {
-            display: none; /* Ascuns inițial */
+            display: none;
+            /* Ascuns inițial */
             position: fixed;
-            bottom: 0; /* Lipit de partea de jos a ecranului */
-            left: 0; /* Ancorează din partea stângă */
-            width: 100vw; /* Se întinde pe toată lățimea ecranului */
-            background-color: #23953e;
+            bottom: 0;
+            /* Lipit de partea de jos a ecranului */
+            left: 0;
+            /* Ancorează din partea stângă */
+            width: 100vw;
+            /* Se întinde pe toată lățimea ecranului */
+            background: linear-gradient(135deg, #c82f2f, #d81414);
             color: #ffffff;
             padding: 15px;
-            border-radius: 5px 5px 0 0; /* Margini rotunjite doar la partea de sus */
+            border-radius: 5px 5px 0 0;
+            /* Margini rotunjite doar la partea de sus */
             font-family: 'Roboto Condensed', sans-serif;
             font-weight: bold;
             font-size: 1.2em;
@@ -47,7 +58,8 @@
         }
 
         .notification.show {
-            display: block; /* Arată notificarea când are clasa show */
+            display: block;
+            /* Arată notificarea când are clasa show */
         }
 
         .red-text {
@@ -133,7 +145,8 @@
             position: relative;
         }
 
-        .circle::before, .circle::after {
+        .circle::before,
+        .circle::after {
             content: '';
             position: absolute;
             top: 50%;
@@ -147,7 +160,8 @@
         }
 
         .circle::after {
-            animation-delay: 0.5s; /* Intârziere pentru a doua undă */
+            animation-delay: 0.5s;
+            /* Intârziere pentru a doua undă */
         }
 
         @keyframes pulse {
@@ -155,6 +169,7 @@
                 transform: translate(-50%, -50%) scale(0.5);
                 opacity: 1;
             }
+
             100% {
                 transform: translate(-50%, -50%) scale(2.5);
                 opacity: 0;
@@ -225,7 +240,8 @@
             align-items: center;
             width: 100%;
             position: relative;
-            overflow: hidden; /* Prevent particles from going outside */
+            overflow: hidden;
+            /* Prevent particles from going outside */
             font-size: 1.2em;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
         }
@@ -239,33 +255,45 @@
             width: 100%;
             height: 45px;
             font-size: 1em;
-            background: linear-gradient(135deg, #28a745, #23953e);
+            background: linear-gradient(135deg, #f7971e, #ffd200);
             position: relative;
-            z-index: 2; /* Ensure button is above particles */
+            z-index: 2;
+            /* Ensure button is above particles */
         }
 
         .btn-success-custom.bouncing {
-            background: linear-gradient(135deg, #FFD700, #FFA500); /* Yellow color for ПОДАРКИ button */
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            /* Yellow color for ПОДАРКИ button */
             animation: bounce 2s infinite;
             margin: 45px 0;
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0);
             }
+
             40% {
                 transform: translateY(-10px);
             }
+
             60% {
                 transform: translateY(-5px);
             }
         }
 
         @keyframes press {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(0.9);
             }
@@ -284,8 +312,10 @@
             position: relative;
             text-align: center;
             display: flex;
-            flex-direction: row; /* Asigură aranjarea pe o linie orizontală */
-            gap: 10px; /* Spațiu între indicator și text */
+            flex-direction: row;
+            /* Asigură aranjarea pe o linie orizontală */
+            gap: 10px;
+            /* Spațiu între indicator și text */
         }
 
         .golden-ticket-img {
@@ -313,7 +343,7 @@
 
         .green-text {
             color: #70FA00;
-            
+
         }
 
         .transferHystory {
@@ -357,8 +387,13 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .amount {
@@ -390,7 +425,10 @@
 
         /* Media queries pentru ecrane mici */
         @media (max-width: 768px) {
-            .header-container, .container, .games-container {
+
+            .header-container,
+            .container,
+            .games-container {
                 width: 100%;
                 padding: 10px;
             }
@@ -434,6 +472,7 @@
         }
     </style>
 </head>
+
 <body class="fade-in">
     <div id="notification" class="notification">
         Промокод FLYWINCASH был скопирован!
@@ -448,10 +487,14 @@
         <div class="container carousel-container">
             <div id="carouselExampleIndicators" class="carousel slide image-container" data-bs-ride="carousel">
                 <div class="text-content">
-                    <button type="button" class="btn btn-success btn-success-custom" id="copyPromoCodeButton">👉 СКОПИРОВАТЬ КОД : <span class="yellow-text">FLYWINCASH</span></button>
+                    <button type="button" class="btn btn-success btn-success-custom" id="copyPromoCodeButton">
+                        СКОПИРОВАТЬ КОД : <span class="yellow-text">FLYWINCASH</span></button>
                     <div class="text-content">
-                        <p><span class="red-text">1.</span> Скопируйте промокод и нажмите кнопку <span class="green-text">"НАЧИНАТЬ"</span></p>
-                        <p><span class="red-text">2.</span> Зарегистрируйте новый аккаунт <span class="blue-text">1</span>Win и добавьте промокод <span class="yellow-text">FLYWINCASH</span></p>
+                        <p><span class="red-text">1.</span> Скопируйте промокод и нажмите кнопку <span
+                                class="green-text">"НАЧИНАТЬ"</span></p>
+                        <p><span class="red-text">2.</span> Зарегистрируйте новый аккаунт <span
+                                class="blue-text">1</span>Win и добавьте промокод <span
+                                class="yellow-text">FLYWINCASH</span></p>
                     </div>
                 </div>
             </div>
@@ -460,11 +503,11 @@
         <div class="games-container">
             <div class="text-content">
                 <p>Ваш аккаунт везучий на <span class="green-text">+85%</span></p>
-                <p>⬇️ ИГРАЙ И ЗАРАБАТЫВАЙ ⬇️</p>
-                <p>_______________________________________________</p>
                 <p id="userID">Bаш ID: </p>
+                <p>⬇️ ИГРАЙ И ЗАРАБАТЫВАЙ ⬇️</p>
             </div>
-            <button type="button" class="btn btn-success btn-success-custom" id="luckyJetButton" onclick="window.open('https://1wxxlb.com/v3/fortune-tiger?p=gy44', '_blank')">👉 НАЧАТЬ ЗАРАБАТЫВАТЬ 👈</button>
+            <button type="button" class="btn btn-success btn-success-custom" id="luckyJetButton"
+                onclick="window.open('https://1wxxlb.com/v3/fortune-tiger?p=gy44', '_blank')">НАЧАТЬ ЗАРАБАТЫВАТЬ</button>
         </div>
         <!-- Transfer History Container -->
         <div class="onlinetranzactiontext">
@@ -512,9 +555,9 @@
             function generateRandomID() {
                 return Array.from({ length: 8 }, () => Math.floor(Math.random() * 9)).join('');
             }
-    // Afișăm ID-ul generat
-    const randomID = generateRandomID();
-    userIDElement.innerHTML = `Bаш <span class="white-text">ID :</span> <span class="green-text">${randomID}</span>`;
+            // Afișăm ID-ul generat
+            const randomID = generateRandomID();
+            userIDElement.innerHTML = `Bаш <span class="white-text">ID :</span> <span class="green-text">${randomID}</span>`;
 
             function generateRandomAmount() {
                 return Math.floor(Math.random() * (800 - 50 + 1)) + 50;
@@ -563,4 +606,5 @@
         });
     </script>
 </body>
+
 </html>
