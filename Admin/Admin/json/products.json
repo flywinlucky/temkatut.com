@@ -360,5 +360,36 @@
         "description": "Parametri\nModel\tXbox Series\nCompatibilitate\tPC, iOS, Android, Xbox One, Xbox Series X, Xbox Series S\nNum\u0103rul de butoane\t12\nForce feedback\tDa\nBrand\tMicrosoft\nConectivitate\nTip de conexiune\tF\u0103r\u0103 fir\nCarcas\u0103\nGreutate\t460 g",
         "isTrending": true,
         "old_price": "1899 MDL"
+    },
+    {
+        "id": "6.9",
+        "name": "Gamepad Sony Dualshock 4 V2 FC Limited Edition F\u0103r\u0103 fir/ Black",
+        "price": "1259 MDL",
+        "images": [
+            "images/Catalog/Tv&Home/sony_dualshock_4_jet_black_2_1669209812624-preview-webp.webp",
+            "images/Catalog/Tv&Home/sony_dualshock_4_jet_black_4_1669209810187-preview-webp.webp",
+            "images/Catalog/Tv&Home/sony_dualshock_4_jet_black_3_1669209812616-preview-webp.webp",
+            "images/Catalog/Tv&Home/1_1669209817061-preview-webp.webp"
+        ],
+        "category": "Tv&Home",
+        "description": "Parametri\nModel\tDualshock 4 V2 FC Limited Edition\nCompatibilitate\tPC, PlayStation 4\nIluminare\tDa\nNum\u0103rul de butoane\t14\nTouchpad\tDa\nBrand\tSony\nAlimentare\nTipul acumulatorului\tLi-Ion\nCapacitatea bateriei\t1000\nConectivitate\nConector audio 3.5 mm\tDa\nMicrofon\tDa\nTip de conexiune\tCu fir, F\u0103r\u0103 fir\nCarcas\u0103\nDimensiuni\t162 x 98 x 52 mm\nGreutate\t210 g\nMaterial\tPlastic",
+        "isTrending": true,
+        "old_price": "1 799 MDL"
+    },
+    {
+        "id": "6.10",
+        "name": "Consol\u0103 pentru jocuri Microsoft Xbox Series S 1 TB/ Black",
+        "price": "5599 MDL",
+        "images": [
+            "images/Catalog/Tv&Home/1_1696413931879-preview-webp.webp",
+            "images/Catalog/Tv&Home/6_1696413932070-preview-webp.webp",
+            "images/Catalog/Tv&Home/2_1696413931974-preview-webp.webp",
+            "images/Catalog/Tv&Home/3_1696413932010-preview-webp.webp",
+            "images/Catalog/Tv&Home/5_1696413931956-preview-webp.webp"
+        ],
+        "category": "Tv&Home",
+        "description": "Parametri\nModel\tXbox Series S\nSpecifica\u0163ii\tFrecven\u021b\u0103 de p\u00e2n\u0103 la 120 de cadre pe secund\u0103, AMD FreeSync, 4K\nBrand\tMicrosoft\nCuloarea de baz\u0103\tBlack\nDisplay\nRefresh rate\t120 Hz\nRezolu\u021bie ecran\t2560 x 1440\nProcesor\nModel CPU\tCustom Zen 2\nProduc\u0103torul CPU\tAMD\nNum\u0103rul de nuclee\t8\nFrecven\u021ba procesorului\t3.60 GHz\nMemorie\nRAM\t10 GB\nTip RAM\tGDDR6\nConectivitate\nVersiune Wi-Fi\t802.11 ac\nWi-Fi\tDa\nBluetooth\tDa\nHDMI\t1\nRJ-45\t1\nUSB 3.1\t3\nCarcas\u0103\nDimensiuni\t275 x 151 x 65 mm\nGreutate\t2 kg\nPlac\u0103 video\nTip memorie plac\u0103 video\tGDDR6\nProduc\u0103tor plac\u0103 video\tAMD\nModel plac\u0103 video\tAMD Radeon RDNA 2\nStocarea datelor\nCapacitate SSD\t1 TB\nTip unitate de stocare\tSSD",
+        "isTrending": true,
+        "old_price": "7999 MDL"
     }
 ]
