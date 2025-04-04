@@ -141,5 +141,52 @@
         "description": "Dimensiune ecran\t13.6\nRezolu\u021bie ecran\t2560 x 1664\nRefresh rate\t60 Hz\nTip display\tLiquid Retina\nCapacitate SSD\t512 GB\nRAM\t8 GB\nTip CPU\tM3\nModel CPU\t(C8/G10)\n\nParametri\nSegment\tHome and Office\nModel\t13.6 2024\nBrand\tApple\nCuloarea de baz\u0103\tGray\nSeria\tMacBook Air\nCod model\tMRXP3RU/A\nDisplay\nRefresh rate\t60 Hz\nRezolu\u021bie ecran\t2560 x 1664\nTip display\tLiquid Retina\nDimensiune ecran\t13.6\nAcoperire ecran\tGlossy\nTipul rezolu\u021biei ecranului\t3K\nProcesor\nTehnologia de fabrica\u021bie\t3 nm\nPlac\u0103 video integrat\u0103\tDa\nModel CPU\t(C8/G10)\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t8\nCache\t20 MB\nFrecven\u021ba procesorului\t4.00 GHz\nTip CPU\tM3\nAlimentare\nTipul acumulatorului\tLi-Pol\nSoftware\nSistem de operare\tMac OS\nMemorie\nRAM\t8 GB\nTip RAM\tLPDDR5\nCapacitatea maxim\u0103 RAM\t24 GB\nSenzori\nScanner de amprente digitale\tDa\nConectivitate\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 ax\nWi-Fi\tDa\nBluetooth\tDa\nConector audio 3.5 mm\tDa\nThunderbolt\t2\nMicrofon\tDa\nUSB Type-C\t2\nCarcas\u0103\nMaterial carcas\u0103\tAluminiu\nDimensiuni\t304.1 x 215 x 11.3 mm\nGreutate\t1.24 kg\nPlac\u0103 video\nTip plac\u0103 video\tIntegrat\u0103\nProduc\u0103tor plac\u0103 video\tApple\nStocarea datelor\nTip unitate de stocare\tSSD\nCapacitate SSD\t512 GB\nMultimedia\nCamera Web\t1080p\nDifuzoare \u00eencorporate\tDa",
         "isTrending": true,
         "old_price": "22690 MDL"
+    },
+    {
+        "id": "4.1",
+        "name": "iPad 2022 10.9\" 64 GB Wi-Fi Blue",
+        "price": "5599 MDL",
+        "images": [
+            "images/Catalog/iPad/aipad_2022_blue_1666186239878-preview-webp.webp",
+            "images/Catalog/iPad/aipad_2022_blue_1_1666186237221-preview-webp.webp",
+            "images/Catalog/iPad/aipad_2022_blue_3_1666186242453-preview-webp.webp",
+            "images/Catalog/iPad/aipad_2022_blue_3_1666186237230-preview-webp.webp",
+            "images/Catalog/iPad/aipad_2022_blue_5_1666186242474-preview-webp.webp"
+        ],
+        "category": "iPad",
+        "description": "Dimensiune ecran\t10.9\nRezolu\u021bie ecran\t2360 x 1640\nTip display\tLiquid Retina IPS\nMemorie intern\u0103\t64 GB\nRAM\t4 GB\nModel CPU\tA14 Bionic\nRezolu\u021bia camerei principale\t12 MP\n\nParametri\nModel\tiPad 2022\nBlitz\tDa\nBrand\tApple\nCuloarea de baz\u0103\tBlue\nPosibilit\u0103\u021bile re\u021belei\tWi-Fi\nCod model\tMPQ13RK/A\nDisplay\nDensitate pixeli\t264 ppi\nRezolu\u021bie ecran\t2360 x 1640\nTip display\tLiquid Retina IPS\nDimensiune ecran\t10.9\nCamere\nCamer\u0103 frontal\u0103\t12 MP\nRezolu\u021bia video\t4k - 60fps\nRezolu\u021bia camerei principale\t12 MP\nProcesor\nTehnologia de fabrica\u021bie\t5 nm\nFrecven\u021ba maximal\u0103 a procesorului\t3.0 GHz\nModel CPU\tA14 Bionic\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t6\nAlimentare\nTipul acumulatorului\tLi-Ion\nSoftware\nVersiunea SO\t16\nSistem de operare\tiOS\nRe\u021bea\nNum\u0103rul de SIM\tNo SIM\nMemorie\nMemorie intern\u0103\t64 GB\nRAM\t4 GB\nSenzori\nAccelerometru\tDa\nGiroscop\tDa\nBusol\u0103\tDa\nBarometru\tDa\nConectivitate\nNFC\tNu\nConector USB\tUSB Type-C 2.0\nVersiunea Bluetooth\tv5.2\nVersiune Wi-Fi\t802.11 ax\nGPS\tDa\nConector audio 3.5 mm\tNu\nCarcas\u0103\nMaterial carcas\u0103\tAluminiu\nMaterialul ramei\tAluminiu\nDimensiuni\t248.6 x 179.5 x 7 mm\nGreutate\t477 g\nPlac\u0103 video\nModel plac\u0103 video\tApple GPU (4-core graphics)",
+        "isTrending": true,
+        "old_price": "7999 MDL"
+    },
+    {
+        "id": "4.2",
+        "name": "iPad 2021 10.2\" 64 GB Wi-Fi Gray",
+        "price": "5453 MDL",
+        "images": [
+            "images/Catalog/iPad/apple_ipad_2021_wifi_space_gray_1_1631780536648-preview-webp.webp",
+            "images/Catalog/iPad/apple_ipad_10_2_hero_space_wifi_1_1631783029254-preview-webp.webp",
+            "images/Catalog/iPad/apple_ipad_10_2_hero_space_wifi_3_1631783028929-preview-webp.webp",
+            "images/Catalog/iPad/apple_ipad_10_2_hero_space_wifi_2_1631783028631-preview-webp.webp"
+        ],
+        "category": "iPad",
+        "description": "Dimensiune ecran\t10.2\nRezolu\u021bie ecran\t2160 x 1620\nTip display\tRetina IPS\nMemorie intern\u0103\t64 GB\nRAM\t3 GB\nModel CPU\tA13 Bionic\nRezolu\u021bia camerei principale\t8 MP\n\nParametri\nBlitz\tNu\nModel\tiPad 2021\nBrand\tApple\nCuloarea de baz\u0103\tGray\nPosibilit\u0103\u021bile re\u021belei\tWi-Fi\nCod model\tMK2K3RK/A\nDisplay\nDensitate pixeli\t264 ppi\nProtec\u021bie ecran\tSticl\u0103 rezistent\u0103 la zg\u00e2rieturi\nRezolu\u021bie ecran\t2160 x 1620\nTip display\tRetina IPS\nDimensiune ecran\t10.2\nCamere\nCamer\u0103 frontal\u0103\t12 MP\nRezolu\u021bia video\t1080p - 30fps, 720p - 60fps\nRezolu\u021bia camerei principale\t8 MP\nProcesor\nFrecven\u021ba maximal\u0103 a procesorului\t2.65 GHz\nTehnologia de fabrica\u021bie\t7 nm\nModel CPU\tA13 Bionic\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t6\nAlimentare\nTipul acumulatorului\tLi-Ion\nCapacitatea acumulatorului\t8557 mAh\nSoftware\nSistem de operare\tiPadOS\nVersiunea SO\t15\nRe\u021bea\nNum\u0103rul de SIM\tNo SIM\nMemorie\nSlot pentru memorie adi\u021bional\u0103\tNu\nMemorie intern\u0103\t64 GB\nRAM\t3 GB\nSenzori\nSenzor de lumin\u0103\tDa\nBarometru\tDa\nBusol\u0103\tDa\nGiroscop\tDa\nAccelerometru\tDa\nConectivitate\nNFC\tNu\nConector USB\tLightning\nVersiunea Bluetooth\tv4.2\nVersiune Wi-Fi\t802.11 ac\nGPS\tNu\nConector audio 3.5 mm\tDa\nCarcas\u0103\nMaterial carcas\u0103\tAluminiu\nMaterialul ramei\tAluminiu\nDimensiuni\t250.6 x 174.1 x 7.5 mm\nGreutate\t487 g\nPlac\u0103 video\nModel plac\u0103 video\tA13 Bionic",
+        "isTrending": true,
+        "old_price": "7790 MDL"
+    },
+    {
+        "id": "4.3",
+        "name": "iPad Pro 2024 11\" 256 GB Wi-Fi Black",
+        "price": "16793 MDL",
+        "images": [
+            "images/Catalog/iPad/679f_1715687144208-preview-webp.webp",
+            "images/Catalog/iPad/67fgh_1715687171492-preview-webp.webp",
+            "images/Catalog/iPad/8ed584_1715687140399-preview-webp.webp",
+            "images/Catalog/iPad/g769vfg_1715687140381-preview-webp.webp",
+            "images/Catalog/iPad/856568_1715687137512-preview-webp.webp"
+        ],
+        "category": "iPad",
+        "description": "Dimensiune ecran\t11\nRezolu\u021bie ecran\t2420 x 1668\nTip display\tUltra Retina XDR\nMemorie intern\u0103\t256 GB\nRAM\t8 GB\nModel CPU\tM4\nRezolu\u021bia camerei principale\t12 MP\n\nParametri\nModel\tiPad Pro 2024\nBlitz\tDa\nBrand\tApple\nCuloarea de baz\u0103\tBlack\nPosibilit\u0103\u021bile re\u021belei\tWi-Fi\nCod model\tMVV83NF/A\nDisplay\nDensitate pixeli\t264 ppi\nRefresh rate\t120 Hz\nProtec\u021bie ecran\tScratch-resistant glass, oleophobic coating\nRezolu\u021bie ecran\t2420 x 1668\nTip display\tUltra Retina XDR\nDimensiune ecran\t11\nCamere\nCamer\u0103 frontal\u0103\t12 MP\nRezolu\u021bia video\t4k - 60fps\nRezolu\u021bia camerei principale\t12 MP\nProcesor\nTehnologia de fabrica\u021bie\t3 nm\nModel CPU\tM4\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t9\nAlimentare\nTipul acumulatorului\tLi-Pol\nSoftware\nSistem de operare\tiPadOS\nVersiunea SO\t17.5\nRe\u021bea\neSIM\tNu\nMemorie\nMemorie intern\u0103\t256 GB\nSlot pentru memorie adi\u021bional\u0103\tNu\nRAM\t8 GB\nSenzori\nAccelerometru\tDa\nGiroscop\tDa\nSenzor de proximitate\tDa\nBusol\u0103\tDa\nBarometru\tDa\nFace ID\tDa\nSenzor de lumin\u0103\tDa\nScanner de amprente digitale\tNu\nConectivitate\nNFC\tNu\nConector USB\tUSB Type-C 4 (Thunderbolt 3)\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 ax\nWi-Fi\tDa\nBluetooth\tDa\nGPS\tDa\nConector audio 3.5 mm\tNu\nCarcas\u0103\nMaterial carcas\u0103\tAluminiu\nMaterialul ramei\tAluminiu\nDimensiuni\t249.7 x 177.5 x 5.3 mm\nGreutate\t444 g\nPlac\u0103 video\nModel plac\u0103 video\tApple GPU (10-core graphics)",
+        "isTrending": true,
+        "old_price": "23990 MDL"
     }
 ]
