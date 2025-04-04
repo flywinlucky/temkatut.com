@@ -45,5 +45,37 @@
         "description": "Tip display\tSuper Retina XDR OLED\nDimensiune ecran\t6.7\nMemorie intern\u0103\t256 GB\nRAM\t8 GB\nCapacitatea acumulatorului\t4441 mAh\n\nParametri\nBlitz\tDa\nModel\tiPhone 15 Pro Max\nBrand\tApple\nCuloarea de baz\u0103\tBlack Titanium\nCod model\tMU773RX/A\nDisplay\nDensitate pixeli\t460 ppi\nRefresh rate\t120 Hz\nRezolu\u021bie ecran\t2796 x 1290\nTip display\tSuper Retina XDR OLED\nDimensiune ecran\t6.7\nCamere\nCamer\u0103 frontal\u0103\t12 MP\nRezolu\u021bia video\t4k - 24fps\nNum\u0103rul de camere principale\t3\nRezolu\u021bia camerei principale\t48 MP\nRezolu\u021bia camerei ultrawide\t12 MP\nRezolu\u021bia camerei telephoto\t12 MP\nProcesor\nFrecven\u021ba maximal\u0103 a procesorului\t3.78 GHz\nTehnologia de fabrica\u021bie\t3 nm\nModel CPU\tA17 Pro\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t6\nAlimentare\nTipul acumulatorului\tLi-Ion\nCapacitatea acumulatorului\t4441 mAh\nProtec\u021bie\nGrad de protec\u021bie\tIP68\nSoftware\nSistem de operare\tiOS\nVersiunea SO\t17\nRe\u021bea\nGenera\u021bia conexiunii\t5G\nNum\u0103rul de SIM\tSingle SIM\neSIM\tDa\nFormatul SIM\tNano-SIM\nMemorie\nMemorie intern\u0103\t256 GB\nRAM\t8 GB\nSenzori\nFace ID\tDa\nDeblocare facial\u0103\tDa\nBarometru\tDa\nBusol\u0103\tDa\nSenzor de proximitate\tDa\nGiroscop\tDa\nAccelerometru\tDa\nConectivitate\nNFC\tDa\nConector USB\tUSB Type-C\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 be\nWi-Fi\tDa\nBluetooth\tDa\nGPS\tDa\nConector audio 3.5 mm\tNu\nCarcas\u0103\nMaterial carcas\u0103\tTitanium\nDimensiuni\t159.9 x 76.7 x 8.3 mm\nGreutate\t221 g\nPlac\u0103 video\nModel plac\u0103 video\tApple GPU (6-core graphics)",
         "isTrending": true,
         "old_price": "25499 MDL"
+    },
+    {
+        "id": "2.1",
+        "name": "Apple Watch SE 2023 40mm Black / Midnight Sport",
+        "price": "4549 MDL",
+        "images": [
+            "images/Catalog/Watch/apple_watch_se_midnight_sport_band_1_1695286179438-preview-webp.webp",
+            "images/Catalog/Watch/apple_watch_se_midnight_sport_band_5_1695286179290-preview-webp.webp",
+            "images/Catalog/Watch/apple_watch_se_midnight_sport_band_6_1695286181160-preview-webp.webp",
+            "images/Catalog/Watch/apple_watch_se_midnight_sport_band_3_1695286183451-preview-webp.webp",
+            "images/Catalog/Watch/apple_watch_se_midnight_sport_band_4_1695286185434-preview-webp.webp"
+        ],
+        "category": "Watch",
+        "description": "Parametri\nSpecifica\u0163ii\tApel de urgen\u021b\u0103 - SOS, Detectare c\u0103dere, Detectare zgomot, Roata digital\u0103 cu r\u0103spuns tactil, G\u0103sire dispozitive, oameni \u0219i obiecte, Siri, Fitness+\nModel\tWatch SE 2023\nBrand\tApple\nCuloarea de baz\u0103\tBlack\nCod model\tMR9Y3QI/A\nDisplay\nEcran tactil\tDa\nProtec\u021bie ecran\tIon\u2011X\nRezolu\u021bie ecran\t394 x 324\nTip display\tRetina LTPO OLED\nDimensiune ecran\t1.57\nProcesor\nModel CPU\tS8\nNum\u0103rul de nuclee\t2\nAlimentare\nDurat\u0103 de lucru acumulator\tp\u00e2n\u0103 la 18 ore\nTipul acumulatorului\tLi-Ion\nCapacitatea acumulatorului\t245 mAh\nProtec\u021bie\nGrad de protec\u021bie\t5 ATM\nSoftware\nCompatibilitate SO\tiOS\nSistem de operare\twatchOS\nMemorie\nMemorie intern\u0103\t32 GB\nSenzori\nSenzor de lumin\u0103\tDa\nBusol\u0103\tDa\nGiroscop\tDa\nAccelerometru\tDa\nConectivitate\nNFC\tDa\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 n\nWi-Fi\tDa\nBluetooth\tDa\nGPS\tDa\nMicrofon\tDa\nCarcas\u0103\nCuloare curea\tMidnight Sport\nMaterial curea\tSilicon\nMaterial carcas\u0103\tAluminiu\nDimensiune ceas\t40mm\nDimensiuni\t40 x 34 x 10.7 mm\nGreutate\t26.4 g\nM\u0103rime curea\t145 - 180 mm\nMultimedia\nDifuzoare \u00eencorporate\tDa",
+        "isTrending": true,
+        "old_price": "6499 MDL"
+    },
+    {
+        "id": "2.2",
+        "name": "Apple Watch SE 2023 40mm Silver / Winter Blue",
+        "price": "6499 MDL",
+        "images": [
+            "images/Catalog/Watch/apple_watch_se_silver_winter_blue1_1695283789572-preview-webp.webp",
+            "images/Catalog/Watch/apple_watch_se_silver_winter_blue2_1695283786436-preview-webp.webp",
+            "images/Catalog/Watch/apple_watch_se_silver_winter_blue7_1695283784207-preview-webp.webp",
+            "images/Catalog/Watch/apple_watch_se_silver_winter_blue8_1695283786422-preview-webp.webp",
+            "images/Catalog/Watch/apple_watch_se_silver_winter_blue4_1695283781906-preview-webp.webp"
+        ],
+        "category": "Watch",
+        "description": "Parametri\nSpecifica\u0163ii\tApel de urgen\u021b\u0103 - SOS, Detectare c\u0103dere, Detectare zgomot, Roata digital\u0103 cu r\u0103spuns tactil, G\u0103sire dispozitive, oameni \u0219i obiecte, Siri, Fitness+\nModel\tWatch SE 2023\nBrand\tApple\nCuloarea de baz\u0103\tSilver\nCod model\tMRE33QI/A\nDisplay\nEcran tactil\tDa\nProtec\u021bie ecran\tIon\u2011X\nRezolu\u021bie ecran\t394 x 324\nTip display\tRetina LTPO OLED\nDimensiune ecran\t1.57\nProcesor\nModel CPU\tS8\nNum\u0103rul de nuclee\t2\nAlimentare\nDurat\u0103 de lucru acumulator\tp\u00e2n\u0103 la 18 ore\nTipul acumulatorului\tLi-Ion\nCapacitatea acumulatorului\t245 mAh\nProtec\u021bie\nGrad de protec\u021bie\t5 ATM\nSoftware\nCompatibilitate SO\tiOS\nSistem de operare\twatchOS\nMemorie\nMemorie intern\u0103\t32 GB\nSenzori\nSenzor de lumin\u0103\tDa\nBusol\u0103\tDa\nGiroscop\tDa\nAccelerometru\tDa\nConectivitate\nNFC\tDa\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 n\nWi-Fi\tDa\nBluetooth\tDa\nGPS\tDa\nMicrofon\tDa\nCarcas\u0103\nCuloare curea\tWinter Blue\nMaterial curea\tNylon\nMaterial carcas\u0103\tAluminiu\nDimensiune ceas\t40mm\nDimensiuni\t40 x 34 x 10.7 mm\nGreutate\t26.4 g\nM\u0103rime curea\t145 - 180 mm\nMultimedia\nDifuzoare \u00eencorporate\tDa",
+        "isTrending": true,
+        "old_price": "4549 MDL"
     }
 ]
