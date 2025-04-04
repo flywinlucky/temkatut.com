@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <style>
+        /* CSS pentru notificări */
+        #notification {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+
+        #notification.success {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #notification.error {
+            background-color: #f44336;
+            color: white;
+        }
+
+        #filterSearchContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        #filterContainer,
+        #searchContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        #filterContainer label,
+        #searchContainer label {
+            margin-right: 10px;
+        }
+
+        #addCategoryContainer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .categoryButton,
+        .deleteCategoryButton {
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .categoryButton {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .categoryButton:hover {
+            background-color: #218838;
+        }
+
+        .deleteCategoryButton {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .deleteCategoryButton:hover {
+            background-color: #c82333;
+        }
+
+        #newCategoryName,
+        #confirmAddCategoryButton,
+        #cancelAddCategoryButton {
+            display: none;
+        }
+
+        #cancelAddCategoryButton {
+            background-color: #dc3545;
+        }
+
+        #cancelAddCategoryButton:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="adminHeader">
+        <h1>
+            <a href="#" onclick="location.reload(); return false;">Admin Panel</a> |
+            <a href="http://gifthouse.pro" target="_blank">www.gifthouse.pro</a>
+        </h1>
+
+        <div id="addCategoryContainer">
+            <button id="showAddCategoryButton" class="categoryButton" onclick="showAddCategoryInput()">Adaugă Categorie
+                Noua</button>
+            <input type="text" id="newCategoryName" placeholder="Nume categorie">
+            <button id="confirmAddCategoryButton" class="categoryButton" onclick="addCategory()">Adaugă</button>
+            <button id="cancelAddCategoryButton" class="cancelButton" onclick="cancelAddCategory()">Anulează</button>
+        </div>
+    </div>
+
+    <div id="categoriesContainer">
+        <!-- Categoriile vor fi adăugate aici -->
+    </div>
+
+    <div id="filterSearchContainer">
+        <div id="filterContainer">
+            <label for="filterDropdown">Filtrează după categorie:</label>
+            <select id="filterDropdown">
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+
+        <div id="searchContainer">
+            <label for="searchInput">Caută produs:</label>
+            <input type="text" id="searchInput" placeholder="Caută după nume, ID sau preț">
+        </div>
+    </div>
+
+    <h2>Produse</h2>
+    <div id="overlay"></div> <!-- Overlay for dimming background -->
+
+    <div id="itemFormContainer" style="display: none;">
+        <h2>Adaugă nou produs în categoria</h2>
+        <h2><span id="selectedCategory"></span></h2>
+        <form id="productForm">
+            <label for="id">ID Produs | <span id="id"></span></label>
+
+            <label for="name">Nume Produs</label>
+            <input type="text" id="name" required>
+
+            <label for="price">Preț</label>
+            <input type="text" id="price" required>
+
+            <label for="images">ImaginiImagini</label>
+            <input type="text" id="images" placeholder="images/Inele/ring22.jpg, images/Inele/ring2.jpg" required
+                readonly style="display: none;">
+            <button type="button" onclick="document.getElementById('imageFileInput').click()">Adaugă o poză</button>
+            <input type="file" id="imageFileInput" style="display: none;" accept="image/*" onchange="addImagePath()">
+            <div id="imagePathsContainer"></div> <!-- Container for image paths with delete icons -->
+
+            <label for="description">Descriere</label>
+            <textarea id="description" required></textarea>
+            <div class="optional">
+                <label for="description">Optional</label>
+                <label for="isTrending">
+                    <input type="checkbox" id="isTrending">
+                    Produsul este în trend
+                </label>
+
+                <label for="old_price">Preț Veche:</label>
+                <input type="text" id="old_price" placeholder="Ex: 1645.00 MDL">
+
+                <label for="out_Of_stock">
+                    <input type="checkbox" id="out_Of_stock">
+                    Este epuizat
+                </label>
+
+                <label for="isNew">
+                    <input type="checkbox" id="isNew">
+                    Produs Nou
+                </label>
+
+                <label for="product_sizes">Dimensiuni disponibile (separate prin virgule):</label>
+                <input type="text" id="product_sizes" placeholder="Ex: 15, 16, 17, 18, 19">
+            </div>
+
+            <button type="button" onclick="saveProduct()">Salvează Produs</button>
+            <button type="button" class="cancelButton" onclick="resetProductForm()">Anulează</button>
+        </form>
+    </div>
+
+    <div id="notification"></div> <!-- Container pentru notificări -->
+
+    <div id="productsContainer">
+        <!-- Produsele vor fi adăugate aici -->
+    </div>
+
+    <script src="scripts/jsmain.js"></script>
+    <script>
+        function showAddCategoryInput() {
+            document.getElementById('newCategoryName').style.display = 'block';
+            document.getElementById('confirmAddCategoryButton').style.display = 'block';
+            document.getElementById('cancelAddCategoryButton').style.display = 'block';
+            document.getElementById('showAddCategoryButton').style.display = 'none';
+        }
+
+        function addCategory() {
+            const categoryName = document.getElementById('newCategoryName').value.trim();
+            if (categoryName) {
+                if (!categories.includes(categoryName)) { // Ensure category is unique
+                    categories.push(categoryName);
+                    updateCategories();
+                    saveCategoriesToJSON(); // Save categories to JSON file
+                    document.getElementById('newCategoryName').value = ''; // Clear input
+                    document.getElementById('newCategoryName').style.display = 'none';
+                    document.getElementById('confirmAddCategoryButton').style.display = 'none';
+                    document.getElementById('cancelAddCategoryButton').style.display = 'none';
+                    document.getElementById('showAddCategoryButton').style.display = 'block';
+                    populateFilterDropdown(); // Update filter dropdown
+                } else {
+                    alert("Categoria există deja.");
+                }
+            } else {
+                alert("Introduceți un nume valid pentru categorie.");
+            }
+        }
+
+        function cancelAddCategory() {
+            document.getElementById('newCategoryName').value = ''; // Clear input
+            document.getElementById('newCategoryName').style.display = 'none';
+            document.getElementById('confirmAddCategoryButton').style.display = 'none';
+            document.getElementById('cancelAddCategoryButton').style.display = 'none';
+            document.getElementById('showAddCategoryButton').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

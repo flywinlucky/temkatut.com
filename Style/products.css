@@ -1,0 +1,412 @@
+main {
+    padding: 8%;
+    font-family: "Poppins", sans-serif;
+    background-color: #F5F5F5;
+    /* Light marble background */
+}
+
+/* Stiluri generale pentru product-header */
+.product-header {
+    background-color: #E0E0E0;
+    /* Light grey */
+    padding: 10px 10px;
+    /* Spațiu mai generos */
+    display: flex;
+    justify-content: space-between;
+    /* Aliniere între elemente */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Umbră blândă */
+}
+
+.product-header-left {
+    display: flex;
+    align-items: center;
+    /* Aliniere verticală */
+    margin-left: 10px;
+    /* Spațiu față de ion-icon */
+    font-size: 16px;
+    /* Dimensiune text */
+    font-weight: 600;
+    /* Font mai pronunțat */
+    color: #333333;
+    /* Dark grey */
+}
+
+.product-header .menu-icon {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    visibility: hidden;
+    /* Ascuns pe desktop */
+}
+
+.current-category-pc span {
+    display: inline-block;
+    font-size: 16px;
+    /* Mărime text ușor mai mare */
+    font-weight: 600;
+    margin-right: 4px;
+    color: #333;
+    /* Culoare mai închisă pentru text */
+}
+
+/* Alinierea la dreapta a product-header-right */
+.product-header-right {
+    display: flex;
+    justify-content: flex-end;
+    /* Aliniere la dreapta */
+    align-items: center;
+}
+
+.product-header-right span {
+    display: inline-block;
+    font-size: 16px;
+    /* Mărime text ușor mai mare */
+    font-weight: 600;
+    margin-right: 4px;
+    color: #333333;
+    /* Dark grey */
+}
+
+.product-header-right #sort {
+    border-radius: 5px;
+    /* Colțuri rotunjite */
+    min-width: auto;
+    min-height: auto;
+    border: 1px solid #ddd;
+    /* Bordură subtire */
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding: 12px;
+    color: #666666;
+    /* Medium grey */
+    transition: background-color 0.3s;
+    /* Tranziție pentru hover */
+}
+
+.product-header-right #sort:hover {
+    background-color: #D3D3D3;
+    /* Light grey */
+}
+
+#sortDropdown {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#productCount {
+    margin-left: 6px;
+}
+
+main .container {
+    position: relative;
+}
+
+.aside {
+    width: 250px;
+    position: fixed;
+    /* Schimbat de la absolute la fixed */
+    top: 405px;
+    /* Centrăm pe verticală */
+    left: 0px;
+    transform: translateY(-55%);
+    /* Ajustăm pentru a fi centrat pe verticală */
+    background-color: #E8E8E8;
+    /* Light grey */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 60px 30px;
+    z-index: 1;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    /* Shadow mai accentuat */
+}
+
+.aside h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    color: #333333;
+    /* Dark grey */
+}
+
+.shop_categories a {
+    padding: 12px 15px;
+    /* Spațiu mai generos */
+    text-decoration: none;
+    font-size: 18px;
+    color: #666666;
+    /* Medium grey */
+    display: block;
+    transition: 0.3s;
+    border-radius: 5px;
+    /* Colțuri rotunjite */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.05);
+    /* Shadow mai accentuat la hover */
+}
+
+.shop_categories a.active,
+.shop_categories a:hover {
+    color: #FFFFFF;
+    /* White */
+    background-color: #B0B0B0;
+    /* Medium grey */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    /* Shadow mai accentuat la hover */
+}
+
+/* Asigură-te că meniul lateral este deasupra fundalului */
+.aside {
+    z-index: 10;
+    /* Mai sus decât overlay-ul */
+}
+
+/* Fundalul transparent */
+.aside-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Negru transparent */
+    z-index: 9;
+    /* Sub meniul lateral */
+    opacity: 0;
+    /* Ascuns inițial */
+    transition: opacity 0.5s;
+    pointer-events: none;
+    /* Previne interacțiunile */
+}
+
+/* Când meniul lateral este deschis */
+.aside.open+.aside-overlay {
+    opacity: 1;
+    /* Devine vizibil */
+    pointer-events: auto;
+    /* Permite clicuri */
+}
+
+/* Alte elemente */
+.products {
+    position: relative;
+    z-index: 1;
+    /* Sub overlay */
+}
+
+/*---------------- products ---------------------*/
+.products {
+    margin-left: 0;
+    padding: 16px;
+    flex-grow: 1;
+    transition: margin-left 0.5s;
+    width: 100%;
+    padding-left: 270px;
+    /* Spațiu pentru meniu */
+}
+
+.products .content {
+    display: grid;
+    gap: 20px;
+    padding: 16px;
+    margin-top: 120px;
+    /* Spațiu deasupra conținutului */
+}
+
+.product-card {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    /* Colțuri rotunjite */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Umbră pentru carduri */
+}
+
+.card-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    /* Colțuri rotunjite pentru partea de sus */
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.card-img:hover img {
+    transform: scale(1.1);
+}
+
+.card-img .addToCart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #B0B0B0;
+    /* Medium grey */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    color: #FFFFFF;
+    /* Updated color */
+    cursor: pointer;
+    transition: all .4s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adăugare shadow */
+}
+
+.card-img .addToCart:hover {
+    background-color: #A0A0A0;
+    /* Slightly darker grey */
+    color: #FFFFFF;
+    /* Updated color */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    /* Shadow mai accentuat la hover */
+}
+
+.card-info {
+    padding: 16px 0;
+    text-align: center;
+    /* Centrează textul în interiorul cardului */
+    background-color: #FFFFFF;
+    /* White */
+}
+
+.product-name {
+    font-size: 16px;
+    /* Mărime text mai mare pentru titlu */
+    font-weight: 600;
+    /* Îngroșat pentru evidențiere */
+    color: #222;
+    margin: 0 0 8px;
+}
+
+.product-price {
+    font-size: 16px;
+    /* Mărime text mai mare pentru preț */
+    font-weight: 600;
+    /* Îngroșat pentru evidențiere */
+    color: #696969;
+    margin: 0;
+}
+
+/* Ajustare pentru mobil */
+@media screen and (max-width: 768px) {
+    .product-header .menu-icon {
+        visibility: visible;
+        /* Vizibil pe mobil */
+    }
+
+    .current-category-pc {
+        display: none;
+        /* Ascunde întregul element pentru a nu ocupa spațiu */
+    }
+
+    .product-header-left,
+    .product-header-right {
+        flex: 1;
+        /* Fiecare parte ocupă o proporție egală din spațiul disponibil */
+        display: flex;
+        justify-content: right;
+        /* Centrare a conținutului */
+    }
+
+    .product-header .menu-icon {
+        margin: 0 10px;
+        /* Marje pentru distanțare */
+    }
+
+    .sortBy {
+        display: none;
+        /* Ascunde sortare pe mobil */
+    }
+
+    .aside {
+        width: 100%;
+        left: -200%;
+    }
+
+    .aside.open {
+        left: 0;
+    }
+
+    .products {
+        padding-left: 16px;
+        /* Spațiu mai mic pe mobil */
+    }
+
+    /* Fundalul transparent vizibil doar pe mobil */
+    .aside-overlay {
+        display: block;
+    }
+}
+
+/* Reguli pentru ecranele mai mari */
+@media screen and (min-width: 769px) {
+    .product-header .menu-icon {
+        visibility: hidden;
+        /* Ascuns pe desktop */
+    }
+
+    /* Aici asigurăm că .current-category-pc span este vizibil pe desktop */
+    .current-category-pc span {
+        visibility: visible;
+        /* Vizibil pe desktop */
+    }
+
+    .products .content {
+        margin-top: 0;
+        /* Elimină spațiul deasupra conținutului pe ecrane mari */
+    }
+
+    /* Fundalul transparent ascuns pe desktop */
+    .aside-overlay {
+        display: none;
+    }
+}
+
+/* Add a scroll area for the category buttons if there are many elements */
+.shop_categories {
+    max-height: 400px;
+    /* Set a maximum height for the category list */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    padding-right: 10px;
+    /* Add some padding to the right for better appearance */
+}
+
+/* Add custom scrollbar styles */
+.shop_categories::-webkit-scrollbar {
+    width: 8px;
+}
+
+.shop_categories::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Light grey background */
+}
+
+.shop_categories::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Medium grey thumb */
+}
+
+.shop_categories::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Darker grey on hover */
+}

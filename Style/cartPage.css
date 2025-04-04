@@ -1,0 +1,202 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F5F5;
+    /* Light marble background */
+}
+
+/* General Heading Styles */
+h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+/* Cart Page Styles */
+.cart_page .container {
+    padding: 4% 8%;
+}
+
+.cart_page .container h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.cart_page .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+/* Summary Price Styles */
+.summary_price {
+    background-color: #FFFFFF;
+    /* White */
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+.summary_price div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.summary_price div:first-child {
+    position: relative;
+}
+
+.summary_price div:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.summary_price div h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.summary_price .Delivery {
+    color: #4c4c4c;
+}
+
+.summary_price div:last-child span,
+.summary_price div:last-child h4 {
+    font-weight: 700;
+}
+
+.summary .checkout {
+    width: 100%;
+    background-color: #51c942;
+    /* Dark grey */
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 48px;
+    transition: .25s ease-in-out !important;
+    margin-bottom: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+/* Styles for the Shipping Info section */
+.Shiping_Info {
+    display: flex;
+    flex-direction: column;
+    /* Stack inputs vertically */
+    gap: 10px;
+    /* Space between inputs */
+    margin-bottom: 60px;
+    /* Margin at the bottom */
+}
+
+.Shiping_Info input {
+    width: 100%;
+    /* Full width for input fields */
+    padding: 14px 20px;
+    /* Same padding as promo code */
+    border: none;
+    /* No border */
+    background-color: #E8E8E8;
+    /* Light grey */
+    color: #868686;
+    /* Text color */
+    font-size: 14px;
+    /* Font size */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+.Shiping_Info input:focus {
+    outline: none;
+    /* No outline on focus */
+    box-shadow: 0 2px 10px rgba(0, 122, 204, 0.5);
+    /* Focus shadow */
+}
+
+.Shiping_Info input::placeholder {
+    color: #565555;
+    /* Placeholder color */
+    font-size: 14px;
+    /* Placeholder font size */
+}
+
+/* Additional heading style for the Shipping Info section */
+.Shiping_Info h2 {
+    font-size: 18px;
+    /* Same as promotional code heading */
+    font-weight: 400;
+    /* Normal weight */
+    margin-bottom: 24px;
+    /* Space below heading */
+}
+
+/* Optional button style for a submit button in shipping info, similar to promo code */
+.Shiping_Info button {
+    background-color: #333333;
+    /* Dark grey */
+    color: #fff;
+    /* White text */
+    font-size: 16px;
+    /* Font size */
+    font-weight: 700;
+    /* Bold text */
+    padding: 12px 30px;
+    /* Button padding */
+    border: none;
+    /* No border */
+    cursor: pointer;
+    /* Pointer on hover */
+    text-transform: uppercase;
+    /* Uppercase text */
+    width: 100%;
+    /* Full width button */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Transition effects */
+}
+
+/* Change background on hover */
+.Shiping_Info button:hover {
+    background-color: #222222;
+    /* Darker grey */
+    transform: translateY(-2px);
+    /* Lift effect on hover */
+}
+
+/* Styles for the Payment Method section */
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Space between elements */
+}
+
+.text-message-center {
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}

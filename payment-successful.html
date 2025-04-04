@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <meta name="keywords" content="cadouri, jucării, accesorii, idei de cadouri, gift house, produse pentru cadouri, decorațiuni, surprize, seturi cadou, articole pentru ocazii speciale">
+    <meta name="author" content="Gift House">
+    <meta name="description" content="Gift House este un magazin online specializat în cadouri, jucării și accesorii. Descoperă cele mai frumoase idei de cadouri pentru toate ocaziile!">
+    
+    <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Style/main.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Gift House</title>
+</head>
+
+<body>
+    <header class="container" id="header">
+        <div class="header_top">
+            <img src="images/logo_block.png" alt="page logo" id="logo" onclick="window.location.href='index.html'">
+
+            <nav>
+                <menu>
+                    <ul class="nav-buttons">
+                        <li><a href="index.html">Acasa</a></li>
+                        <li><a href="products.html">Produse</a></li>
+                    </ul>
+                </menu>
+            </nav>
+
+            <div class="header_actions">
+
+                <a href="https://t.me/jewelryady">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <section id="login">
+        <div class="container">
+            <h1 class="section-header">🎉 SUCCES 🎉</h1>
+
+            <div class="text-message-center">
+                <p>Comanda dumneavoastră a fost plasată cu succes. În scurt timp, veți fi contactat de operatorul
+                    nostru. Fiți pe fază!</p>
+            </div>
+
+            <div id="general-order-details" class="general-order-details">
+                <!-- General order details will be populated here -->
+            </div>
+
+
+            <div id="order-details" class="order-details">
+                <!-- Product details will be populated here -->
+            </div>
+
+            <div id="form">
+                <div class="submit">
+                    <button id="btn-login" onclick="window.location.href='index.html'">Întoarce-te în magazin.</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer black-footer">
+        <div class="footer-top">
+            <div class="footer-list">
+
+                <div class="list">
+                    <h4>INFORMATII</h4>
+                    <ul>
+                      <!--<li><a href="despre-noi.html">Despre noi</a></li>-->
+                        <li><a href="contacte.html">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4>RELATII CLIENTI</h4>
+                    <ul>
+                        <li><a href="termeni-si-conditii.html">Termeni si conditii</a></li>
+                        <li><a href="politica-de-confidentialitate.html">Politica de confidentialitate</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+                  <!--<div class="header_social">
+                <a href="https://www.instagram.com/jewelryady/" target="_blank">
+                    <img src="images/footer/Insta_Icon.png" alt="Instagram">
+                </a>
+                <a href="https://t.me/jewelryady" target="_blank">
+                    <img src="images/footer/telegram_Icon.png" alt="Telegram">
+                </a>
+                <a href="https://wa.me/+373069956253" target="_blank">
+                    <img src="images/footer/whatsapp_Icon.png" alt="WhatsApp">
+                </a>
+            </div>-->
+
+            <p class="footer-company-name">
+                © 2025 Toate drepturile rezervate.
+            </p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const orderDetails = localStorage.getItem("orderDetails");
+            if (orderDetails) {
+                const generalOrderDetailsContainer = document.getElementById("general-order-details");
+                const orderDetailsContainer = document.getElementById("order-details");
+
+                const orderLines = orderDetails.split('\n');
+                let generalOrderInfo = "";
+                let productHtml = "";
+                let shippingInfoHtml = "";
+
+                orderLines.forEach((line, index) => {
+                    if (line.startsWith("Nume:") || line.startsWith("Telefon:") || line.startsWith("Email:") || line.startsWith("Telegram:") || line.startsWith("Raion:") || line.startsWith("Oras:") || line.startsWith("Adresa:") || line.startsWith("Codul Postal:")) {
+                        // Dacă este informație de livrare, o adăugăm în `general-order-details`
+                        shippingInfoHtml += line + "<br>";
+                    } else if (line.startsWith("Total:") || line.startsWith("Detalii Comandă:") || line.startsWith("Data")) {
+                        // Dacă este informație generală, o adăugăm în `general-order-details`
+                        generalOrderInfo += line + "<br>";
+                    } else if (line.match(/^\d+\)/)) {
+                        // Dacă este un produs (ex: "1) Product Name | Cantitate x2 | Mărime M")
+                        let productData = line.split('|');
+                        let productName = productData[0].split(') ')[1]; // Extrage numele produsului
+                        let productQuantity = productData[1].trim(); // Cantitatea
+                        let productSize = productData[2].trim(); // Mărimea
+
+                        // Verificăm dacă există imaginea produsului pe linia următoare
+                        let productImage = "";
+                        if (orderLines[index + 1] && orderLines[index + 1].includes("Imagine:")) {
+                            productImage = orderLines[index + 1].split("Imagine: ")[1].trim();
+                        }
+
+                        // Construim HTML-ul pentru produs
+                        productHtml += `
+                            <div class="product-container">
+                                <img src="${productImage}" alt="${productName}" onerror="this.src='images/default_image.jpg';">
+                                <div>
+                                    <strong>${productName}</strong><br>
+                                    ${productQuantity}<br>
+                                    ${productSize}
+                                </div>
+                            </div>
+                        `;
+                    }
+                });
+
+                // Afișează informațiile de livrare
+                generalOrderDetailsContainer.innerHTML = shippingInfoHtml + "<br>" + generalOrderInfo;
+                // Afișează doar produsele în `order-details`
+                orderDetailsContainer.innerHTML = productHtml;
+            }
+        });
+    </script>
+
+    <style>
+        .general-order-details {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .order-details {
+            display: flex;
+            flex-direction: column;
+            /* Change to column for vertical alignment */
+            overflow-x: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .product-container img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <meta name="keywords" content="cadouri, jucării, accesorii, idei de cadouri, gift house, produse pentru cadouri, decorațiuni, surprize, seturi cadou, articole pentru ocazii speciale">
+    <meta name="author" content="Gift House">
+    <meta name="description" content="Gift House este un magazin online specializat în cadouri, jucării și accesorii. Descoperă cele mai frumoase idei de cadouri pentru toate ocaziile!">
+    
+    <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Style/main.css">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Gift House</title>
+    <style>
+        #contact-us {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-content h2 {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        .contact-content p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .contact-content form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-content input,
+        .contact-content textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-content button {
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #51c942;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-content button:hover {
+            background-color: #48b03a;
+        }
+
+        .success-message {
+            color: green;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container" id="header">
+        <div class="header_top">
+            <img src="images/logo_block.png" alt="page logo" id="logo" onclick="window.location.href='index.html'">
+
+            <nav>
+                <menu>
+                    <ul class="nav-buttons">
+                        <li><a href="index.html">Acasa</a></li>
+                        <li><a href="products.html">Produse</a></li>
+                    </ul>
+                </menu>
+            </nav>
+
+            <div class="header_actions">
+
+                <a href="https://t.me/jewelryady">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <section id="contact-us">
+        <div class="container">
+            <h1 class="section-header">Contacte</h1>
+            <div class="contact-content">
+                <h2>Informații de contact</h2>
+                <p>Email: flystudiosgames@gmail.com</p>
+                <p>Telefon: +373 069776897</p>
+                <p>Program de lucru: Luni - Luni: 8:00 - 22:00</p>
+            
+                <h2>Formular de contact</h2>
+                <form id="contactForm">
+                    <label for="name">Nume:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone">
+                    
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Trimite</button>
+                </form>
+                <p class="success-message" id="successMessage">Mesajul a fost trimis cu succes! Operatorul vă va contacta în cel mai scurt timp.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer black-footer">
+        <div class="footer-top">
+            <div class="footer-list">
+
+                <div class="list">
+                    <h4>INFORMATII</h4>
+                    <ul>
+                         <!--<li><a href="despre-noi.html">Despre noi</a></li>-->
+                        <li><a href="contacte.html">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4>RELATII CLIENTI</h4>
+                    <ul>
+                        <li><a href="termeni-si-conditii.html">Termeni si conditii</a></li>
+                        <li><a href="politica-de-confidentialitate.html">Politica de confidentialitate</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+                   <!--<div class="header_social">
+                <a href="https://www.instagram.com/jewelryady/" target="_blank">
+                    <img src="images/footer/Insta_Icon.png" alt="Instagram">
+                </a>
+                <a href="https://t.me/jewelryady" target="_blank">
+                    <img src="images/footer/telegram_Icon.png" alt="Telegram">
+                </a>
+                <a href="https://wa.me/+373069956253" target="_blank">
+                    <img src="images/footer/whatsapp_Icon.png" alt="WhatsApp">
+                </a>
+            </div>-->
+            
+            <p class="footer-company-name">
+                © 2025 Toate drepturile rezervate.
+            </p>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            const orderDetails = `Formular de contact:\nNume: ${name}\nEmail: ${email}\nTelefon: ${phone}\nMesaj: ${message}`;
+            const telegramUrl = `https://api.telegram.org/bot7566897555:AAG-7T_y31rmY5Adtwz3d8oxdTo2uNXuj-U/sendMessage?chat_id=6953089880&text=${encodeURIComponent(orderDetails)}`;
+
+            fetch(telegramUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        document.getElementById('contactForm').reset();
+                        document.getElementById('successMessage').style.display = 'block';
+                    } else {
+                        alert('Eroare la trimiterea mesajului. Vă rugăm să încercați din nou.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Eroare la trimiterea mesajului. Vă rugăm să încercați din nou.');
+                });
+        });
+    </script>
+</body>
+
+</html>

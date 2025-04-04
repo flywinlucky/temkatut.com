@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Games Order</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ 
+  <div class="photo-editor">
+    <!-- Add the overlay image -->
+    <img id="overlayImage" src="Resources/avatar-mask.png" alt="Overlay" />
+    <canvas id="photoCanvas"></canvas>
+    <div class="controls">
+      <button onclick="rotateImage(-10)">Rotate Left</button>
+      <button onclick="rotateImage(10)">Rotate Right</button>
+      <button onclick="zoomImage(1.1)">Zoom In</button>
+      <button onclick="zoomImage(0.9)">Zoom Out</button>
+      <button onclick="flipPhoto()">Flip Photo</button>
+      <button onclick="resetTransformations()">Reset</button>
+      <button type="button" onclick="document.getElementById('photoInput').click()">Add Image</button>
+    </div>
+    <div class="debug-info" id="debugInfo">Debug Info: </div>
+    <div class="order-form">
+      <h1>Make Order</h1>
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required> <!-- New email input field -->
+      <div class="notification" id="notification"></div>
+      <input type="file" id="photoInput" accept="image/*" style="display: none;" onchange="previewPhoto()">
+      <button type="button" onclick="generateJSON()">Place Order</button>
+    </div>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

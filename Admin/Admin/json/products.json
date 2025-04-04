@@ -1,0 +1,230 @@
+[
+    {
+        "id": "1.1",
+        "name": "Capybara de plu\u0219",
+        "price": "150 MDL",
+        "images": [
+            "images/Catalog/Animale/cap_1.jpg"
+        ],
+        "category": "Animale",
+        "description": "Descriere produs:\nNumele produsului: Perna capibara\nCuloare: Maro\nPentru tine: 25cm\nanimale : capibara\nTip : P\u0103pu\u0219\u0103 de plu\u0219/Nano\nUmplere : PP bumbac\nMaterial : plus",
+        "isTrending": true,
+        "isNew": true
+    },
+    {
+        "id": "1.2",
+        "name": "Caracati\u021b\u0103 de plu\u0219",
+        "price": "100 MDL",
+        "images": [
+            "images/Catalog/Animale/car_1.jpg"
+        ],
+        "category": "Animale",
+        "description": "Produsul este sigur \u0219i non-toxic, nu este u\u0219or s\u0103 \u00eendep\u0103rta\u021bi p\u0103rul, culoarea este plin\u0103 \u0219i senza\u021bia este confortabil\u0103. P\u0103pu\u0219\u0103 de plu\u0219 dr\u0103gu\u021b\u0103 \u0219i moale, cu expresie realist\u0103, vedere de ansamblu clar\u0103 \u0219i realist\u0103",
+        "isTrending": true,
+        "old_price": "1300 MDL"
+    },
+    {
+        "id": "1.3",
+        "name": "Iepura\u0219 de plu\u0219",
+        "price": "150 MDL",
+        "images": [
+            "images/Catalog/Animale/iep_1.jpg"
+        ],
+        "category": "Animale",
+        "description": "Stare 100% nou-nou\u021b\u0103 \u0219i de \u00eenalt\u0103 calitate Inaltime Aproximativ 40 cm (inclusiv urechea)\nCuloarea alb\u0103",
+        "isTrending": true
+    },
+    {
+        "id": "1.4",
+        "name": "Inchworm Moale",
+        "price": "200 MDL",
+        "images": [
+            "images/Catalog/Animale/worm_1.jpg"
+        ],
+        "category": "Animale",
+        "description": "50 cm Colorat Inchworm, Caterpillar Pern\u0103 Juc\u0103rie de dezvoltare pentru bebelu\u0219i",
+        "isTrending": true,
+        "isNew": true
+    },
+    {
+        "id": "1.5",
+        "name": "Pisic\u0103 pern\u0103 de plu\u0219",
+        "price": "150 MDL",
+        "images": [
+            "images/Catalog/Animale/cat_1.jpg"
+        ],
+        "category": "Animale",
+        "description": "Aceast\u0103 p\u0103pu\u0219\u0103 adorabil\u0103 cu pern\u0103 de plu\u0219 este perfect\u0103 pentru iubitorii de pisici \u0219i ofer\u0103 confort \u0219i companie. Conceput cu picioare foarte lungi, acest prieten felin moale \u0219i dr\u0103g\u0103la\u0219 este realizat din materiale de \u00eenalt\u0103 calitate",
+        "isTrending": true
+    },
+    {
+        "id": "1.6",
+        "name": "Pisic\u0103 dr\u0103gu\u021b\u0103",
+        "price": "250 MDL",
+        "images": [
+            "images/Catalog/Animale/cat_2.jpg"
+        ],
+        "category": "Animale",
+        "description": "De \u00eenalt\u0103 calitate, din plu\u0219 moale \u0219i bumbac pp, 25cm",
+        "isTrending": true,
+        "isNew": true
+    },
+    {
+        "id": "1.7",
+        "name": "Avocado Capybara",
+        "price": "250 MDL",
+        "images": [
+            "images/Catalog/Animale/capavocado_1.jpg"
+        ],
+        "category": "Animale",
+        "description": "Aceast\u0103 juc\u0103rie adorabil\u0103 de plus este cadoul perfect pentru copiii care iubesc animalele dr\u0103gu\u021be \u0219i dr\u0103g\u0103la\u0219e. Cu designul s\u0103u fermec\u0103tor de avocado \u0219i materialul moale, care se \u00eembr\u0103\u021bi\u0219eaz\u0103, acest plus de capibara va deveni cu siguran\u021b\u0103 un \u00eenso\u021bitor iubit",
+        "isTrending": true,
+        "old_price": "300 MDL"
+    },
+    {
+        "id": "1.8",
+        "name": "Bear Tiktok Boom",
+        "price": "250 MDL",
+        "images": [
+            "images/Catalog/Animale/iep_2.jpg"
+        ],
+        "category": "Animale",
+        "description": "Juc\u0103rie de plu\u0219, Material de umplere bumbac",
+        "isTrending": true
+    },
+    {
+        "id": "2.1",
+        "name": "Floarea soarelui",
+        "price": "250 MDL",
+        "images": [
+            "images/Catalog/Plante/plan_1.jpg"
+        ],
+        "category": "Plante",
+        "description": "Juc\u0103rii de plus floarea-soarelu, 32*10 cm",
+        "isTrending": true
+    },
+    {
+        "id": "2.2",
+        "name": "Dovleac de plush",
+        "price": "450 MDL",
+        "images": [
+            "images/Catalog/Plante/plan_2.jpg"
+        ],
+        "category": "Plante",
+        "description": "Dovleac de plush, Decorare pentru cas\u0103",
+        "isTrending": true
+    },
+    {
+        "id": "2.3",
+        "name": "Banana de plu\u0219",
+        "price": "150 MDL",
+        "images": [
+            "images/Catalog/Plante/ban_1.jpg"
+        ],
+        "category": "Plante",
+        "description": "Aceast\u0103 juc\u0103rie adorabil\u0103 de plu\u0219 este un plus \u00eenc\u00e2nt\u0103tor pentru orice camer\u0103, oferind un design juc\u0103u\u0219 \u0219i dr\u0103g\u0103la\u0219 care aduce un z\u00e2mbet pe fa\u021b\u0103 oricui.. \u00cen form\u0103 de banan\u0103, are o fa\u021b\u0103 expresiv\u0103 care adaug\u0103 personalitate \u0219i farmec.",
+        "isTrending": true
+    },
+    {
+        "id": "2.4",
+        "name": "Vinete Moale de Plu\u0219",
+        "price": "550 MDL",
+        "images": [
+            "images/Catalog/Plante/img_.jpg"
+        ],
+        "category": "Plante",
+        "description": "40/55cm Vinete Moale de Plu\u0219, 18 ani \u0219i peste, 14 ani \u0219i pes",
+        "isTrending": true,
+        "old_price": "750 MDL"
+    },
+    {
+        "id": "2.5",
+        "name": "Morcov de plu\u0219",
+        "price": "350 MDL",
+        "images": [
+            "images/Catalog/Plante/morc_1.jpg"
+        ],
+        "category": "Plante",
+        "description": "Morcov de plu\u0219, M\u0103rime 45CM",
+        "isTrending": true
+    },
+    {
+        "id": "3.1",
+        "name": "Ocean din lemn puzzle 3D",
+        "price": "150 MDL",
+        "images": [
+            "images/Catalog/Puzzle-uri/fish_1.jpg"
+        ],
+        "category": "Puzzle-uri",
+        "description": "Bun venit \u00een magazinul meu, sper s\u0103 v\u0103 plac\u0103!",
+        "isTrending": true
+    },
+    {
+        "id": "3.2",
+        "name": "Twist Puzzles",
+        "price": "50 MDL",
+        "images": [
+            "images/Catalog/Puzzle-uri/magic_1.jpg"
+        ],
+        "category": "Puzzle-uri",
+        "description": "Rigl\u0103 magic\u0103 din plastic, 24 de pene, cub de \u0219arpe magic, puzzle-uri r\u0103sucite pentru copii, juc\u0103rie educa\u021bional\u0103 pliabil\u0103.",
+        "isTrending": true
+    },
+    {
+        "id": "3.3",
+        "name": "Animale din h\u00e2rtie",
+        "price": "70 MDL",
+        "images": [
+            "images/Catalog/Puzzle-uri/anim_1.jpg"
+        ],
+        "category": "Puzzle-uri",
+        "description": "Fabricat din h\u00e2rtie ecologic\u0103 \u0219i reciclabil\u0103, non-toxic\u0103 \u0219i inofensiv\u0103.\nAceast\u0103 juc\u0103rie este perfect\u0103 pentru adolescen\u021bii \u0219i tinerii adul\u021bi c\u0103rora le place activit\u0103\u021bile de construc\u021bie \u0219i me\u0219te\u0219uguri.",
+        "isTrending": true,
+        "isNew": true
+    },
+    {
+        "id": "3.4",
+        "name": "Puzzle din lemn pentru copii",
+        "price": "80 MDL",
+        "images": [
+            "images/Catalog/Puzzle-uri/puz_1.jpg"
+        ],
+        "category": "Puzzle-uri",
+        "description": "ocul de origine: CN (Origine)\nMaterial: lemn\nPentru tine: Lungime: aproximativ 11 cm latime: aproximativ 11 cm \u00een\u0103l\u021bime: aproximativ 0,4 cm\n(M\u0103rimea este m\u0103surat\u0103 manual, iar eroarea de 1-2 cm este normal\u0103)",
+        "isTrending": true,
+        "old_price": "100 MDL"
+    },
+    {
+        "id": "3.5",
+        "name": "Ferm\u0103 puzzle",
+        "price": "180 MDL",
+        "images": [
+            "images/Catalog/Puzzle-uri/farm_1.jpg"
+        ],
+        "category": "Puzzle-uri",
+        "description": "De \u00eenalt\u0103 calitate\nMaterial: lemn\nCuloare: ca imagine\nDimensiune: 3,5 * 3,5 * 3,5 cm (dimensiunea unei piese)\n1 inch = 2,54 cm",
+        "isTrending": true
+    },
+    {
+        "id": "3.6",
+        "name": "puzzle 3D pentru copii",
+        "price": "140 MDL",
+        "images": [
+            "images/Catalog/Puzzle-uri/juc_1.jpg"
+        ],
+        "category": "Puzzle-uri",
+        "description": "Montessori Juc\u0103rii de \u00eenv\u0103\u021bare Puzzle de potrivire a formelor Potrivirea culorilor \u0219i formelor Teaseruri de creier Joc de logic\u0103 Juc\u0103rii educa\u021bionale pre\u0219colare pentru copii B\u0103ie\u021bi Fete Cadouri de aniversare pentru copii",
+        "isTrending": true,
+        "old_price": "200 MDL"
+    },
+    {
+        "id": "3.7",
+        "name": "ds",
+        "price": "23 MDL",
+        "images": [
+            "images/Catalog/Puzzle-uri/farm_1.jpg"
+        ],
+        "category": "Puzzle-uri",
+        "description": "wed"
+    }
+]

@@ -1,17 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Page</title>
-    <script>
-        // Redirecționează automat către pagina dorită
-        window.onload = function() {
-            window.location.href = "Bots/Money Dev Bot/index.html";
-        };
-    </script>
+ 
+    <meta name="keywords" content="cadouri, jucării, accesorii, idei de cadouri, gift house, produse pentru cadouri, decorațiuni, surprize, seturi cadou, articole pentru ocazii speciale">
+    <meta name="author" content="Gift House">
+    <meta name="description" content="Gift House este un magazin online specializat în cadouri, jucării și accesorii. Descoperă cele mai frumoase idei de cadouri pentru toate ocaziile!">
+    
+    <link rel="icon" href="images/logowhite.jpg" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Style/chatBot.css"> <!-- Link to external CSS -->
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Gift House</title>
+
+    <style>
+        .info-link {
+            display: flex;
+            /* Permite alinierea conținutului în linie */
+            text-decoration: none;
+            /* Elimină sublinierea textului */
+            color: inherit;
+            /* Moștenește culoarea textului părintelui */
+        }
+
+        .info-link:hover {
+            opacity: 0.8;
+            /* Schimbă transparența la hover pentru un efect vizual */
+        }
+
+        .discount-header {
+            color: red;
+            font-weight: bold;
+        }
+
+        .discount-date {
+            background-color: yellow;
+            padding: 0 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <p>Redirecting to the requested page...</p>
+    <header class="container" id="header">
+        <div class="header_top">
+            <img src="images/logo_block.png" alt="page logo" id="logo" onclick="window.location.href='index.html'">
+            <nav id="navbar">
+                <menu>
+                    <ul class="nav-buttons">
+                        <li><a href="index.html">Acasa</a></li>
+                        <li><a href="products.html">Produse</a></li>
+                    </ul>
+                </menu>
+            </nav>
+            
+            <div class="header_actions">
+                <a href="https://t.me/jewelryady">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+                <a href="#" class="icon-cart">
+                    <ion-icon name="cart-outline"></ion-icon>
+                    <span id="cart-counter">0</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+    <div class="header">
+        <h3>.</h3>
+    </div>
+
+    <!-- slider -->
+    <div class="carousel">
+        <div class="slides">
+            <a href="products.html?category=Animale" target="_blank" class="slide">
+                <img src="images/background/Carousell/P11.jpg" alt="Slide 1">
+            </a>
+            <a href="products.html?category=Plante" target="_blank" class="slide">
+                <img src="images/background/Carousell/P22.jpg" alt="Slide 2">
+            </a>
+            <a href="products.html?category=Puzzle-uri" target="_blank" class="slide">
+                <img src="images/background/Carousell/P33.jpg" alt="Slide 3">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" onclick="closeCart();"></div>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+        <div class="cart-header">
+            <h2>Coș de cumpărături</h2>
+            <div class="closeCart" onclick="closeCart();">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="cart_products">
+            <!-- add cart products in js -->
+        </div>
+        <div class="cart_total">
+            <h3>Total:</h3>
+            <span id="total_price"></span>
+        </div>
+        <div class="btn_control">
+            <button class="viewCart" onclick="viewCart();">Vezi coșul</button>
+        </div>
+    </div>
+
+    <!-- Top Products -->
+    <div class="top_products">
+        <div class="container">
+            <div class="header">
+                <h2 class="discount-header">🔥 REDUCERE -15% 🔥</h2>
+                <h2 class="discount-header"><span class="discount-date">1 - 17 Martie</span></h2>
+                <!-- <p>Iubirea merită simțită și sărbătorită în fiecare zi. Acum, cu reduceri de până la 50%!</p> -->
+                <h3>Produse în trend</h3>
+                <p>Dragostea nu se măsoară în cuvinte, ci în gesturi mici și pline de semnificație !</p>
+            </div>
+            <div class="products">
+                <!-- add by js -->
+            </div>
+        </div>
+    </div>
+
+    <div class="text-message-center">
+        <h2>✨Colecțiile Noastre ✨</h2>
+        <p>O gamă variată de produse, disponibile pentru a-ți aduce fericirea!</p>
+    </div>
+
+    <!-- collection -->
+    <div class="collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+            <ul class="collection-list">
+                <li>
+                    <div class="collection-card has-before hover:shine">
+                        <h2 class="card-title">⭐️Animale</h2>
+                        <p class="card-text"></p>
+
+                        <a href="products.html?category=Animale" class="btn-link">
+                            <span>Cumpără Animale</span>
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+
+                        <div class="has-bg-image"
+                            style="background-image: url('images/background/Collection/banner1.jpg')"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collection-card has-before hover:shine">
+                        <h2 class="card-title">⭐️Plante</h2>
+                        <p class="card-text"></p>
+
+                        <a href="products.html?category=Plante" class="btn-link">
+                            <span>Cumpără Plante</span>
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+
+                        <div class="has-bg-image"
+                            style="background-image: url('images/background/Collection/banner2.jpg')"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collection-card has-before hover:shine">
+                        <h2 class="card-title">⭐️Puzzle-uri</h2>
+                        <p class="card-text"></p>
+
+                        <a href="products.html?category=Puzzle-uri" class="btn-link">
+                            <span>Cumpără Puzzle-uri</span>
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </a>
+
+                        <div class="has-bg-image"
+                            style="background-image: url('images/background/Collection/banner4.jpg')"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>`
+    </div>
+
+    <div class="text-message-center">
+        <h2>⚡️Recenzii⚡️</h2>
+        <!--       <div class="info">
+            <a href="reviews.html" class="info-link">
+                <div class="info-icon">
+                    <img src="images/recenzii users/5283083.png" alt="24-hours-support">
+                </div>
+                <div class="info-text">
+                    <h3>Mai multe recenzii puteți citi în acest articol</h3>
+                    <p>Click aici pentru a citi recenziile complete.</p> 
+                 
+                </div>
+            </a>
+        </div> -->
+        <p>Datoria noastră este să facem clienții fericiți !</p>
+
+    </div>
+
+    <!-- Recenzii -->
+    <div class="information">
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/recenzii users/user_1.png" alt="delivery-status">
+            </div>
+            <div class="info-text">
+                <h3>Mihail 5/5 ⭐⭐⭐⭐⭐</h3>
+                <p>Comandă rapidă și produse superbe! Cadoul a fost ambalat frumos și livrat la timp. Recomand cu încredere!</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/recenzii users/user_2.png" alt="Security">
+            </div>
+            <div class="info-text">
+                <h3>Elena 5/5 ⭐⭐⭐⭐⭐</h3>
+                <p>Am găsit aici cele mai frumoase idei de cadouri! Jucăriile și accesoriile sunt de calitate. Voi reveni sigur!</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/recenzii users/user_3.png" alt="24-hours-support">
+            </div>
+            <div class="info-text">
+                <h3>Cristian 5/5 ⭐⭐⭐⭐⭐</h3>
+                <p>Livrare rapidă și servicii excelente! Produsele sunt exact ca în poze, perfecte pentru surprize speciale!</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/recenzii users/user_4.png" alt="24-hours-support">
+            </div>
+            <div class="info-text">
+                <h3>Andreea 5/5 ⭐⭐⭐⭐⭐</h3>
+                <p>Gift House este magazinul ideal pentru cadouri! Seturile sunt elegante, iar decorațiunile absolut superbe!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-message-center">
+        <h2>De ce noi ?</h2>
+        <p>Suntem mereu deschiși cu clienții noștri și sărim în ajutor oricând</p>
+    </div>
+
+    <!-- Shipping Info -->
+    <div class="information">
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/Why Us/delivery-status.png" alt="delivery-status">
+            </div>
+            <div class="info-text">
+                <h3>Produs verificat</h3>
+                <p>Fiecare articol este verificat calitativ înainte de ambalare.</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/Why Us/check.png" alt="Security">
+            </div>
+            <div class="info-text">
+                <h3>Plată securizată</h3>
+                <p>Plată sigură pentru comanda dvs. Achitare în numerar sau cu cardul.</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/Why Us/24-hours-support.png" alt="24-hours-support">
+            </div>
+            <div class="info-text">
+                <h3>Primirea comenzilor 24/7</h3>
+                <p>Faceți comanda în magazinul online „Gift House” chiar acum!</p>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-icon">
+                <img src="images/Why Us/global-distribution.png" alt="Global Distribution">
+            </div>
+            <div class="info-text">
+                <h3>Livrare în orice regiune</h3>
+                <p>Vă garantăm livrarea la timp a tuturor produselor.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer black-footer">
+        <div class="footer-top">
+            <div class="footer-list">
+
+                <div class="list">
+                    <h4>INFORMATII</h4>
+                    <ul>
+                     <!--<li><a href="despre-noi.html">Despre noi</a></li>-->
+                        <li><a href="contacte.html">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h4>RELATII CLIENTI</h4>
+                    <ul>
+                        <li><a href="termeni-si-conditii.html">Termeni si conditii</a></li>
+                        <li><a href="politica-de-confidentialitate.html">Politica de confidentialitate</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+            <!--<div class="header_social">
+                <a href="https://www.instagram.com/jewelryady/" target="_blank">
+                    <img src="images/footer/Insta_Icon.png" alt="Instagram">
+                </a>
+                <a href="https://t.me/jewelryady" target="_blank">
+                    <img src="images/footer/telegram_Icon.png" alt="Telegram">
+                </a>
+                <a href="https://wa.me/+373069956253" target="_blank">
+                    <img src="images/footer/whatsapp_Icon.png" alt="WhatsApp">
+                </a>
+            </div>-->
+
+            <p class="footer-company-name">
+                © 2025 Toate drepturile rezervate.
+            </p>
+
+    </footer>
+
+    <!-- Chat Bot -->
+    <div class="overlay" id="overlay"></div>
+    <button class="chat-button" id="chatButton" onclick="toggleChat()">
+        <img id="chatIcon" src="images/Chat Bot/Chat On.png" alt="Chat Icon" style="width: 100%; height: auto;">
+    </button>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            Consultant (Online)
+            <button class="close-button" onclick="toggleChat()">×</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-message message-bot">
+                👋 Bună ziua! Cum vă putem ajuta?
+            </div>
+        </div>
+        <div class="preset-buttons">
+            <button class="preset-button" onclick="sendPresetMessage('În câte zile ajunge livrarea?')">În câte zile
+                ajunge livrarea?</button>
+            <button class="preset-button"
+                onclick="sendPresetMessage('Care sunt opțiunile de livrare disponibile?')">Care sunt opțiunile de
+                livrare disponibile?</button>
+            <button class="preset-button" onclick="sendPresetMessage('Cum pot să urmăresc statusul comenzii mele?')">Cum
+                pot să urmăresc statusul comenzii mele?</button>
+            <button class="preset-button"
+                onclick="sendPresetMessage('Achitarea se efectuează la primire sau cu cardul?')">Achitarea se efectuează
+                la primire sau cu cardul?</button>
+        </div>
+    </div>
+
+    <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/chatBotCore.js"></script> <!-- Link to external JavaScript -->
+    <script src="JavaScript/slider.js"></script> <!-- Link to new slider JavaScript -->
 </body>
+
 </html>
