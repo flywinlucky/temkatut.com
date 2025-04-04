@@ -1,230 +1,49 @@
 [
     {
         "id": "1.1",
-        "name": "Capybara de plu\u0219",
-        "price": "150 MDL",
+        "name": "iPhone 15 Pro Max 256 GB Single SIM Natural Titanium",
+        "price": "17849 MDL",
         "images": [
-            "images/Catalog/Animale/cap_1.jpg"
+            "images/Catalog/iPhone/1_1694691322938-preview-webp.webp",
+            "images/Catalog/iPhone/2_1694691328515-preview-webp.webp",
+            "images/Catalog/iPhone/3_1694691320929-preview-webp.webp",
+            "images/Catalog/iPhone/4_1694691322875-preview-webp.webp",
+            "images/Catalog/iPhone/5_1694691328313-preview-webp.webp"
         ],
-        "category": "Animale",
-        "description": "Descriere produs:\nNumele produsului: Perna capibara\nCuloare: Maro\nPentru tine: 25cm\nanimale : capibara\nTip : P\u0103pu\u0219\u0103 de plu\u0219/Nano\nUmplere : PP bumbac\nMaterial : plus",
+        "category": "iPhone",
+        "description": "Tip display\tSuper Retina XDR OLED\nDimensiune ecran\t6.7\nMemorie intern\u0103\t256 GB\nRAM\t8 GB\nCapacitatea acumulatorului\t4441 mAh\n\nParametri\nBlitz\tDa\nModel\tiPhone 15 Pro Max\nBrand\tApple\nCuloarea de baz\u0103\tNatural Titanium\nCod model\tMU793RX/A\nDisplay\nDensitate pixeli\t460 ppi\nRefresh rate\t120 Hz\nRezolu\u021bie ecran\t2796 x 1290\nTip display\tSuper Retina XDR OLED\nDimensiune ecran\t6.7\nCamere\nCamer\u0103 frontal\u0103\t12 MP\nRezolu\u021bia video\t4k - 24fps\nNum\u0103rul de camere principale\t3\nRezolu\u021bia camerei principale\t48 MP\nRezolu\u021bia camerei ultrawide\t12 MP\nRezolu\u021bia camerei telephoto\t12 MP\nProcesor\nFrecven\u021ba maximal\u0103 a procesorului\t3.78 GHz\nTehnologia de fabrica\u021bie\t3 nm\nModel CPU\tA17 Pro\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t6\nAlimentare\nTipul acumulatorului\tLi-Ion\nCapacitatea acumulatorului\t4441 mAh\nProtec\u021bie\nGrad de protec\u021bie\tIP68\nSoftware\nSistem de operare\tiOS\nVersiunea SO\t17\nRe\u021bea\nGenera\u021bia conexiunii\t5G\nNum\u0103rul de SIM\tSingle SIM\neSIM\tDa\nFormatul SIM\tNano-SIM\nMemorie\nMemorie intern\u0103\t256 GB\nRAM\t8 GB\nSenzori\nFace ID\tDa\nDeblocare facial\u0103\tDa\nBarometru\tDa\nBusol\u0103\tDa\nSenzor de proximitate\tDa\nGiroscop\tDa\nAccelerometru\tDa\nConectivitate\nNFC\tDa\nConector USB\tUSB Type-C\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 be\nWi-Fi\tDa\nBluetooth\tDa\nGPS\tDa\nConector audio 3.5 mm\tNu\nCarcas\u0103\nMaterial carcas\u0103\tTitanium\nDimensiuni\t159.9 x 76.7 x 8.3 mm\nGreutate\t221 g\nPlac\u0103 video\nModel plac\u0103 video\tApple GPU (6-core graphics)",
         "isTrending": true,
-        "isNew": true
+        "old_price": "25499 MDL"
     },
     {
         "id": "1.2",
-        "name": "Caracati\u021b\u0103 de plu\u0219",
-        "price": "100 MDL",
+        "name": "iPhone 13 128 GB Single SIM Midnight",
+        "price": "7419 MDL",
         "images": [
-            "images/Catalog/Animale/car_1.jpg"
+            "images/Catalog/iPhone/apple_iphone_13_black_4_1631710843209-preview-webp.webp",
+            "images/Catalog/iPhone/apple_iphone_13_midnight_1_1631688933602-preview-webp.webp",
+            "images/Catalog/iPhone/apple_iphone_13_black_2_1631710843196-preview-webp.webp",
+            "images/Catalog/iPhone/apple_iphone_13_black_3_1631710845453-preview-webp.webp"
         ],
-        "category": "Animale",
-        "description": "Produsul este sigur \u0219i non-toxic, nu este u\u0219or s\u0103 \u00eendep\u0103rta\u021bi p\u0103rul, culoarea este plin\u0103 \u0219i senza\u021bia este confortabil\u0103. P\u0103pu\u0219\u0103 de plu\u0219 dr\u0103gu\u021b\u0103 \u0219i moale, cu expresie realist\u0103, vedere de ansamblu clar\u0103 \u0219i realist\u0103",
+        "category": "iPhone",
+        "description": "Tip display\tSuper Retina XDR OLED\nDimensiune ecran\t6.1\nMemorie intern\u0103\t128 GB\nRAM\t4 GB\nCapacitatea acumulatorului\t3240 mAh\n\nParametri\nBlitz\tDa\nModel\tiPhone 13\nBrand\tApple\nCuloarea de baz\u0103\tMidnight\nCod model\tMLPF3HU/A\nDisplay\nDensitate pixeli\t460 ppi\nProtec\u021bie ecran\tSticl\u0103 ceramic\u0103\nRezolu\u021bie ecran\t2532 x 1170\nTip display\tSuper Retina XDR OLED\nDimensiune ecran\t6.1\nCamere\nCamer\u0103 frontal\u0103\t12 MP\nRezolu\u021bia video\t4k - 60fps\nNum\u0103rul de camere principale\t2\nRezolu\u021bia camerei principale\t12 MP\nRezolu\u021bia camerei ultrawide\t12 MP\nProcesor\nTehnologia de fabrica\u021bie\t5 nm\nFrecven\u021ba maximal\u0103 a procesorului\t3.2 GHz\nModel CPU\tA15 Bionic\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t6\nAlimentare\nTipul acumulatorului\tLi-Ion\n\u00cenc\u0103rcare rapid\u0103\t20 W\nCapacitatea acumulatorului\t3240 mAh\nProtec\u021bie\nGrad de protec\u021bie\tIP68\nSoftware\nSistem de operare\tiOS\nVersiunea SO\t15\nRe\u021bea\nGenera\u021bia conexiunii\t5G\nNum\u0103rul de SIM\tSingle SIM\nFormatul SIM\tNano-SIM\nMemorie\nMemorie intern\u0103\t128 GB\nSlot pentru memorie adi\u021bional\u0103\tNu\nRAM\t4 GB\nSenzori\nDeblocare facial\u0103\tDa\nAccelerometru\tDa\nGiroscop\tDa\nSenzor de proximitate\tDa\nBarometru\tDa\nFace ID\tDa\nSenzor de lumin\u0103\tDa\nConectivitate\nNFC\tDa\nConector USB\tLightning\nVersiunea Bluetooth\tv5.0\nVersiune Wi-Fi\t802.11 ax\nGPS\tDa\nConector audio 3.5 mm\tNu\nCarcas\u0103\nMaterial carcas\u0103\tSticl\u0103\nMaterialul ramei\tAluminiu\nDimensiuni\t146.7 x 71.5 x 7.65 mm\nGreutate\t174 g\nPlac\u0103 video\nModel plac\u0103 video\tApple GPU (5-core graphics)",
         "isTrending": true,
-        "old_price": "1300 MDL"
+        "old_price": "10599 MDL"
     },
     {
         "id": "1.3",
-        "name": "Iepura\u0219 de plu\u0219",
-        "price": "150 MDL",
+        "name": "iPhone 15 Pro Max 256 GB Single SIM Black Titanium",
+        "price": "17849 MDL",
         "images": [
-            "images/Catalog/Animale/iep_1.jpg"
+            "images/Catalog/iPhone/1_1694691417915-preview-webp.webp",
+            "images/Catalog/iPhone/2_1694691422324-preview-webp.webp",
+            "images/Catalog/iPhone/3_1694691416932-preview-webp.webp",
+            "images/Catalog/iPhone/4_1694691417979-preview-webp.webp",
+            "images/Catalog/iPhone/5_1694691420762-preview-webp.webp"
         ],
-        "category": "Animale",
-        "description": "Stare 100% nou-nou\u021b\u0103 \u0219i de \u00eenalt\u0103 calitate Inaltime Aproximativ 40 cm (inclusiv urechea)\nCuloarea alb\u0103",
-        "isTrending": true
-    },
-    {
-        "id": "1.4",
-        "name": "Inchworm Moale",
-        "price": "200 MDL",
-        "images": [
-            "images/Catalog/Animale/worm_1.jpg"
-        ],
-        "category": "Animale",
-        "description": "50 cm Colorat Inchworm, Caterpillar Pern\u0103 Juc\u0103rie de dezvoltare pentru bebelu\u0219i",
+        "category": "iPhone",
+        "description": "Tip display\tSuper Retina XDR OLED\nDimensiune ecran\t6.7\nMemorie intern\u0103\t256 GB\nRAM\t8 GB\nCapacitatea acumulatorului\t4441 mAh\n\nParametri\nBlitz\tDa\nModel\tiPhone 15 Pro Max\nBrand\tApple\nCuloarea de baz\u0103\tBlack Titanium\nCod model\tMU773RX/A\nDisplay\nDensitate pixeli\t460 ppi\nRefresh rate\t120 Hz\nRezolu\u021bie ecran\t2796 x 1290\nTip display\tSuper Retina XDR OLED\nDimensiune ecran\t6.7\nCamere\nCamer\u0103 frontal\u0103\t12 MP\nRezolu\u021bia video\t4k - 24fps\nNum\u0103rul de camere principale\t3\nRezolu\u021bia camerei principale\t48 MP\nRezolu\u021bia camerei ultrawide\t12 MP\nRezolu\u021bia camerei telephoto\t12 MP\nProcesor\nFrecven\u021ba maximal\u0103 a procesorului\t3.78 GHz\nTehnologia de fabrica\u021bie\t3 nm\nModel CPU\tA17 Pro\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t6\nAlimentare\nTipul acumulatorului\tLi-Ion\nCapacitatea acumulatorului\t4441 mAh\nProtec\u021bie\nGrad de protec\u021bie\tIP68\nSoftware\nSistem de operare\tiOS\nVersiunea SO\t17\nRe\u021bea\nGenera\u021bia conexiunii\t5G\nNum\u0103rul de SIM\tSingle SIM\neSIM\tDa\nFormatul SIM\tNano-SIM\nMemorie\nMemorie intern\u0103\t256 GB\nRAM\t8 GB\nSenzori\nFace ID\tDa\nDeblocare facial\u0103\tDa\nBarometru\tDa\nBusol\u0103\tDa\nSenzor de proximitate\tDa\nGiroscop\tDa\nAccelerometru\tDa\nConectivitate\nNFC\tDa\nConector USB\tUSB Type-C\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 be\nWi-Fi\tDa\nBluetooth\tDa\nGPS\tDa\nConector audio 3.5 mm\tNu\nCarcas\u0103\nMaterial carcas\u0103\tTitanium\nDimensiuni\t159.9 x 76.7 x 8.3 mm\nGreutate\t221 g\nPlac\u0103 video\nModel plac\u0103 video\tApple GPU (6-core graphics)",
         "isTrending": true,
-        "isNew": true
-    },
-    {
-        "id": "1.5",
-        "name": "Pisic\u0103 pern\u0103 de plu\u0219",
-        "price": "150 MDL",
-        "images": [
-            "images/Catalog/Animale/cat_1.jpg"
-        ],
-        "category": "Animale",
-        "description": "Aceast\u0103 p\u0103pu\u0219\u0103 adorabil\u0103 cu pern\u0103 de plu\u0219 este perfect\u0103 pentru iubitorii de pisici \u0219i ofer\u0103 confort \u0219i companie. Conceput cu picioare foarte lungi, acest prieten felin moale \u0219i dr\u0103g\u0103la\u0219 este realizat din materiale de \u00eenalt\u0103 calitate",
-        "isTrending": true
-    },
-    {
-        "id": "1.6",
-        "name": "Pisic\u0103 dr\u0103gu\u021b\u0103",
-        "price": "250 MDL",
-        "images": [
-            "images/Catalog/Animale/cat_2.jpg"
-        ],
-        "category": "Animale",
-        "description": "De \u00eenalt\u0103 calitate, din plu\u0219 moale \u0219i bumbac pp, 25cm",
-        "isTrending": true,
-        "isNew": true
-    },
-    {
-        "id": "1.7",
-        "name": "Avocado Capybara",
-        "price": "250 MDL",
-        "images": [
-            "images/Catalog/Animale/capavocado_1.jpg"
-        ],
-        "category": "Animale",
-        "description": "Aceast\u0103 juc\u0103rie adorabil\u0103 de plus este cadoul perfect pentru copiii care iubesc animalele dr\u0103gu\u021be \u0219i dr\u0103g\u0103la\u0219e. Cu designul s\u0103u fermec\u0103tor de avocado \u0219i materialul moale, care se \u00eembr\u0103\u021bi\u0219eaz\u0103, acest plus de capibara va deveni cu siguran\u021b\u0103 un \u00eenso\u021bitor iubit",
-        "isTrending": true,
-        "old_price": "300 MDL"
-    },
-    {
-        "id": "1.8",
-        "name": "Bear Tiktok Boom",
-        "price": "250 MDL",
-        "images": [
-            "images/Catalog/Animale/iep_2.jpg"
-        ],
-        "category": "Animale",
-        "description": "Juc\u0103rie de plu\u0219, Material de umplere bumbac",
-        "isTrending": true
-    },
-    {
-        "id": "2.1",
-        "name": "Floarea soarelui",
-        "price": "250 MDL",
-        "images": [
-            "images/Catalog/Plante/plan_1.jpg"
-        ],
-        "category": "Plante",
-        "description": "Juc\u0103rii de plus floarea-soarelu, 32*10 cm",
-        "isTrending": true
-    },
-    {
-        "id": "2.2",
-        "name": "Dovleac de plush",
-        "price": "450 MDL",
-        "images": [
-            "images/Catalog/Plante/plan_2.jpg"
-        ],
-        "category": "Plante",
-        "description": "Dovleac de plush, Decorare pentru cas\u0103",
-        "isTrending": true
-    },
-    {
-        "id": "2.3",
-        "name": "Banana de plu\u0219",
-        "price": "150 MDL",
-        "images": [
-            "images/Catalog/Plante/ban_1.jpg"
-        ],
-        "category": "Plante",
-        "description": "Aceast\u0103 juc\u0103rie adorabil\u0103 de plu\u0219 este un plus \u00eenc\u00e2nt\u0103tor pentru orice camer\u0103, oferind un design juc\u0103u\u0219 \u0219i dr\u0103g\u0103la\u0219 care aduce un z\u00e2mbet pe fa\u021b\u0103 oricui.. \u00cen form\u0103 de banan\u0103, are o fa\u021b\u0103 expresiv\u0103 care adaug\u0103 personalitate \u0219i farmec.",
-        "isTrending": true
-    },
-    {
-        "id": "2.4",
-        "name": "Vinete Moale de Plu\u0219",
-        "price": "550 MDL",
-        "images": [
-            "images/Catalog/Plante/img_.jpg"
-        ],
-        "category": "Plante",
-        "description": "40/55cm Vinete Moale de Plu\u0219, 18 ani \u0219i peste, 14 ani \u0219i pes",
-        "isTrending": true,
-        "old_price": "750 MDL"
-    },
-    {
-        "id": "2.5",
-        "name": "Morcov de plu\u0219",
-        "price": "350 MDL",
-        "images": [
-            "images/Catalog/Plante/morc_1.jpg"
-        ],
-        "category": "Plante",
-        "description": "Morcov de plu\u0219, M\u0103rime 45CM",
-        "isTrending": true
-    },
-    {
-        "id": "3.1",
-        "name": "Ocean din lemn puzzle 3D",
-        "price": "150 MDL",
-        "images": [
-            "images/Catalog/Puzzle-uri/fish_1.jpg"
-        ],
-        "category": "Puzzle-uri",
-        "description": "Bun venit \u00een magazinul meu, sper s\u0103 v\u0103 plac\u0103!",
-        "isTrending": true
-    },
-    {
-        "id": "3.2",
-        "name": "Twist Puzzles",
-        "price": "50 MDL",
-        "images": [
-            "images/Catalog/Puzzle-uri/magic_1.jpg"
-        ],
-        "category": "Puzzle-uri",
-        "description": "Rigl\u0103 magic\u0103 din plastic, 24 de pene, cub de \u0219arpe magic, puzzle-uri r\u0103sucite pentru copii, juc\u0103rie educa\u021bional\u0103 pliabil\u0103.",
-        "isTrending": true
-    },
-    {
-        "id": "3.3",
-        "name": "Animale din h\u00e2rtie",
-        "price": "70 MDL",
-        "images": [
-            "images/Catalog/Puzzle-uri/anim_1.jpg"
-        ],
-        "category": "Puzzle-uri",
-        "description": "Fabricat din h\u00e2rtie ecologic\u0103 \u0219i reciclabil\u0103, non-toxic\u0103 \u0219i inofensiv\u0103.\nAceast\u0103 juc\u0103rie este perfect\u0103 pentru adolescen\u021bii \u0219i tinerii adul\u021bi c\u0103rora le place activit\u0103\u021bile de construc\u021bie \u0219i me\u0219te\u0219uguri.",
-        "isTrending": true,
-        "isNew": true
-    },
-    {
-        "id": "3.4",
-        "name": "Puzzle din lemn pentru copii",
-        "price": "80 MDL",
-        "images": [
-            "images/Catalog/Puzzle-uri/puz_1.jpg"
-        ],
-        "category": "Puzzle-uri",
-        "description": "ocul de origine: CN (Origine)\nMaterial: lemn\nPentru tine: Lungime: aproximativ 11 cm latime: aproximativ 11 cm \u00een\u0103l\u021bime: aproximativ 0,4 cm\n(M\u0103rimea este m\u0103surat\u0103 manual, iar eroarea de 1-2 cm este normal\u0103)",
-        "isTrending": true,
-        "old_price": "100 MDL"
-    },
-    {
-        "id": "3.5",
-        "name": "Ferm\u0103 puzzle",
-        "price": "180 MDL",
-        "images": [
-            "images/Catalog/Puzzle-uri/farm_1.jpg"
-        ],
-        "category": "Puzzle-uri",
-        "description": "De \u00eenalt\u0103 calitate\nMaterial: lemn\nCuloare: ca imagine\nDimensiune: 3,5 * 3,5 * 3,5 cm (dimensiunea unei piese)\n1 inch = 2,54 cm",
-        "isTrending": true
-    },
-    {
-        "id": "3.6",
-        "name": "puzzle 3D pentru copii",
-        "price": "140 MDL",
-        "images": [
-            "images/Catalog/Puzzle-uri/juc_1.jpg"
-        ],
-        "category": "Puzzle-uri",
-        "description": "Montessori Juc\u0103rii de \u00eenv\u0103\u021bare Puzzle de potrivire a formelor Potrivirea culorilor \u0219i formelor Teaseruri de creier Joc de logic\u0103 Juc\u0103rii educa\u021bionale pre\u0219colare pentru copii B\u0103ie\u021bi Fete Cadouri de aniversare pentru copii",
-        "isTrending": true,
-        "old_price": "200 MDL"
-    },
-    {
-        "id": "3.7",
-        "name": "ds",
-        "price": "23 MDL",
-        "images": [
-            "images/Catalog/Puzzle-uri/farm_1.jpg"
-        ],
-        "category": "Puzzle-uri",
-        "description": "wed"
+        "old_price": "25499 MDL"
     }
 ]

@@ -224,7 +224,7 @@
 
 .collection-card .card-title {
     margin-bottom: 12px;
-    color: white;
+    color: 020202
     /* Text alb pentru titlu */
 }
 
@@ -282,7 +282,7 @@
 }
 
 .btn-link {
-    color: #ffffff;
+    color: #020202;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -302,8 +302,11 @@
 
 .has-bg-image {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto; /* Schimbă din 'cover' în 'auto' pentru a păstra dimensiunea originală */
     background-position: center;
+    width: auto; /* Setează lățimea automată */
+    height: auto; /* Setează înălțimea automată */
+    background-color: #ffffff;
 }
 
 
