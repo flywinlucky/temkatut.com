@@ -93,5 +93,53 @@
         "description": "Parametri\nSpecifica\u0163ii\tApel de urgen\u021b\u0103 - SOS, Detectare c\u0103dere, Detectare zgomot, Roata digital\u0103 cu r\u0103spuns tactil, G\u0103sire dispozitive, oameni \u0219i obiecte, Siri, Fitness+\nModel\tWatch SE 2023\nBrand\tApple\nCuloarea de baz\u0103\tSilver\nCod model\tMRE23QI/A\nDisplay\nEcran tactil\tDa\nProtec\u021bie ecran\tIon\u2011X\nRezolu\u021bie ecran\t394 x 324\nTip display\tRetina LTPO OLED\nDimensiune ecran\t1.57\nProcesor\nModel CPU\tS8\nNum\u0103rul de nuclee\t2\nAlimentare\nDurat\u0103 de lucru acumulator\tp\u00e2n\u0103 la 18 ore\nTipul acumulatorului\tLi-Ion\nCapacitatea acumulatorului\t245 mAh\nProtec\u021bie\nGrad de protec\u021bie\t5 ATM\nSoftware\nCompatibilitate SO\tiOS\nSistem de operare\twatchOS\nMemorie\nMemorie intern\u0103\t32 GB\nSenzori\nSenzor de lumin\u0103\tDa\nBusol\u0103\tDa\nGiroscop\tDa\nAccelerometru\tDa\nConectivitate\nNFC\tDa\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 n\nWi-Fi\tDa\nBluetooth\tDa\nGPS\tDa\nMicrofon\tDa\nCarcas\u0103\nCuloare curea\tStorm Blue\nMaterial curea\tSilicon\nMaterial carcas\u0103\tAluminiu\nDimensiune ceas\t40mm\nDimensiuni\t40 x 34 x 10.7 mm\nGreutate\t26.4 g\nM\u0103rime curea\t145 - 180 mm\nMultimedia\nDifuzoare \u00eencorporate\tDa",
         "isTrending": true,
         "old_price": "4549 MDL"
+    },
+    {
+        "id": "3.1",
+        "name": "MacBook Air 13 2020 13.3\" M1 8 GB 256 GB Space Gray",
+        "price": "10703 MDL",
+        "images": [
+            "images/Catalog/Macbook/apple_macbook_air_13_2020_space_gray_1_1643269506033-preview-webp.webp",
+            "images/Catalog/Macbook/apple_macbook_air_13_2020_space_gray_2_1643269510589-preview-webp.webp",
+            "images/Catalog/Macbook/apple_macbook_air_13_2020_space_gray_5_1643269506038-preview-webp.webp",
+            "images/Catalog/Macbook/apple_macbook_air_13_2020_space_gray_3_1643269508158-preview-webp.webp",
+            "images/Catalog/Macbook/apple_macbook_air_13_2020_space_gray_4_1643269508162-preview-webp.webp"
+        ],
+        "category": "Macbook",
+        "description": "Dimensiune ecran\t13.3\nRezolu\u021bie ecran\t2560 x 1600\nTip display\tIPS\nCapacitate SSD\t256 GB\nRAM\t8 GB\nTip CPU\tM1\nModel CPU\t(C8/G7)\n\nParametri\nModel\t13 2020\nSegment\tUltrabook\nBrand\tApple\nCuloarea de baz\u0103\tGray\nSeria\tMacBook Air\nCod model\tMGN63RU/A\nTastatur\u0103\tRussian\nDisplay\nRezolu\u021bie ecran\t2560 x 1600\nTip display\tIPS\nDimensiune ecran\t13.3\nTipul rezolu\u021biei ecranului\tWQXGA\nProcesor\nModel CPU\t(C8/G7)\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t8\nTip CPU\tM1\nAlimentare\nTipul acumulatorului\tLi-Pol\nSoftware\nSistem de operare\tMac OS\nMemorie\nRAM\t8 GB\nTip RAM\tDDR4\nSenzori\nScanner de amprente digitale\tDa\nConectivitate\nVersiunea Bluetooth\tv5.0\nVersiune Wi-Fi\t802.11 ac\nConector audio 3.5 mm\tDa\nThunderbolt\t2\nMicrofon\tDa\nCarcas\u0103\nMaterial carcas\u0103\tAluminiu\nDimensiuni\t304 x 212 x 16 mm\nGreutate\t1.29 kg\nPlac\u0103 video\nProduc\u0103tor plac\u0103 video\tApple\nTip plac\u0103 video\tIntegrat\u0103\nProcesor Video Integrat\tM1\nStocarea datelor\nCapacitate SSD\t256 GB\nTip unitate de stocare\tSSD\nMultimedia\nCamera Web\t720p\nDifuzoare \u00eencorporate\tDa",
+        "isTrending": true,
+        "old_price": "15290 MDL"
+    },
+    {
+        "id": "3.2",
+        "name": "MacBook Air 13.6 2024 13.6\" M3 8 GB 256 GB Midnight",
+        "price": "14693 MDL",
+        "images": [
+            "images/Catalog/Macbook/apple_24_13_2_1710150334712-preview-webp.webp",
+            "images/Catalog/Macbook/apple_24_13_3_1710150334461-preview-webp.webp",
+            "images/Catalog/Macbook/apple_24_13_1_1710150336843-preview-webp.webp",
+            "images/Catalog/Macbook/9f33ba14-76d0-46c9-82e0-5221b3d9d3fd_1710150349530-preview-webp.webp",
+            "images/Catalog/Macbook/023a5d6e-7793-4b8a-9755-ed673fa53f40_1710150346920-preview-webp.webp"
+        ],
+        "category": "Macbook",
+        "description": "Dimensiune ecran\t13.6\nRezolu\u021bie ecran\t2560 x 1664\nRefresh rate\t60 Hz\nTip display\tLiquid Retina\nCapacitate SSD\t256 GB\nRAM\t8 GB\nTip CPU\tM3\nModel CPU\t(C8/G8)\n\nParametri\nSegment\tHome and Office\nModel\t13.6 2024\nBrand\tApple\nCuloarea de baz\u0103\tMidnight\nSeria\tMacBook Air\nCod model\tMRXV3RU/A\nDisplay\nRefresh rate\t60 Hz\nRezolu\u021bie ecran\t2560 x 1664\nTip display\tLiquid Retina\nDimensiune ecran\t13.6\nAcoperire ecran\tGlossy\nTipul rezolu\u021biei ecranului\t3K\nProcesor\nTehnologia de fabrica\u021bie\t3 nm\nPlac\u0103 video integrat\u0103\tDa\nModel CPU\t(C8/G8)\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t8\nCache\t20 MB\nFrecven\u021ba procesorului\t4.00 GHz\nTip CPU\tM3\nAlimentare\nTipul acumulatorului\tLi-Pol\nSoftware\nSistem de operare\tMac OS\nMemorie\nRAM\t8 GB\nTip RAM\tLPDDR5\nCapacitatea maxim\u0103 RAM\t24 GB\nSenzori\nScanner de amprente digitale\tDa\nConectivitate\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 ax\nWi-Fi\tDa\nBluetooth\tDa\nConector audio 3.5 mm\tDa\nThunderbolt\t2\nMicrofon\tDa\nUSB Type-C\t2\nCarcas\u0103\nMaterial carcas\u0103\tAluminiu\nDimensiuni\t304.1 x 215 x 11.3 mm\nGreutate\t1.24 kg\nPlac\u0103 video\nTip plac\u0103 video\tIntegrat\u0103\nProduc\u0103tor plac\u0103 video\tApple\nStocarea datelor\nTip unitate de stocare\tSSD\nCapacitate SSD\t256 GB\nMultimedia\nCamera Web\t1080p\nDifuzoare \u00eencorporate\tDa",
+        "isTrending": true,
+        "old_price": "20990 MDL"
+    },
+    {
+        "id": "3.3",
+        "name": "MacBook Air 13.6 2024 13.6\" M3 8 GB 512 GB Space Gray",
+        "price": "15883 MDL",
+        "images": [
+            "images/Catalog/Macbook/apple_24_13_space-grey_1_1710156357736-preview-webp.webp",
+            "images/Catalog/Macbook/apple_24_13_space-grey_2_1710156671655-preview-webp.webp",
+            "images/Catalog/Macbook/apple_24_13_space-grey_6_1710156666027-preview-webp.webp",
+            "images/Catalog/Macbook/apple_24_13_space-grey_5_1710156669182-preview-webp.webp",
+            "images/Catalog/Macbook/apple_24_13_space-grey_4_1710156669182-preview-webp.webp"
+        ],
+        "category": "Macbook",
+        "description": "Dimensiune ecran\t13.6\nRezolu\u021bie ecran\t2560 x 1664\nRefresh rate\t60 Hz\nTip display\tLiquid Retina\nCapacitate SSD\t512 GB\nRAM\t8 GB\nTip CPU\tM3\nModel CPU\t(C8/G10)\n\nParametri\nSegment\tHome and Office\nModel\t13.6 2024\nBrand\tApple\nCuloarea de baz\u0103\tGray\nSeria\tMacBook Air\nCod model\tMRXP3RU/A\nDisplay\nRefresh rate\t60 Hz\nRezolu\u021bie ecran\t2560 x 1664\nTip display\tLiquid Retina\nDimensiune ecran\t13.6\nAcoperire ecran\tGlossy\nTipul rezolu\u021biei ecranului\t3K\nProcesor\nTehnologia de fabrica\u021bie\t3 nm\nPlac\u0103 video integrat\u0103\tDa\nModel CPU\t(C8/G10)\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t8\nCache\t20 MB\nFrecven\u021ba procesorului\t4.00 GHz\nTip CPU\tM3\nAlimentare\nTipul acumulatorului\tLi-Pol\nSoftware\nSistem de operare\tMac OS\nMemorie\nRAM\t8 GB\nTip RAM\tLPDDR5\nCapacitatea maxim\u0103 RAM\t24 GB\nSenzori\nScanner de amprente digitale\tDa\nConectivitate\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 ax\nWi-Fi\tDa\nBluetooth\tDa\nConector audio 3.5 mm\tDa\nThunderbolt\t2\nMicrofon\tDa\nUSB Type-C\t2\nCarcas\u0103\nMaterial carcas\u0103\tAluminiu\nDimensiuni\t304.1 x 215 x 11.3 mm\nGreutate\t1.24 kg\nPlac\u0103 video\nTip plac\u0103 video\tIntegrat\u0103\nProduc\u0103tor plac\u0103 video\tApple\nStocarea datelor\nTip unitate de stocare\tSSD\nCapacitate SSD\t512 GB\nMultimedia\nCamera Web\t1080p\nDifuzoare \u00eencorporate\tDa",
+        "isTrending": true,
+        "old_price": "22690 MDL"
     }
 ]
