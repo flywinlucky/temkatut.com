@@ -188,5 +188,52 @@
         "description": "Dimensiune ecran\t11\nRezolu\u021bie ecran\t2420 x 1668\nTip display\tUltra Retina XDR\nMemorie intern\u0103\t256 GB\nRAM\t8 GB\nModel CPU\tM4\nRezolu\u021bia camerei principale\t12 MP\n\nParametri\nModel\tiPad Pro 2024\nBlitz\tDa\nBrand\tApple\nCuloarea de baz\u0103\tBlack\nPosibilit\u0103\u021bile re\u021belei\tWi-Fi\nCod model\tMVV83NF/A\nDisplay\nDensitate pixeli\t264 ppi\nRefresh rate\t120 Hz\nProtec\u021bie ecran\tScratch-resistant glass, oleophobic coating\nRezolu\u021bie ecran\t2420 x 1668\nTip display\tUltra Retina XDR\nDimensiune ecran\t11\nCamere\nCamer\u0103 frontal\u0103\t12 MP\nRezolu\u021bia video\t4k - 60fps\nRezolu\u021bia camerei principale\t12 MP\nProcesor\nTehnologia de fabrica\u021bie\t3 nm\nModel CPU\tM4\nProduc\u0103torul CPU\tApple\nNum\u0103rul de nuclee\t9\nAlimentare\nTipul acumulatorului\tLi-Pol\nSoftware\nSistem de operare\tiPadOS\nVersiunea SO\t17.5\nRe\u021bea\neSIM\tNu\nMemorie\nMemorie intern\u0103\t256 GB\nSlot pentru memorie adi\u021bional\u0103\tNu\nRAM\t8 GB\nSenzori\nAccelerometru\tDa\nGiroscop\tDa\nSenzor de proximitate\tDa\nBusol\u0103\tDa\nBarometru\tDa\nFace ID\tDa\nSenzor de lumin\u0103\tDa\nScanner de amprente digitale\tNu\nConectivitate\nNFC\tNu\nConector USB\tUSB Type-C 4 (Thunderbolt 3)\nVersiunea Bluetooth\tv5.3\nVersiune Wi-Fi\t802.11 ax\nWi-Fi\tDa\nBluetooth\tDa\nGPS\tDa\nConector audio 3.5 mm\tNu\nCarcas\u0103\nMaterial carcas\u0103\tAluminiu\nMaterialul ramei\tAluminiu\nDimensiuni\t249.7 x 177.5 x 5.3 mm\nGreutate\t444 g\nPlac\u0103 video\nModel plac\u0103 video\tApple GPU (10-core graphics)",
         "isTrending": true,
         "old_price": "23990 MDL"
+    },
+    {
+        "id": "5.1",
+        "name": "C\u0103\u0219ti Apple AirPods PRO (2nd generation) MagSafe White",
+        "price": "3849 MDL",
+        "images": [
+            "images/Catalog/AirPods/1_1695736110293-preview-webp.webp",
+            "images/Catalog/AirPods/2_1695736103086-preview-webp.webp",
+            "images/Catalog/AirPods/3_1695736103097-preview-webp.webp",
+            "images/Catalog/AirPods/5_1695736106524-preview-webp.webp",
+            "images/Catalog/AirPods/6_1695736106517-preview-webp.webp"
+        ],
+        "category": "AirPods",
+        "description": "Tip c\u0103\u0219ti\tIn ear\nMicrofon\tDa\nTip de conexiune\tF\u0103r\u0103 fir\nVersiunea Bluetooth\tv5.3\nTimpul de lucru\tp\u00e2n\u0103 la 6 ore\n\nParametri\nAsistent virtual\tSiri\nSensibilitatea microfonului\t-38 dB\nTrue Wireless\tDa\nIluminare\tNu\nSensibilitate\t95 dB\nTip c\u0103\u0219ti\tIn ear\nImpedan\u021b\u0103 (Rezisten\u021b\u0103)\t16 Ohm\nInterval de frecven\u021b\u0103\t20 Hz - 20 kHz\nSegment\tPersonal\nModel\tAirPods PRO (2nd generation) MagSafe\nBrand\tApple\nCuloarea de baz\u0103\tWhite\nCod model\tMTJV3\nAlimentare\nTimpul de lucru (cu case)\tp\u00e2n\u0103 la 30 ore\nTimpul de lucru\tp\u00e2n\u0103 la 6 ore\nProtec\u021bie\nGrad de protec\u021bie\tIPX4\nSoftware\nCompatibilitate SO\tiOS\nSenzori\nAccelerometru\tDa\nConectivitate\nInterfa\u021b\u0103\tUSB Type-C\nVersiunea Bluetooth\tv5.3\nBluetooth\tDa\nMicrofon\tDa\nTip de conexiune\tF\u0103r\u0103 fir\nCarcas\u0103\nMaterial carcas\u0103\tPlastic",
+        "isTrending": true,
+        "old_price": "5499 MDL"
+    },
+    {
+        "id": "5.2",
+        "name": "C\u0103\u0219ti Apple AirPods 3 White",
+        "price": "1959 MDL",
+        "images": [
+            "images/Catalog/AirPods/incasti-apple-airpods-3-white-017_1667398744730-preview-webp.webp",
+            "images/Catalog/AirPods/casti-apple-airpods-3-white-085_1667398740260-preview-webp.webp",
+            "images/Catalog/AirPods/casti-apple-airpods-3-white-047_1667398742696-preview-webp.webp",
+            "images/Catalog/AirPods/casti-apple-airpods-3-white-011_1667398740274-preview-webp.webp",
+            "images/Catalog/AirPods/casti-apple-airpods-3-white-060_1667398742679-preview-webp.webp"
+        ],
+        "category": "AirPods",
+        "description": "Tip c\u0103\u0219ti\tIn ear\nMicrofon\tDa\nTip de conexiune\tF\u0103r\u0103 fir\nVersiunea Bluetooth\tv5.0\nTimpul de lucru\tp\u00e2n\u0103 la 6 ore\n\nParametri\nAsistent virtual\tSiri\nTip c\u0103\u0219ti\tIn ear\nSegment\tPersonal\nModel\tAirPods 3\nBrand\tApple\nCuloarea de baz\u0103\tWhite\nCod model\tMPNY3TY/A\nComplecta\u021bie\tCharging Case\nAlimentare\nTimpul de lucru (cu case)\tp\u00e2n\u0103 la 30 ore\nTimpul de \u00eenc\u0103rcare\t30 min\nTimpul de lucru\tp\u00e2n\u0103 la 6 ore\nProtec\u021bie\nGrad de protec\u021bie\tIPX4\nSoftware\nCompatibilitate SO\tiOS\nSenzori\nAccelerometru\tDa\nConectivitate\nInterfa\u021b\u0103\tLightning\nVersiunea Bluetooth\tv5.0\nBluetooth\tDa\nMicrofon\tDa\nTip de conexiune\tF\u0103r\u0103 fir",
+        "isTrending": true,
+        "old_price": "2799 MDL"
+    },
+    {
+        "id": "5.3",
+        "name": "AirPods 2 White",
+        "price": "1819 MDL",
+        "images": [
+            "images/Catalog/AirPods/apple_airpods_v2_white_1_1656416508120-preview-webp.webp",
+            "images/Catalog/AirPods/apple_airpods_v2_white_5_1656416505655-preview-webp.webp",
+            "images/Catalog/AirPods/apple_airpods_v2_white_4_1656416508120-preview-webp.webp",
+            "images/Catalog/AirPods/apple_airpods_v2_white_3_1656416505689-preview-webp.webp"
+        ],
+        "category": "AirPods",
+        "description": "Tip c\u0103\u0219ti\tIn ear\nMicrofon\tDa\nTip de conexiune\tF\u0103r\u0103 fir\nVersiunea Bluetooth\tv5.0\nTimpul de lucru\tp\u00e2n\u0103 la 5 ore\n\nParametri\nModel\tAirPods 2\nSegment\tPersonal\nTip c\u0103\u0219ti\tIn ear\nAsistent virtual\tSiri\nBrand\tApple\nCuloarea de baz\u0103\tWhite\nCod model\tMV7N2RU/A\nAlimentare\nTimpul de lucru\tp\u00e2n\u0103 la 5 ore\nConectivitate\nConector USB\tLightning\nVersiunea Bluetooth\tv5.0\nBluetooth\tDa\nMicrofon\tDa\nTip de conexiune\tF\u0103r\u0103 fir\nCarcas\u0103\nMaterial carcas\u0103\tPlastic\nGreutate\t8 g",
+        "isTrending": true,
+        "old_price": "2599 MDL"
     }
 ]
