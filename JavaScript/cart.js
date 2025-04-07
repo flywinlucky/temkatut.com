@@ -36,20 +36,17 @@ function saveCart() {
 function addToCart(productId, inputQuantity = 1, selectedSize = "Mărime necunoscută") {
     let product = products.find(p => p.id === productId);
     if (product) {
-        // Verificăm dacă produsul există deja în coș cu aceeași mărime
-        let existingProduct = cart.find(p => p.id === productId && p.size === selectedSize);
-        if (existingProduct) {
-            // Dacă există, actualizăm cantitatea
-            existingProduct.quantity += inputQuantity;
-        } else {
-            // Dacă nu există, adăugăm produsul cu mărimea selectată
-            let productWithQuantity = {
-                ...product,
-                quantity: inputQuantity,
-                size: selectedSize // Salvăm mărimea selectată
-            };
-            cart.push(productWithQuantity);
-        }
+        // Golește coșul înainte de a adăuga un nou produs
+        cart = [];
+
+        // Adaugă produsul selectat
+        let productWithQuantity = {
+            ...product,
+            quantity: inputQuantity,
+            size: selectedSize // Salvăm mărimea selectată
+        };
+        cart.push(productWithQuantity);
+
         saveCart(); // Salvăm coșul în localStorage
         checkCart(); // Actualizăm UI-ul
     }
