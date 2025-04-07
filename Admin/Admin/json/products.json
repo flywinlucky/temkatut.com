@@ -2,7 +2,7 @@
     {
         "id": "1.1",
         "name": "iPhone 15 Pro Max 256 GB Single SIM Natural Titanium",
-        "price": "17849 MDL",
+        "price": "8924 MDL",
         "images": [
             "images/Catalog/iPhone/1_1694691322938-preview-webp.webp",
             "images/Catalog/iPhone/2_1694691328515-preview-webp.webp",
@@ -18,7 +18,7 @@
     {
         "id": "1.2",
         "name": "iPhone 13 128 GB Single SIM Midnight",
-        "price": "7419 MDL",
+        "price": "3709 MDL",
         "images": [
             "images/Catalog/iPhone/apple_iphone_13_black_4_1631710843209-preview-webp.webp",
             "images/Catalog/iPhone/apple_iphone_13_midnight_1_1631688933602-preview-webp.webp",
@@ -33,7 +33,7 @@
     {
         "id": "1.3",
         "name": "iPhone 15 Pro Max 256 GB Single SIM Black Titanium",
-        "price": "17849 MDL",
+        "price": "8924 MDL",
         "images": [
             "images/Catalog/iPhone/1_1694691417915-preview-webp.webp",
             "images/Catalog/iPhone/2_1694691422324-preview-webp.webp",
@@ -49,7 +49,7 @@
     {
         "id": "2.1",
         "name": "Apple Watch SE 2023 40mm Black / Midnight Sport",
-        "price": "4549 MDL",
+        "price": "2274 MDL",
         "images": [
             "images/Catalog/Watch/apple_watch_se_midnight_sport_band_1_1695286179438-preview-webp.webp",
             "images/Catalog/Watch/apple_watch_se_midnight_sport_band_5_1695286179290-preview-webp.webp",
@@ -65,7 +65,7 @@
     {
         "id": "2.2",
         "name": "Apple Watch SE 2023 40mm Silver / Winter Blue",
-        "price": "6499 MDL",
+        "price": "3249 MDL",
         "images": [
             "images/Catalog/Watch/apple_watch_se_silver_winter_blue1_1695283789572-preview-webp.webp",
             "images/Catalog/Watch/apple_watch_se_silver_winter_blue2_1695283786436-preview-webp.webp",
@@ -81,7 +81,7 @@
     {
         "id": "2.3",
         "name": "Apple Watch SE 2023 40mm Silver / Storm Blue",
-        "price": "6499 MDL",
+        "price": "3249 MDL",
         "images": [
             "images/Catalog/Watch/apple_watch_se_silver_storm_blue1_1695285072905-preview-webp.webp",
             "images/Catalog/Watch/apple_watch_se_silver_storm_blue4_1695285070598-preview-webp.webp",
