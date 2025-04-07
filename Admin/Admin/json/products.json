@@ -18,7 +18,7 @@
     {
         "id": "1.2",
         "name": "iPhone 13 128 GB Single SIM Midnight",
-        "price": "3709 MDL",
+        "price": "5709 MDL",
         "images": [
             "images/Catalog/iPhone/apple_iphone_13_black_4_1631710843209-preview-webp.webp",
             "images/Catalog/iPhone/apple_iphone_13_midnight_1_1631688933602-preview-webp.webp",
@@ -97,7 +97,7 @@
     {
         "id": "3.1",
         "name": "MacBook Air 13 2020 13.3\" M1 8 GB 256 GB Space Gray",
-        "price": "5351 MDL",
+        "price": "6351 MDL",
         "images": [
             "images/Catalog/Macbook/apple_macbook_air_13_2020_space_gray_1_1643269506033-preview-webp.webp",
             "images/Catalog/Macbook/apple_macbook_air_13_2020_space_gray_2_1643269510589-preview-webp.webp",
@@ -161,7 +161,7 @@
     {
         "id": "4.2",
         "name": "iPad 2021 10.2\" 64 GB Wi-Fi Gray",
-        "price": "2726 MDL",
+        "price": "2600 MDL",
         "images": [
             "images/Catalog/iPad/apple_ipad_2021_wifi_space_gray_1_1631780536648-preview-webp.webp",
             "images/Catalog/iPad/apple_ipad_10_2_hero_space_wifi_1_1631783029254-preview-webp.webp",
@@ -176,7 +176,7 @@
     {
         "id": "4.3",
         "name": "iPad Pro 2024 11\" 256 GB Wi-Fi Black",
-        "price": "8396 MDL",
+        "price": "4396 MDL",
         "images": [
             "images/Catalog/iPad/679f_1715687144208-preview-webp.webp",
             "images/Catalog/iPad/67fgh_1715687171492-preview-webp.webp",
