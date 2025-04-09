@@ -67,6 +67,17 @@
       color: #888;
     }
 
+    .btn-scroll-order {
+      margin-top: 15px;
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
     .countdown-box {
       background: #ff0033;
       color: #fff;
@@ -170,9 +181,8 @@
 <header>
   <h1>🔥 Горящая Распродажа: iPhone 15 Pro Max 256 GB</h1>
   <p>Супер цена! Только ограниченное количество товаров!</p>
-
   <div class="countdown-box" id="countdown-box">
-    ⏳ Это предложение закончится через: 07 часов 00 минут 00 секунд
+    ⏳ Это предложение закончится через: ...
   </div>
 </header>
 
@@ -188,7 +198,9 @@
   </div>
   <div class="price">Цена: 8924 MDL</div>
   <div class="old-price">Обычная цена: 25499 MDL</div>
- 
+  <button class="btn-scroll-order" onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
+    Заказать сейчас
+  </button>
 </section>
 
 <section class="specs">
@@ -252,6 +264,7 @@
 
 <section class="order-form">
   <h2>Оформление заказа</h2>
+
   <form id="deliveryForm">
     <div class="form-group">
       <label for="name">Ваше имя:</label>
@@ -269,9 +282,32 @@
   </form>
 </section>
 
-<p class="footer-note">* Акция действует с 01.02.2025 по 01.03.2025</p>
+<p class="footer-note">* Акция действует сегодня!</p>
 
 <script>
+  // Countdown Timer (5 hours)
+  const countdownEl = document.getElementById("countdown-box");
+  const endTime = new Date(new Date().getTime() + 5 * 60 * 60 * 1000); // 5 hours from now
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = endTime - now;
+
+    if (diff <= 0) {
+      countdownEl.innerHTML = "⚠️ Акция завершена!";
+      return;
+    }
+
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `⏳ Это предложение закончится через: ${String(hours).padStart(2, '0')} часов ${String(minutes).padStart(2, '0')} минут ${String(seconds).padStart(2, '0')} секунд`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
   // Form alert
   document.getElementById("deliveryForm").addEventListener("submit", function(e) {
     e.preventDefault();
