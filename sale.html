@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>🔥 Горящая Распродажа: iPhone 15 Pro Max</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome pentru iconițe -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome pentru iconițe -->
     <style>
         body {
             font-family: 'Poppins', Arial, sans-serif;
@@ -46,7 +47,6 @@
             margin: auto;
             overflow: hidden;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .slides {
@@ -66,12 +66,35 @@
         }
 
         @keyframes slide {
-            0%, 15% { transform: translateX(0); }
-            20%, 35% { transform: translateX(-20%); }
-            40%, 55% { transform: translateX(-40%); }
-            60%, 75% { transform: translateX(-60%); }
-            80%, 95% { transform: translateX(-80%); }
-            100% { transform: translateX(0); }
+
+            0%,
+            15% {
+                transform: translateX(0);
+            }
+
+            20%,
+            35% {
+                transform: translateX(-20%);
+            }
+
+            40%,
+            55% {
+                transform: translateX(-40%);
+            }
+
+            60%,
+            75% {
+                transform: translateX(-60%);
+            }
+
+            80%,
+            95% {
+                transform: translateX(-80%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
         }
 
         .price {
@@ -119,7 +142,10 @@
             animation: fadeIn 1.5s ease;
         }
 
-        .specs, .order-steps, .delivery-info, .order-form {
+        .specs,
+        .order-steps,
+        .delivery-info,
+        .order-form {
             padding: 40px;
             background: #fff;
             margin: 20px;
@@ -245,139 +271,174 @@
 
         /* Animații */
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
 
         .reviews-form {
-    padding: 40px 20px;
-    background: #fff;
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+            padding: 40px 20px;
+            background: #fff;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
 
-.reviews-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
+        .reviews-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-.review-card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 15px;
-    width: 260px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeInUp 1s ease;
-}
+        .review-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            width: 260px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 1s ease;
+        }
 
-.review-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-}
+        .review-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
 
-.stars {
-    font-size: 24px;
-    color: #ffcc00; /* Culoare galbenă pentru stele */
-    margin-bottom: 15px;
-}
+        .stars {
+            font-size: 24px;
+            color: #ffcc00;
+            /* Culoare galbenă pentru stele */
+            margin-bottom: 15px;
+        }
 
-.review-card p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-    margin: 0 0 15px;
-}
+        .review-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin: 0 0 15px;
+        }
 
-.reviewer-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
 
-.reviewer-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; /* Rotund */
-    object-fit: cover;
-    border: 2px solid #ddd; /* Margine subtilă */
-    transition: transform 0.3s;
-}
+        .reviewer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            /* Rotund */
+            object-fit: cover;
+            border: 2px solid #ddd;
+            /* Margine subtilă */
+            transition: transform 0.3s;
+        }
 
-.reviewer-avatar:hover {
-    transform: scale(1.1); /* Mic efect de zoom la hover */
-}
+        .reviewer-avatar:hover {
+            transform: scale(1.1);
+            /* Mic efect de zoom la hover */
+        }
 
-.reviewer-name {
-    font-size: 14px;
-    color: #777;
-    font-style: italic;
-}
+        .reviewer-name {
+            font-size: 14px;
+            color: #777;
+            font-style: italic;
+        }
 
-.button-container {
-    display: flex;
-    flex-direction: column; /* Aliniere verticală */
-    align-items: center;
-    gap: 15px; /* Spațiu între butoane */
-    margin-top: 20px;
-}
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            /* Aliniere verticală */
+            align-items: center;
+            gap: 15px;
+            /* Spațiu între butoane */
+            margin-top: 20px;
+        }
 
-.btn-scroll-order {
-    padding: 15px 35px;
-    font-size: 20px;
-    background: linear-gradient(45deg, #007bff, #00c4ff);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 250px; /* Lățime fixă pentru consistență */
-}
+        .btn-scroll-order {
+            padding: 15px 35px;
+            font-size: 20px;
+            background: linear-gradient(45deg, #007bff, #00c4ff);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 250px;
+            /* Lățime fixă pentru consistență */
+        }
 
-.btn-scroll-order:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
-}
+        .btn-scroll-order:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+        }
 
-.btn-scroll-reviews {
-    padding: 12px 30px;
-    font-size: 18px;
-    background: linear-gradient(45deg, #ffcc00, #ffd700);
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 250px; /* Lățime fixă pentru consistență */
-}
+        .btn-scroll-reviews {
+            padding: 12px 30px;
+            font-size: 18px;
+            background: linear-gradient(45deg, #ffcc00, #ffd700);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 250px;
+            /* Lățime fixă pentru consistență */
+        }
 
-.btn-scroll-reviews:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
-}
+        .btn-scroll-reviews:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+        }
 
-/* Animație pentru carduri */
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+        /* Animație pentru carduri */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
     <link rel="stylesheet" href="Style/chatBot.css"> <!-- Link to external CSS -->
 </head>
@@ -396,26 +457,27 @@
         <div class="slider">
             <div class="slides">
                 <img src="images/Catalog/iPhone/1_1694691417915-preview-webp.webp" alt="iPhone">
-                <                <img src="images/Catalog/iPhone/2_1694691422324-preview-webp.webp" alt="iPhone">
-                <img src="images/Catalog/iPhone/3_1694691416932-preview-webp.webp" alt="iPhone">
-                <img src="images/Catalog/iPhone/4_1694691417979-preview-webp.webp" alt="iPhone">
-                <img src="images/Catalog/iPhone/5_1694691420762-preview-webp.webp" alt="iPhone">
+                < <img src="images/Catalog/iPhone/2_1694691422324-preview-webp.webp" alt="iPhone">
+                    <img src="images/Catalog/iPhone/3_1694691416932-preview-webp.webp" alt="iPhone">
+                    <img src="images/Catalog/iPhone/4_1694691417979-preview-webp.webp" alt="iPhone">
+                    <img src="images/Catalog/iPhone/5_1694691420762-preview-webp.webp" alt="iPhone">
             </div>
         </div>
         <div class="price">Цена: 8924 MDL</div>
         <div class="old-price">Обычная цена: 25499 MDL</div>
         <div class="button-container">
-             
-            <button class="btn-scroll-order" onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
+
+            <button class="btn-scroll-order"
+                onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
                 Заказать сейчас <i class="fas fa-arrow-right"></i>
             </button>
 
-            <button class="btn-scroll-reviews" onclick="document.querySelector('.reviews-form').scrollIntoView({behavior: 'smooth'});">
+            <button class="btn-scroll-reviews"
+                onclick="document.querySelector('.reviews-form').scrollIntoView({behavior: 'smooth'});">
                 <i class="fas fa-star"></i> Отзывы <i class="fas fa-star"></i>
-              </button>
-              
-
+            </button>
         </div>
+        
         <p class="footer-note">* Предложение действительно с 01.02.2025 по 01.03.2025</p>
         <div class="stock-counter">
             Акционного товара осталось: 12 шт
@@ -438,26 +500,31 @@
             <li><strong>ОС:</strong> iOS 17</li>
             <li><strong>Вес:</strong> 221 г | <strong>Материал:</strong> Титан</li>
         </ul>
-    
+
         <div style="margin-top: 40px; text-align: center;">
             <h2>✨ Прочный и легкий титановый корпус</h2>
-            <img src="images/Catalog/iPhone/2_1694691422324-preview-webp.webp" alt="Titanium iPhone" style="max-width: 100%; border-radius: 15px; margin-top: 20px;">
+            <img src="images/Catalog/iPhone/2_1694691422324-preview-webp.webp" alt="Titanium iPhone"
+                style="max-width: 100%; border-radius: 15px; margin-top: 20px;">
             <p style="max-width: 800px; margin: 20px auto; font-size: 18px; line-height: 1.6;">
-                iPhone 15 Pro Max выполнен из титана 5-го класса с новой текстурой microblasted. Титан — один из самых прочных и лёгких металлов, обеспечивающий невероятную прочность и минимальный вес устройства. Доступен в четырёх потрясающих цветах, включая Natural Titanium!
+                iPhone 15 Pro Max выполнен из титана 5-го класса с новой текстурой microblasted. Титан — один из самых
+                прочных и лёгких металлов, обеспечивающий невероятную прочность и минимальный вес устройства. Доступен в
+                четырёх потрясающих цветах, включая Natural Titanium!
             </p>
             <div class="stock-counter">
                 Осталось: 12 шт
             </div>
             <div class="button-container">
-             
-                <button class="btn-scroll-order" onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
+
+                <button class="btn-scroll-order"
+                    onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
                     Заказать сейчас <i class="fas fa-arrow-right"></i>
                 </button>
 
-                <button class="btn-scroll-reviews" onclick="document.querySelector('.reviews-form').scrollIntoView({behavior: 'smooth'});">
+                <button class="btn-scroll-reviews"
+                    onclick="document.querySelector('.reviews-form').scrollIntoView({behavior: 'smooth'});">
                     <i class="fas fa-star"></i> Отзывы <i class="fas fa-star"></i>
-                  </button>
-                  
+                </button>
+
 
             </div>
         </div>
@@ -507,52 +574,64 @@
         </form>
     </section>
 
-<!-- Reviews Section -->
-<section class="reviews-form">
-    <h2>✨ Отзывы наших клиентов ✨</h2>
-    <div class="reviews-container">
-        <div class="review-card">
-            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
-            <p>"Заказал iPhone 15 Pro Max — доставка всего 3 дня! Качество на высоте, цена невероятная. Очень доволен!"</p>
-            <div class="reviewer-info">
-                <img src="images/recenzii users/user_1.png" alt="Алексей П." class="reviewer-avatar">
-                <span class="reviewer-name">Алексей П.</span>
+    <!-- Reviews Section -->
+    <section class="reviews-form">
+        <h2>✨ Отзывы наших клиентов ✨</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+                <p>"Заказал iPhone 15 Pro Max — доставка всего 3 дня! Качество на высоте, цена невероятная. Очень
+                    доволен!"</p>
+                <div class="reviewer-info">
+                    <img src="images/recenzii users/user_1.png" alt="Алексей П." class="reviewer-avatar">
+                    <span class="reviewer-name">Алексей П.</span>
+                </div>
             </div>
-        </div>
-        <div class="review-card">
-            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
-            <p>"Телефон пришёл в идеальной упаковке, всё оригинальное. Скидка реальная, сервис отличный!"</p>
-            <div class="reviewer-info">
-                <img src="images/recenzii users/user_2.png" alt="Мария К." class="reviewer-avatar">
-                <span class="reviewer-name">Мария К.</span>
+            <div class="review-card">
+                <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+                <p>"Телефон пришёл в идеальной упаковке, всё оригинальное. Скидка реальная, сервис отличный!"</p>
+                <div class="reviewer-info">
+                    <img src="images/recenzii users/user_2.png" alt="Мария К." class="reviewer-avatar">
+                    <span class="reviewer-name">Мария К.</span>
+                </div>
             </div>
-        </div>
-        <div class="review-card">
-            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
-            <p>"Лучшая покупка года! iPhone 15 Pro Max работает идеально, доставка быстрая. Рекомендую!"</p>
-            <div class="reviewer-info">
-                <img src="images/recenzii users/user_3.png" alt="Дмитрий С." class="reviewer-avatar">
-                <span class="reviewer-name">Дмитрий С.</span>
+            <div class="review-card">
+                <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+                <p>"Лучшая покупка года! iPhone 15 Pro Max работает идеально, доставка быстрая. Рекомендую!"</p>
+                <div class="reviewer-info">
+                    <img src="images/recenzii users/user_3.png" alt="Дмитрий С." class="reviewer-avatar">
+                    <span class="reviewer-name">Дмитрий С.</span>
+                </div>
             </div>
-        </div>
-        <div class="review-card">
-            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
-            <p>"Сомневалась, но зря! Телефон шикарный, поддержка ответила на все вопросы. 5 звёзд!"</p>
-            <div class="reviewer-info">
-                <img src="images/recenzii users/user_4.png" alt="Ольга В." class="reviewer-avatar">
-                <span class="reviewer-name">Ольга В.</span>
+            <div class="review-card">
+                <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+                <p>"Сомневалась, но зря! Телефон шикарный, поддержка ответила на все вопросы. 5 звёзд!"</p>
+                <div class="reviewer-info">
+                    <img src="images/recenzii users/user_4.png" alt="Ольга В." class="reviewer-avatar">
+                    <span class="reviewer-name">Ольга В.</span>
+                </div>
             </div>
-        </div>
-        <div class="review-card">
-            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
-            <p>"Супер акция! iPhone 15 Pro Max по такой цене — это находка. Доставили вовремя, всё отлично!"</p>
-            <div class="reviewer-info">
-                <img src="images/recenzii users/user_1.png" alt="Игорь Т." class="reviewer-avatar">
-                <span class="reviewer-name">Игорь Т.</span>
+            <div class="review-card">
+                <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+                <p>"Супер акция! iPhone 15 Pro Max по такой цене — это находка. Доставили вовремя, всё отлично!"</p>
+                <div class="reviewer-info">
+                    <img src="images/recenzii users/user_1.png" alt="Игорь Т." class="reviewer-avatar">
+                    <span class="reviewer-name">Игорь Т.</span>
+                </div>
+
             </div>
+
         </div>
-    </div>
-</section>
+        <div class="button-container">
+            <div class="stock-counter">
+                Акционного товара осталось: 12 шт
+            </div>
+            <button class="btn-scroll-order"
+                onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
+                Заказать сейчас <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
 
     <!-- Chat Bot -->
     <div class="overlay" id="overlay"></div>
@@ -571,7 +650,8 @@
             </div>
         </div>
         <div class="preset-buttons">
-            <button class="preset-button" onclick="sendPresetMessage('Через сколько дней прибудет доставка iPhone 15?')">
+            <button class="preset-button"
+                onclick="sendPresetMessage('Через сколько дней прибудет доставка iPhone 15?')">
                 Через сколько дней прибудет доставка iPhone 15?
             </button>
             <button class="preset-button" onclick="sendPresetMessage('Какие варианты доставки iPhone 15 доступны?')">
