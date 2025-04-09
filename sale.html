@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>🔥 Hot Sale: iPhone 15 Pro Max</title>
+  <title>🔥 Горящая Распродажа: iPhone 15 Pro Max</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -20,44 +20,45 @@
     }
 
     .hero {
-      padding: 30px;
       background: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      padding: 20px;
+      text-align: center;
     }
 
     .slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      scroll-snap-type: x mandatory;
-      padding: 10px;
-      margin-bottom: 20px;
-      max-width: 100%;
-    }
-
-    .slider img {
-      width: 300px;
-      border-radius: 10px;
-      scroll-snap-align: center;
-      flex-shrink: 0;
-      transition: transform 0.3s;
-    }
-
-    .slider img:hover {
-      transform: scale(1.05);
-    }
-
-    .product-info {
-      text-align: center;
+      position: relative;
       max-width: 600px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      animation: slide 20s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0%, 15% { transform: translateX(0); }
+      20%, 35% { transform: translateX(-100%); }
+      40%, 55% { transform: translateX(-200%); }
+      60%, 75% { transform: translateX(-300%); }
+      80%, 95% { transform: translateX(-400%); }
+      100% { transform: translateX(0); }
     }
 
     .price {
       font-size: 28px;
       color: #d00000;
       font-weight: bold;
+      margin-top: 20px;
     }
 
     .old-price {
@@ -66,209 +67,143 @@
       color: #888;
     }
 
-    .countdown {
+    .countdown-box {
       background: #ff0033;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      color: #fff;
+      padding: 15px;
       font-size: 22px;
       font-weight: bold;
+      max-width: 500px;
       margin: 20px auto;
-      max-width: 400px;
       border-radius: 10px;
     }
 
-    .specs {
+    .specs, .order-steps, .delivery-info, .order-form {
       padding: 30px;
-      background: #f2f2f2;
+      background: #fff;
+      margin: 20px 0;
     }
 
-    .specs h2 {
+    h2 {
       text-align: center;
       margin-bottom: 20px;
     }
 
-    .specs ul {
-      max-width: 800px;
+    ul {
+      max-width: 700px;
       margin: auto;
       padding-left: 20px;
     }
 
-    .specs ul li {
-      margin: 5px 0;
+    .steps-container, .delivery-points {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .step, .delivery-point {
+      width: 200px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .step-icon, .delivery-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .stock-counter {
+      text-align: center;
+      font-size: 20px;
+      color: #d00000;
+      font-weight: bold;
+      background: #fff8f8;
+      padding: 15px;
+      margin-top: -20px;
+    }
+
+    .order-form form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 15px;
+      background: #d00000;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
     }
 
     .footer-note {
       text-align: center;
       font-size: 14px;
       color: #777;
-      margin-top: 20px;
-    }
-
-    .btn-buy {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #d00000;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-    
-    /* New styles for additional sections */
-    .order-steps {
-      padding: 30px;
-      background: #fff;
-      text-align: center;
-    }
-    
-    .order-steps h2 {
-      margin-bottom: 30px;
-    }
-    
-    .steps-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    
-    .step {
-      width: 200px;
-      margin: 10px;
-    }
-    
-    .step-icon {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-    
-    .stock-counter {
-      text-align: center;
-      font-size: 20px;
-      color: #d00000;
-      font-weight: bold;
-      padding: 15px;
-      background: #fff8f8;
       margin: 20px 0;
-    }
-    
-    .delivery-info {
-      padding: 30px;
-      background: #f2f2f2;
-    }
-    
-    .delivery-info h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    .delivery-points {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    .delivery-point {
-      display: flex;
-      align-items: center;
-      margin: 15px 0;
-    }
-    
-    .delivery-icon {
-      font-size: 30px;
-      margin-right: 20px;
-      min-width: 50px;
-    }
-    
-    .order-form {
-      padding: 30px;
-      background: #fff;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    .order-form h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    
-    .form-group {
-      margin-bottom: 15px;
-    }
-    
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    
-    .form-group input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 16px;
-    }
-    
-    .btn-submit {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      background: #d00000;
-      color: white;
-      border: none;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>🔥 HOT SALE: iPhone 15 Pro Max 256 GB</h1>
-  <p>LIMITED-TIME OFFER – Grab it before the price goes up!</p>
+  <h1>🔥 Горящая Распродажа: iPhone 15 Pro Max 256 GB</h1>
+  <p>Супер цена! Только ограниченное количество товаров!</p>
+
+  <div class="countdown-box" id="countdown-box">
+    ⏳ Это предложение закончится через: 07 часов 00 минут 00 секунд
+  </div>
 </header>
 
 <section class="hero">
   <div class="slider">
-    <img src="images/Catalog/iPhone/1_1694691417915-preview-webp.webp" alt="iPhone Front">
-    <img src="images/Catalog/iPhone/2_1694691422324-preview-webp.webp" alt="iPhone Side">
-    <img src="images/Catalog/iPhone/3_1694691416932-preview-webp.webp" alt="iPhone Back">
-    <img src="images/Catalog/iPhone/4_1694691417979-preview-webp.webp" alt="iPhone Top">
-    <img src="images/Catalog/iPhone/5_1694691420762-preview-webp.webp" alt="iPhone Detail">
-  </div>
-
-  <div class="product-info">
-    <div class="price">Now: 8924 MDL</div>
-    <div class="old-price">Old Price: 25499 MDL</div>
-    <div class="countdown" id="countdown">
-      Hurry up! Only a few hours left!
+    <div class="slides">
+      <img src="images/Catalog/iPhone/1_1694691417915-preview-webp.webp" alt="iPhone">
+      <img src="images/Catalog/iPhone/2_1694691422324-preview-webp.webp" alt="iPhone">
+      <img src="images/Catalog/iPhone/3_1694691416932-preview-webp.webp" alt="iPhone">
+      <img src="images/Catalog/iPhone/4_1694691417979-preview-webp.webp" alt="iPhone">
+      <img src="images/Catalog/iPhone/5_1694691420762-preview-webp.webp" alt="iPhone">
     </div>
-    <a href="#" class="btn-buy">Buy Now</a>
   </div>
+  <div class="price">Цена: 8924 MDL</div>
+  <div class="old-price">Обычная цена: 25499 MDL</div>
+ 
 </section>
 
 <section class="specs">
-  <h2>📱 Product Specifications</h2>
+  <h2>📱 Характеристики продукта</h2>
   <ul>
-    <li><strong>Model:</strong> iPhone 15 Pro Max (MU793RX/A)</li>
-    <li><strong>Color:</strong> Natural Titanium</li>
-    <li><strong>Battery:</strong> 4441 mAh, Li-Ion</li>
-    <li><strong>Display:</strong> 6.7" Super Retina XDR OLED, 2796 x 1290, 120 Hz</li>
-    <li><strong>Camera:</strong> Triple: 48 MP + 12 MP + 12 MP, Front: 12 MP, 4K video</li>
-    <li><strong>Processor:</strong> A17 Pro, 6-core, up to 3.78 GHz</li>
-    <li><strong>Memory:</strong> 256 GB Storage, 8 GB RAM</li>
-    <li><strong>Connectivity:</strong> 5G, Wi-Fi 802.11 be, Bluetooth 5.3, NFC, USB-C</li>
-    <li><strong>Security:</strong> Face ID, Sensors, Emergency features</li>
-    <li><strong>Protection:</strong> IP68 water & dust resistance</li>
-    <li><strong>Operating System:</strong> iOS 17</li>
-    <li><strong>Weight:</strong> 221g | <strong>Material:</strong> Titanium</li>
+    <li>Модель: iPhone 15 Pro Max (MU793RX/A)</li>
+    <li>Цвет: Natural Titanium</li>
+    <li>Аккумулятор: 4441 mAh, Li-Ion</li>
+    <li>Дисплей: 6.7" OLED, 2796 x 1290, 120 Hz</li>
+    <li>Камеры: 48 + 12 + 12 MP / фронтальная: 12 MP</li>
+    <li>Процессор: A17 Pro, до 3.78 GHz</li>
+    <li>Память: 256 GB, RAM: 8 GB</li>
+    <li>Связь: 5G, Wi-Fi 802.11 be, Bluetooth 5.3</li>
+    <li>Безопасность: Face ID, защита IP68</li>
+    <li>ОС: iOS 17</li>
   </ul>
 </section>
 
@@ -281,11 +216,6 @@
       <p>Заполните контактную форму на сайте</p>
     </div>
     <div class="step">
-      <div class="step-icon">📞</div>
-      <h3>Звонок</h3>
-      <p>Наш менеджер перезвонит для уточнения деталей</p>
-    </div>
-    <div class="step">
       <div class="step-icon">🚚</div>
       <h3>Отправка</h3>
       <p>Оплата при получении</p>
@@ -293,7 +223,7 @@
     <div class="step">
       <div class="step-icon">📦</div>
       <h3>Получение</h3>
-      <p>Оплачиваете при получении на почте</p>
+      <p>Вы оплачиваете товар на почте</p>
     </div>
   </div>
 </section>
@@ -306,25 +236,16 @@
   <h2>Доставка</h2>
   <div class="delivery-points">
     <div class="delivery-point">
-      <div class="delivery-icon">🚚</div>
-      <div>
-        <h3>Доставка</h3>
-        <p>Доставка по Молдове в течение 1-3 рабочих дней.</p>
-      </div>
+      <div class="delivery-icon">🚛</div>
+      <div><strong>Доставка</strong><br>По Молдове 1–3 рабочих дня</div>
     </div>
     <div class="delivery-point">
-      <div class="delivery-icon">💰</div>
-      <div>
-        <h3>Никаких предоплат!</h3>
-        <p>Оплата заказов производится по факту получения товара.</p>
-      </div>
+      <div class="delivery-icon">💳</div>
+      <div><strong>Без предоплат</strong><br>Оплата при получении</div>
     </div>
     <div class="delivery-point">
       <div class="delivery-icon">🔍</div>
-      <div>
-        <h3>Гарантия</h3>
-        <p>Перед отправкой все товары проходят тщательную проверку брака.</p>
-      </div>
+      <div><strong>Гарантия</strong><br>Проверка перед отправкой</div>
     </div>
   </div>
 </section>
@@ -348,39 +269,13 @@
   </form>
 </section>
 
-<p class="footer-note">* Offer valid from 01.02.2025 to 01.03.2025</p>
+<p class="footer-note">* Акция действует с 01.02.2025 по 01.03.2025</p>
 
 <script>
-  // Countdown Timer
-  const endDate = new Date("2025-03-01T00:00:00").getTime();
-  const countdownEl = document.getElementById("countdown");
-
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const diff = endDate - now;
-
-    if (diff <= 0) {
-      countdownEl.innerHTML = "🔥 Promotion ended!";
-      return;
-    }
-
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-    countdownEl.innerHTML = `⏰ Hurry before price increases:
-    <br> ${String(hours).padStart(2, '0')} hours 
-    ${String(minutes).padStart(2, '0')} minutes 
-    ${String(seconds).padStart(2, '0')} seconds`;
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-  
-  // Form submission
-  document.getElementById('deliveryForm').addEventListener('submit', function(e) {
+  // Form alert
+  document.getElementById("deliveryForm").addEventListener("submit", function(e) {
     e.preventDefault();
-    alert('Ваш заказ успешно оформлен! Наш менеджер свяжется с вами в ближайшее время.');
+    alert("✅ Ваш заказ успешно оформлен! Мы свяжемся с вами в ближайшее время.");
     this.reset();
   });
 </script>
