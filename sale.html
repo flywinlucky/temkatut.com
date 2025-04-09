@@ -498,11 +498,9 @@
     text-decoration: underline; /* Subliniere la hover */
 }
     </style>
-    <link rel="stylesheet" href="Style/chatBot.css"> <!-- Link to external CSS -->
 </head>
 
 <body>
-
     <header>
         <h1>🔥 Распродажа 🔥<br>iPhone 15 Pro Max 256 GB</h1>
 
@@ -515,6 +513,8 @@
     </header>
 
     <section class="hero">
+        <h1>Оригинал + гарантия!</h1>
+        <h1>⚡️ iPhone 15 Pro Max 256 GB ⚡️</h1>
         <div class="slider">
             <div class="slides">
                 <img src="images/Catalog/iPhone/1_1694691417915-preview-webp.webp" alt="iPhone">
@@ -542,7 +542,7 @@
 
         <p class="footer-note">* Предложение действительно с 01.02.2025 по 01.03.2025</p>
         <div class="stock-counter">
-            Акционного товара осталось: 12 шт
+            Oсталось: 12 шт
         </div>
     </section>
 
@@ -648,7 +648,7 @@
     
 
     <div class="stock-counter">
-        Акционного товара осталось: 12 шт
+        Oсталось: 12 шт
     </div>
 
     <section class="order-form">
@@ -751,7 +751,7 @@
         </div>
         <div class="button-container">
             <div class="stock-counter">
-                Акционного товара осталось: 12 шт
+                Oсталось: 12 шт
             </div>
             <button class="btn-scroll-order"
                 onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
@@ -778,41 +778,10 @@
           <div class="step">
             <div class="step-icon"><i class="fas fa-headset"></i></div>
             <h3>3. Поддержка 24/7</h3>
-            <p>Мы всегда на связи и готовы ответить на любые ваши вопросы — до и после покупки.</p>
+            <p>Мы всегда на связи и готовы ответить на любые ваши вопросы до и после покупки.</p>
           </div>
         </div>
       </section>
-      
-
-    <!-- Chat Bot -->
-    <div class="overlay" id="overlay"></div>
-    <button class="chat-button" id="chatButton" onclick="toggleChat()">
-        <img id="chatIcon" src="images/Chat Bot/Chat On.png" alt="Chat Icon" style="width: 100%; height: auto;">
-    </button>
-
-    <div class="chat-container" id="chatContainer">
-        <div class="chat-header">
-            Консультант (Онлайн)
-            <button class="close-button" onclick="toggleChat()">×</button>
-        </div>
-        <div class="chat-body" id="chatBody">
-            <div class="chat-message message-bot">
-                👋 Здравствуйте! Чем можем помочь с вашим iPhone 15?
-            </div>
-        </div>
-        <div class="preset-buttons">
-            <button class="preset-button"
-                onclick="sendPresetMessage('Через сколько дней прибудет доставка iPhone 15?')">
-                Через сколько дней прибудет доставка iPhone 15?
-            </button>
-            <button class="preset-button" onclick="sendPresetMessage('Какие варианты доставки iPhone 15 доступны?')">
-                Какие варианты доставки iPhone 15 доступны?
-            </button>
-            <button class="preset-button" onclick="sendPresetMessage('Как я могу отследить статус заказа iPhone 15?')">
-                Как я могу отследить статус заказа iPhone 15?
-            </button>
-        </div>
-    </div>
 
     <p class="footer-note">© 2025 Все права защищены.</p>
 
@@ -844,7 +813,6 @@
             window.location.href = "https://t.me/tribute/app?startapp=hfh3";
         });
     </script>
-    <script src="JavaScript/chatBotCore.js"></script> <!-- Link to external JavaScript -->
 </body>
 
 </html>
