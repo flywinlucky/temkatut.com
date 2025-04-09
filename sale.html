@@ -331,6 +331,48 @@
     font-style: italic;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column; /* Aliniere verticală */
+    align-items: center;
+    gap: 15px; /* Spațiu între butoane */
+    margin-top: 20px;
+}
+
+.btn-scroll-order {
+    padding: 15px 35px;
+    font-size: 20px;
+    background: linear-gradient(45deg, #007bff, #00c4ff);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px; /* Lățime fixă pentru consistență */
+}
+
+.btn-scroll-order:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+.btn-scroll-reviews {
+    padding: 12px 30px;
+    font-size: 18px;
+    background: linear-gradient(45deg, #ffcc00, #ffd700);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px; /* Lățime fixă pentru consistență */
+}
+
+.btn-scroll-reviews:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+}
+
 /* Animație pentru carduri */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
@@ -362,9 +404,18 @@
         </div>
         <div class="price">Цена: 8924 MDL</div>
         <div class="old-price">Обычная цена: 25499 MDL</div>
-        <button class="btn-scroll-order" onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
-            Заказать сейчас <i class="fas fa-shopping-cart"></i>
-        </button>
+        <div class="button-container">
+             
+            <button class="btn-scroll-order" onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
+                Заказать сейчас <i class="fas fa-arrow-right"></i>
+            </button>
+
+            <button class="btn-scroll-reviews" onclick="document.querySelector('.reviews-form').scrollIntoView({behavior: 'smooth'});">
+                <i class="fas fa-star"></i> Отзывы <i class="fas fa-star"></i>
+              </button>
+              
+
+        </div>
         <p class="footer-note">* Предложение действительно с 01.02.2025 по 01.03.2025</p>
         <div class="stock-counter">
             Акционного товара осталось: 12 шт
@@ -387,7 +438,7 @@
             <li><strong>ОС:</strong> iOS 17</li>
             <li><strong>Вес:</strong> 221 г | <strong>Материал:</strong> Титан</li>
         </ul>
-
+    
         <div style="margin-top: 40px; text-align: center;">
             <h2>✨ Прочный и легкий титановый корпус</h2>
             <img src="images/Catalog/iPhone/2_1694691422324-preview-webp.webp" alt="Titanium iPhone" style="max-width: 100%; border-radius: 15px; margin-top: 20px;">
@@ -397,9 +448,18 @@
             <div class="stock-counter">
                 Осталось: 12 шт
             </div>
-            <button class="btn-scroll-order" onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
-                Заказать сейчас <i class="fas fa-arrow-right"></i>
-            </button>
+            <div class="button-container">
+             
+                <button class="btn-scroll-order" onclick="document.getElementById('deliveryForm').scrollIntoView({behavior: 'smooth'});">
+                    Заказать сейчас <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <button class="btn-scroll-reviews" onclick="document.querySelector('.reviews-form').scrollIntoView({behavior: 'smooth'});">
+                    <i class="fas fa-star"></i> Отзывы <i class="fas fa-star"></i>
+                  </button>
+                  
+
+            </div>
         </div>
     </section>
 
