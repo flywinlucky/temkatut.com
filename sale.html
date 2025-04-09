@@ -259,6 +259,83 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
+
+        .reviews-form {
+    padding: 40px 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.review-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 1s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stars {
+    font-size: 24px;
+    color: #ffcc00; /* Culoare galbenă pentru stele */
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0 0 15px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Rotund */
+    object-fit: cover;
+    border: 2px solid #ddd; /* Margine subtilă */
+    transition: transform 0.3s;
+}
+
+.reviewer-avatar:hover {
+    transform: scale(1.1); /* Mic efect de zoom la hover */
+}
+
+.reviewer-name {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Animație pentru carduri */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
     </style>
     <link rel="stylesheet" href="Style/chatBot.css"> <!-- Link to external CSS -->
 </head>
@@ -369,6 +446,53 @@
             <button type="submit" class="btn-submit">Заказать сейчас <i class="fas fa-check"></i></button>
         </form>
     </section>
+
+<!-- Reviews Section -->
+<section class="reviews-form">
+    <h2>✨ Отзывы наших клиентов ✨</h2>
+    <div class="reviews-container">
+        <div class="review-card">
+            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+            <p>"Заказал iPhone 15 Pro Max — доставка всего 3 дня! Качество на высоте, цена невероятная. Очень доволен!"</p>
+            <div class="reviewer-info">
+                <img src="images/recenzii users/user_1.png" alt="Алексей П." class="reviewer-avatar">
+                <span class="reviewer-name">Алексей П.</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+            <p>"Телефон пришёл в идеальной упаковке, всё оригинальное. Скидка реальная, сервис отличный!"</p>
+            <div class="reviewer-info">
+                <img src="images/recenzii users/user_2.png" alt="Мария К." class="reviewer-avatar">
+                <span class="reviewer-name">Мария К.</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+            <p>"Лучшая покупка года! iPhone 15 Pro Max работает идеально, доставка быстрая. Рекомендую!"</p>
+            <div class="reviewer-info">
+                <img src="images/recenzii users/user_3.png" alt="Дмитрий С." class="reviewer-avatar">
+                <span class="reviewer-name">Дмитрий С.</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+            <p>"Сомневалась, но зря! Телефон шикарный, поддержка ответила на все вопросы. 5 звёзд!"</p>
+            <div class="reviewer-info">
+                <img src="images/recenzii users/user_4.png" alt="Ольга В." class="reviewer-avatar">
+                <span class="reviewer-name">Ольга В.</span>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="stars">5/5 ⭐⭐⭐⭐⭐</div>
+            <p>"Супер акция! iPhone 15 Pro Max по такой цене — это находка. Доставили вовремя, всё отлично!"</p>
+            <div class="reviewer-info">
+                <img src="images/recenzii users/user_1.png" alt="Игорь Т." class="reviewer-avatar">
+                <span class="reviewer-name">Игорь Т.</span>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Chat Bot -->
     <div class="overlay" id="overlay"></div>
