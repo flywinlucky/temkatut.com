@@ -478,6 +478,25 @@
 .payment-icon:hover {
     transform: scale(1.1); /* Ușoară mărire la hover */
 }
+
+.payment-text {
+    text-align: center; /* Centrează textul */
+    font-size: 14px; /* Dimensiune similară cu alte texte mici */
+    color: #555; /* Culoare gri subtilă */
+    margin: 15px 0; /* Spațiu deasupra și dedesubt */
+}
+
+.payment-text a {
+    color: #007bff; /* Culoare albastră pentru link, similară cu alte elemente */
+    text-decoration: none; /* Fără subliniere implicită */
+    font-weight: bold; /* Textul „Tribute“ evidențiat */
+    transition: color 0.3s ease; /* Tranziție pentru hover */
+}
+
+.payment-text a:hover {
+    color: #0056b3; /* Culoare mai închisă la hover */
+    text-decoration: underline; /* Subliniere la hover */
+}
     </style>
     <link rel="stylesheet" href="Style/chatBot.css"> <!-- Link to external CSS -->
 </head>
@@ -602,25 +621,27 @@
     </section>
 
     <section class="order-steps">
-        <h2>Как оформить заказ?</h2>
+        <h2>Почему у нас дешевле?</h2>
         <div class="steps-container">
             <div class="step">
-                <div class="step-icon"><i class="fas fa-edit"></i></div>
-                <h3>1. Заявка</h3>
-                <p>Заполните форму на сайте</p>
+                <div class="step-icon"><i class="fas fa-warehouse"></i></div>
+                <h3>Ликвидация склада</h3>
+                <p>Продаем остатки с минимальной наценкой. Всё оригинальное и новое.</p>
             </div>
             <div class="step">
-                <div class="step-icon"><i class="fas fa-truck"></i></div>
-                <h3>2. Отправка</h3>
-                <p>Оплата при получении</p>
+                <div class="step-icon"><i class="fas fa-percent"></i></div>
+                <h3>Без посредников</h3>
+                <p>У нас нет магазинов и аренды – только онлайн-продажа напрямую.</p>
             </div>
             <div class="step">
-                <div class="step-icon"><i class="fas fa-box-open"></i></div>
-                <h3>3. Получение</h3>
-                <p>Оплачивайте на почте</p>
+                <div class="step-icon"><i class="fas fa-certificate"></i></div>
+                <h3>100% Оригинал</h3>
+                <p>Только официальные устройства Apple с проверкой перед отправкой.</p>
             </div>
         </div>
     </section>
+
+    
 
     <div class="stock-counter">
         Акционного товара осталось: 12 шт
@@ -667,7 +688,7 @@
                 <input type="text" id="contact" name="contact" placeholder="Email или +373..." required>
             </div>
             <button type="submit" class="btn-submit">Заказать сейчас <i class="fas fa-check"></i></button>
-            <p>securepaymen with : Tribute</p>
+            <p class="payment-text">Secure Payment with: <a href="https://tribute.tg/" target="_blank">Tribute</a></p>
             <div class="payment-logos">
                 <img src="images/payment/Tribute Logo.png" alt="Tribute Logo" class="payment-icon">
                 <img src="images/payment/mastercard logo.png" alt="Mastercard Logo" class="payment-icon">
