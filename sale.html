@@ -460,6 +460,24 @@
                 transform: translateY(0);
             }
         }
+
+        .payment-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Spațiu între imagini */
+    margin-top: 15px; /* Spațiu sub buton */
+}
+
+.payment-icon {
+    width: 50px; /* Dimensiune mică pentru logo-uri */
+    height: auto;
+    transition: transform 0.3s ease; /* Animație la hover */
+}
+
+.payment-icon:hover {
+    transform: scale(1.1); /* Ușoară mărire la hover */
+}
     </style>
     <link rel="stylesheet" href="Style/chatBot.css"> <!-- Link to external CSS -->
 </head>
@@ -649,6 +667,12 @@
                 <input type="text" id="contact" name="contact" placeholder="Email или +373..." required>
             </div>
             <button type="submit" class="btn-submit">Заказать сейчас <i class="fas fa-check"></i></button>
+            <p>securepaymen with : Tribute</p>
+            <div class="payment-logos">
+                <img src="images/payment/Tribute Logo.png" alt="Tribute Logo" class="payment-icon">
+                <img src="images/payment/mastercard logo.png" alt="Mastercard Logo" class="payment-icon">
+                <img src="images/payment/visa logo.png" alt="Visa Logo" class="payment-icon">
+            </div>
         </form>
     </section>
 
