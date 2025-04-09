@@ -224,6 +224,27 @@
             margin-bottom: 20px;
         }
 
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #fff;
+            transition: border-color 0.3s;
+        }
+
+        .form-group select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .optional {
+            font-size: 12px;
+            color: #999;
+            font-weight: normal;
+        }
+
         label {
             display: block;
             font-weight: bold;
@@ -477,7 +498,7 @@
                 <i class="fas fa-star"></i> Отзывы <i class="fas fa-star"></i>
             </button>
         </div>
-        
+
         <p class="footer-note">* Предложение действительно с 01.02.2025 по 01.03.2025</p>
         <div class="stock-counter">
             Акционного товара осталось: 12 шт
@@ -559,16 +580,41 @@
         <h2>Оформите заказ прямо сейчас!</h2>
         <form id="deliveryForm">
             <div class="form-group">
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" placeholder="Введите имя" required>
+                <label for="country">Country/Region:</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Выберите страну</option>
+                    <option value="MD">Молдова</option>
+                    <option value="RU">Россия</option>
+                    <option value="UA">Украина</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="phone">Номер телефона:</label>
-                <input type="tel" id="phone" placeholder="+373..." required>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Город" required>
             </div>
             <div class="form-group">
-                <label for="address">Адрес доставки:</label>
-                <input type="text" id="address" placeholder="Город, улица..." required>
+                <label for="firstName">First Name <span class="optional">(optional)</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Введите фамилию" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Улица, номер дома" required>
+            </div>
+            <div class="form-group">
+                <label for="apartment">Apartment, suite, etc. <span class="optional">(optional)</span></label>
+                <input type="text" id="apartment" name="apartment" placeholder="Квартира, офис и т.д.">
+            </div>
+            <div class="form-group">
+                <label for="postalCode">Postal Code <span class="optional">(optional)</span></label>
+                <input type="text" id="postalCode" name="postalCode" placeholder="Почтовый индекс">
+            </div>
+            <div class="form-group">
+                <label for="contact">Email or Mobile Phone Number</label>
+                <input type="text" id="contact" name="contact" placeholder="Email или +373..." required>
             </div>
             <button type="submit" class="btn-submit">Заказать сейчас <i class="fas fa-check"></i></button>
         </form>
