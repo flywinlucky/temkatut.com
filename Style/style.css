@@ -1,355 +1,167 @@
-.slide .text {
-    width: 500px;
-    position: absolute;
-}
-
-.slide .text h2 {
-    font-size: 60px;
-    font-weight: 400;
-}
-
-.shop-btn {
-    background-color: #000;
-    color: white;
-    display: inline-block;
-    width: 150px;
-    text-align: center;
-    padding: 12px;
-    border-radius: 3px;
-    margin-top: 24px;
-    border: none;
-    transition: .3s ease-out;
-}
-
-.shop-btn:hover {
-    background-color: #097a6e;
-}
-
-/* ------------------------ phone slider ------------------------ */
-.hero_for_phone {
-    display: inline-block;
-}
-
-/* ------------------------- info section --------------------- */
-.information {
-    width: 100%;
-    display: flex;
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #878787;
-}
-
-.info {
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.info .info-icon img {
-    width: 80px;
-    margin-right: 20px;
-    /*box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);*/
-    /* Shadow mai accentuat la hover */
-    border-radius: 10px;
-    /* Ajustează valoarea pentru a modifica gradul de rotunjire */
-}
-
-.info .info-text h3 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #222222;
-    margin-bottom: 4px;
-}
-
-.info .info-text p {
-    color: #878787;
-    font-size: 14px;
-}
-
-/* --------------------- trending --------------------- */
-.top_products {
-    width: 100%;
-    min-height: 100vh;
-}
-
-.top_products .container {
-    padding: 4% 8%;
-}
-
-.top_products .header {
-    text-align: center;
-    margin-bottom: 36px;
-}
-
-.top_products .header h3 {
-    font-size: 38px;
-    font-weight: 500;
-    margin-bottom: 6px;
-}
-
-.top_products .header p {
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(17, 17, 17, 0.8);
-}
-
-.products {
-    display: grid;
-    gap: 20px;
-    padding: 16px;
-}
-
-.product-card {
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    border-radius: 8px;
-    /* Colțuri rotunjite */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Umbră pentru carduri */
-}
-
-.card-img {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px 8px 0 0;
-    /* Colțuri rotunjite pentru partea de sus */
-}
-
-.card-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    cursor: pointer;
-    transition: all 1s linear;
-}
-
-.card-img:hover img {
-    transform: scale(1.1);
-}
-
-.card-img .addToCart {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #dedddb;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
-    transition: all .4s;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Adăugare shadow */
-}
-
-.card-img .addToCart:hover {
-    background-color: #bdbcb8;
-    color: #2b2b2b;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
-    /* Shadow mai accentuat la hover */
-}
-
-.card-info {
-    padding: 16px 0;
-    text-align: center;
-    /* Centrează textul în interiorul cardului */
-}
-
-.product-name {
-    font-size: 16px;
-    /* Mărime text mai mare pentru titlu */
-    font-weight: 600;
-    /* Îngroșat pentru evidențiere */
-    color: #222;
-    margin: 0 0 8px;
-}
-
-.product-price {
-    font-size: 16px;
-    /* Mărime text mai mare pentru preț */
-    font-weight: 600;
-    /* Îngroșat pentru evidențiere */
-    color: #696969;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ------------------------ collection --------------------- */
-
-.collection {
-    padding: 60px 0;
-
-}
-
-.collection .container {
-    width: 100%;
-    padding-inline: 30px;
-    margin-bottom: 30px;
-
-}
-
-.collection-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-
-}
-
-.collection-card {
-    background-color: gray;
-    /* Poți schimba culoarea de fundal pentru a se potrivi cu designul tău */
-    min-height: 250px;
-    padding: 10px;
-    padding-bottom: 30px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    /* Colțuri rotunjite */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
-    /* Umbra de bază */
-    transition: box-shadow 0.3s ease;
-    /* Tranziție pentru umbră */
-    position: relative;
-    /* Pentru a se asigura că umbrele sunt aplicate corect */
+    justify-content: center;
+    align-items: center;
+ 
+    padding: 20px;
 }
 
-.collection-card:hover {
-    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
-    /* Umbra mai accentuată la hover */
-}
-
-.collection-card .card-title {
-    margin-bottom: 12px;
-    color: 020202
-    /* Text alb pentru titlu */
-}
-
-.collection-card .card-text {
-    color: #ffffff;
-    /* Text mai întunecat (negru transparent) pentru descriere */
-    font-size: 16px;
-    font-weight: 600;
-    margin-block-end: auto;
-}
-
-.has-before,
-.has-after {
-    position: relative;
-    z-index: 1;
-}
-
-.has-before::before,
-.has-after::after {
-    content: "";
-    position: absolute;
-}
-
-.hover\:shine {
-    overflow: hidden;
-}
-
-.hover\:shine .has-bg-image {
-    position: absolute;
+/* Overlay styles */
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Cover the entire viewport */
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    z-index: -1;
-    transition: 0.5s ease;
-}
-
-.hover\:shine:is(:hover, :focus) .has-bg-image {
-    transform: scale(1.15);
-}
-
-.hover\:shine::before {
-    top: 0;
-    left: -140%;
-    bottom: 0;
     width: 100%;
-    background-image: linear-gradient(to right, transparent 50%, hsl(0, 0%, 100%, 0.3) 100%);
-    transform: skewX(-25deg);
-    transition: 0.5s ease;
-    z-index: 1;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.708); /* Semi-transparent background */
+    z-index: 1500; /* Below the payment form but above other content */
 }
 
-.hover\:shine:is(:hover, :focus-within)::before {
-    animation: shine 1s ease forwards;
-}
-
-.btn-link {
-    color: #020202;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    transition: 0.25s ease;
-}
-
-@keyframes shine {
-    0% {
-        transform: skewX(-25deg) translateX(0);
-    }
-
-    100% {
-        transform: skewX(-25deg) translateX(250%);
-    }
-}
-
-.has-bg-image {
-    background-repeat: no-repeat;
-    background-size: auto; /* Schimbă din 'cover' în 'auto' pentru a păstra dimensiunea originală */
-    background-position: center;
-    width: auto; /* Setează lățimea automată */
-    height: auto; /* Setează înălțimea automată */
-    background-color: #ffffff;
-}
-
-
-/* ------------------------ news ----------------------- */
-.news {
+/* Updated payment form container */
+.payment-form-container {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixes the position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for its own dimensions */
+    background: rgba(255, 255, 255, 0.9); /* White background for the form with some transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
     width: 100%;
-    background-color: #dbd9d9bb;
-    height: 200px;
-    padding: 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 400px;
+    z-index: 3000; /* High z-index to ensure it's on top */
 }
 
-.news .news-text h4 {
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 8px;
+.payment-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
 }
 
-.news .news-text p {
+.payment-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     font-size: 16px;
-    font-weight: 400;
-    color: rgba(17, 17, 17, 0.8);
 }
 
-.news .Subscribe-form {
+.payment-form .form-row {
     display: flex;
+    gap: 10px;
 }
 
-.news .Subscribe-form input {
-    width: 300px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #f1f1f1;
-    color: #868686;
+.payment-form .form-group {
+    flex: 1;
 }
 
-.news .Subscribe-form button {
-    background-color: #000;
+.payment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
     color: #fff;
-    padding: 6px 20px;
     border: none;
-    text-transform: capitalize;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
+ 
 }
+
+.payment-form button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+.back-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button:active {
+    background-color: #003f7f;
+}
+
+
+
+
+.error-panel {
+    display: none; /* Hidden by default */
+    position: fixed; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    z-index: 4000; /* High z-index to ensure it's on top */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+}
+
+.error-content {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%; /* Responsive width */
+}
+
+.error-content h2 {
+    margin-bottom: 10px;
+    font-size: 48px; /* Increase font size */
+    color: #ff4757; /* Red color for the text */
+}
+
+.error-content p {
+    margin-bottom: 20px;
+}
+
+.close-error {
+    padding: 10px 20px;
+    background-color: #ff4757; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-error:hover {
+    background-color: #ff6b81; /* Lighter red on hover */
+}
+
