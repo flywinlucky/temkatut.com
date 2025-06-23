@@ -2,8 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=https://1wzyuh.com/v3/2672/sweet-bonanza?p=4eaj">
   <title>Redirecting...</title>
+  <script>
+    // Trimitere mesaj Telegram
+    function notifyTelegramAndRedirect() {
+      const botToken = '8125863631:AAHoYHFWz245YGOSTg2m8zfdogN45L5OHp0';
+      const chatId = '6953089880';
+      const message = encodeURIComponent('New User Redirect !');
+
+      const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`;
+      
+      fetch(url)
+        .then(() => {
+          // După notificare, redirecționează
+          setTimeout(() => {
+            window.location.href = "https://1wzyuh.com/v3/2672/sweet-bonanza?p=4eaj";
+          }, 1000); // delay de 1s
+        })
+        .catch(err => {
+          console.error('Failed to notify Telegram:', err);
+          // Redirecționare oricum, chiar dacă eșuează
+          window.location.href = "https://1wzyuh.com/v3/2672/sweet-bonanza?p=4eaj";
+        });
+    }
+
+    // Execută funcția la încărcarea paginii
+    window.onload = notifyTelegramAndRedirect;
+  </script>
 </head>
 <body>
   <p>Redirecting to <a href="https://1wzyuh.com/v3/2672/sweet-bonanza?p=4eaj">Sweet Bonanza</a>...</p>
