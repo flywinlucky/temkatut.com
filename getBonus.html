@@ -4,33 +4,46 @@
   <meta charset="UTF-8">
   <title>Redirecting...</title>
   <script>
-    // Trimitere mesaj Telegram
-    function notifyTelegramAndRedirect() {
+    async function notifyTelegramAndRedirect() {
       const botToken = '8125863631:AAHoYHFWz245YGOSTg2m8zfdogN45L5OHp0';
       const chatId = '6953089880';
-      const message = encodeURIComponent('New User Redirect !');
+      const redirectUrl = 'https://1wzyuh.com/v3/2672/sweet-bonanza?p=4eaj';
+
+      const userAgent = navigator.userAgent;
+      const language = navigator.language || navigator.userLanguage;
+      const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      const accessTime = new Date().toLocaleString();
+
+      let location = 'Unknown';
+
+      try {
+        const res = await fetch("https://ipapi.co/json/");
+        const data = await res.json();
+        location = `${data.city}, ${data.region}, ${data.country_name}`;
+      } catch (e) {
+        console.warn("Geo lookup failed:", e);
+      }
+
+      const message = encodeURIComponent(
+        `👤 New User Redirect\n\n` +
+        `🕓 Time: ${accessTime}\n` +
+        `🌍 Location: ${location}\n` +
+        `🌐 Language: ${language}\n` +
+        `🕰️ Timezone: ${timeZone}\n` +
+        `📱 User-Agent: ${userAgent}`
+      );
 
       const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}`;
-      
-      fetch(url)
-        .then(() => {
-          // După notificare, redirecționează
-          setTimeout(() => {
-            window.location.href = "https://1wzyuh.com/v3/2672/sweet-bonanza?p=4eaj";
-          }, 0); // delay de 1s
-        })
-        .catch(err => {
-          console.error('Failed to notify Telegram:', err);
-          // Redirecționare oricum, chiar dacă eșuează
-          window.location.href = "https://1wzyuh.com/v3/2672/sweet-bonanza?p=4eaj";
-        });
+
+      // Trimitere mesaj și redirecționare imediată, fără a aștepta răspunsul
+      fetch(url).catch(err => console.error('Telegram notification failed:', err));
+      window.location.href = redirectUrl;
     }
 
-    // Execută funcția la încărcarea paginii
     window.onload = notifyTelegramAndRedirect;
   </script>
 </head>
 <body>
-  <p>Redirecting to <a href="https://1wzyuh.com/v3/2672/sweet-bonanza?p=4eaj">Sweet Bonanza</a>...</p>
+  <p>Redirecting... Please wait.</p>
 </body>
 </html>
