@@ -55,11 +55,18 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             margin-top: 10px;
             background: linear-gradient(135deg, #681ce3, #8a35f1);
+            position: relative;
+            z-index: 1;
+            animation: btnBounce 2s infinite;
         }
 
         .btn-success-custom:hover {
             background: linear-gradient(135deg, #4b0cad, #681ce3);
             transform: scale(1.05);
+        }
+
+        .btn-success-custom:active {
+            animation: none;
         }
 
         .image-container {
@@ -79,11 +86,16 @@
             top: 0;
             left: 0;
             opacity: 0;
-            transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out, transform 1.2s cubic-bezier(.25,1.25,.5,1.1);
         }
 
         .image-container img.active {
             opacity: 1;
+            transform: scale(1.08);
+        }
+
+        .image-container img:not(.active) {
+            transform: scale(1);
         }
 
         #channel-title {
@@ -91,6 +103,15 @@
             font-weight: 700;
             margin-bottom: 10px;
             white-space: nowrap;
+        }
+
+        #channel-title.glow {
+            text-shadow: 0 0 8px #ffd700, 0 0 16px #8a35f1, 0 0 24px #ffd700;
+            animation: glowPulse 2s infinite alternate;
+        }
+        @keyframes glowPulse {
+            0% { text-shadow: 0 0 8px #ffd700, 0 0 16px #8a35f1, 0 0 24px #ffd700; }
+            100% { text-shadow: 0 0 24px #ffd700, 0 0 32px #8a35f1, 0 0 48px #ffd700; }
         }
 
         .text-content p {
@@ -109,6 +130,21 @@
         .green-text {
             color: #00FF00;
             font-weight: bold;
+        }
+
+        .slide-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        .slide-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes btnBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px) scale(1.05); }
         }
 
         @media (max-width: 768px) {
@@ -145,10 +181,18 @@
                 font-size: 1em;
             }
         }
+        /* Confetti styles (canvas overlays page) */
+        #confetti-canvas {
+            position: fixed;
+            pointer-events: none;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: 9999;
+        }
     </style>
 </head>
 
 <body>
+    <canvas id="confetti-canvas"></canvas>
     <div id="panel1" class="container">
         <div class="image-container">
             <img src="Resources/MoneyDev/image1.png" alt="Image 1" class="active">
@@ -157,12 +201,12 @@
             <img src="Resources/MoneyDev/image4.png" alt="Image 4">
         </div>
         <div class="text-content white-text">
-            <p id="channel-title"></p>
+            <p id="channel-title" class="glow"></p>
         </div>
-        <div class="text-content white-text">
+        <div class="text-content white-text slide-in" id="slide-in-title">
             <p id="channel-title">👑 MONEY DEV MD 👑</p>
         </div>
-        <div class="text-content">
+        <div class="text-content slide-in" id="slide-in-call">
             <p><strong>Pаздаю бота <span id="free-text" class="yellow-text"></span><span id="typing-emoji">✏️</span></strong></p>
             <p>⬇️ Открой TG ⬇️</p>
         </div>
@@ -177,12 +221,22 @@
             countUp(0, 3500, 1000, 'money-amount'); // Pornim animația de numărare pentru +3500 MDL
             typingEffect('free-text', 'БЕСПЛАТНО', 150, 'typing-emoji'); // Pornim efectul de scriere pentru "БЕСПЛАТНО"
             startSlideshow(); // Pornim slideshow-ul automat
+            // Slide-in effect
+            setTimeout(() => {
+                document.getElementById('slide-in-title').classList.add('visible');
+            }, 400);
+            setTimeout(() => {
+                document.getElementById('slide-in-call').classList.add('visible');
+            }, 900);
         });
 
         // Redirecționare la apăsarea butonului
         function trackButtonClick() {
             fbq('track', 'ButtonClicked'); // Track event for Meta Pixel
-            window.location.href = "https://t.me/moneydevmd";
+            launchConfetti();
+            setTimeout(function() {
+                window.location.href = "https://t.me/moneydevmd";
+            }, 900);
         }
 
         // Funcție pentru numărarea crescentă
@@ -235,6 +289,57 @@
             }
 
             setInterval(showNextImage, 3000); // Schimbă imaginea la fiecare 3 secunde
+        }
+
+        // Confetti implementation
+        function launchConfetti() {
+            const canvas = document.getElementById('confetti-canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            let confetti = [];
+            for (let i = 0; i < 120; i++) {
+                confetti.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * -canvas.height,
+                    r: Math.random() * 6 + 4,
+                    d: Math.random() * 80 + 40,
+                    color: `hsl(${Math.random()*360}, 80%, 60%)`,
+                    tilt: Math.random() * 10 - 10,
+                    tiltAngle: 0
+                });
+            }
+            let angle = 0;
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                for (let i = 0; i < confetti.length; i++) {
+                    let c = confetti[i];
+                    ctx.beginPath();
+                    ctx.arc(c.x, c.y, c.r, 0, 2 * Math.PI);
+                    ctx.fillStyle = c.color;
+                    ctx.fill();
+                }
+                update();
+            }
+            function update() {
+                angle += 0.01;
+                for (let i = 0; i < confetti.length; i++) {
+                    let c = confetti[i];
+                    c.y += (Math.cos(angle + c.d) + 2 + c.r/2) * 0.9;
+                    c.x += Math.sin(angle) * 2;
+                    c.tiltAngle += 0.1;
+                    c.tilt = Math.sin(c.tiltAngle) * 15;
+                    if (c.y > canvas.height) {
+                        c.x = Math.random() * canvas.width;
+                        c.y = -10;
+                    }
+                }
+            }
+            let confettiInterval = setInterval(draw, 16);
+            setTimeout(() => {
+                clearInterval(confettiInterval);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }, 900);
         }
     </script>
 
