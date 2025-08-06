@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Хозяин Бинарок</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* previne scroll-ul */
+        }
+        body {
+            min-height: 100vh;
+            height: 100vh; /* forțează înălțimea completă */
+            background: url('Resources/tgwalper.jpg') center center/cover no-repeat;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            background: #e3f2f9;
+            border-bottom: 1px solid #d0e3ef;
+        }
+        .header img {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+        }
+        .header span {
+            font-size: 22px;
+            font-weight: 600;
+            color: #222;
+        }
+        .download-btn {
+            position: absolute;
+            top: 18px;
+            right: 32px;
+            background: #3390ec;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(51,144,236,0.08);
+            transition: background 0.2s;
+        }
+        .download-btn:hover {
+            background: #2878c6;
+        }
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 60px);
+        }
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 36px 40px 32px 40px;
+            max-width: 370px;
+            width: 100%;
+            text-align: center;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 18px;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #222;
+        }
+        .members {
+            font-size: 16px;
+            color: #3bb143;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .desc {
+            font-size: 16px;
+            color: #222;
+            margin-bottom: 18px;
+        }
+        .desc .emoji {
+            font-size: 18px;
+        }
+        .join-btn {
+            background: #3390ec;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 12px 36px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 2px 8px rgba(51,144,236,0.08);
+            transition: background 0.2s;
+        }
+        .join-btn:hover {
+            background: #2878c6;
+        }
+        @media (max-width: 500px) {
+            .card {
+                padding: 16px 4px 14px 4px;
+                max-width: 98vw;
+                border-radius: 18px;
+                margin: 12px 13px; /* adaugă spațiu față de margini */
+            }
+            .avatar {
+                width: 82px;
+                height: 82px;
+                margin-bottom: 12px;
+            }
+            .title {
+                font-size: 20px;
+                margin-bottom: 6px;
+            }
+            .members {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+            .desc {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            .join-btn {
+                padding: 10px 0;
+                width: 90%;
+                font-size: 15px;
+            }
+            .header {
+                padding: 10px 8px;
+            }
+            .download-btn {
+                right: 10px;
+                top: 10px;
+                padding: 6px 14px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Resources/telegram-logo.webp" alt="Telegram Logo">
+        <span>Telegram</span>
+        <button class="download-btn" onclick="window.open('https://telegram.org/', '_blank')">DOWNLOAD</button>
+    </div>
+    <div class="center-container">
+        <div class="card">
+            <img class="avatar" src="Resources/avatar.jpg" alt="Avatar">
+            <div class="title">Хозяин Бинарок | PO<span class="emoji">📈</span></div>
+            <div class="members">
+                <span class="emoji">💵</span>
+                6095 members
+            </div>
+            <div class="desc">
+                💶 Успех в трейдинге - это не графики и анализ а ИИ которое все сделает за тебя<span class="emoji">🤩</span><br><br>
+                B0T абсолютно бесплатный<span class="emoji">✅</span>
+            </div>
+            <button class="join-btn" onclick="window.open('https://t.me/+5rx77z1IDac2YmMy', '_blank')">JOIN CHANNEL</button>
+        </div>
+    </div>
+</body>
+</html>

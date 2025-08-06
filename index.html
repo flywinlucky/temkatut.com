@@ -1,182 +1,518 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(99095536, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+    });
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/99095536" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+
 <head>
     <meta charset="UTF-8">
-    <title>Хозяин Бинарок</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+    
+    
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden; /* previne scroll-ul */
-        }
         body {
-            min-height: 100vh;
-            height: 100vh; /* forțează înălțimea completă */
-            background: url('Resources/tgwalper.jpg') center center/cover no-repeat;
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
-        .header {
-            display: flex;
-            align-items: center;
-            padding: 16px 24px;
-            background: #e3f2f9;
-            border-bottom: 1px solid #d0e3ef;
-        }
-        .header img {
-            width: 32px;
-            height: 32px;
-            margin-right: 12px;
-        }
-        .header span {
-            font-size: 22px;
-            font-weight: 600;
-            color: #222;
-        }
-        .download-btn {
-            position: absolute;
-            top: 18px;
-            right: 32px;
-            background: #3390ec;
-            color: #fff;
-            border: none;
-            border-radius: 20px;
-            padding: 8px 24px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(51,144,236,0.08);
-            transition: background 0.2s;
-        }
-        .download-btn:hover {
-            background: #2878c6;
-        }
-        .center-container {
+            background: radial-gradient(circle, #2c3e50, #000000);
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: calc(100vh - 60px);
-        }
-        .card {
-            background: #fff;
-            border-radius: 20px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-            padding: 36px 40px 32px 40px;
-            max-width: 370px;
-            width: 100%;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
             text-align: center;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 18px;
-            object-fit: cover;
-            border: 3px solid #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+
+        .fade-in {
+            opacity: 1;
         }
-        .title {
-            font-size: 26px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: #222;
-        }
-        .members {
-            font-size: 16px;
-            color: #3bb143;
-            font-weight: 600;
-            margin-bottom: 12px;
+
+        .container {
+            background: linear-gradient(145deg, #1e222a, #252a34);
+            border-radius: 25px;
+            padding: 25px;
+            width: 100%;
+            max-width: 60vh;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            gap: 6px;
+            align-items: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            text-align: f;
         }
-        .desc {
-            font-size: 16px;
-            color: #222;
-            margin-bottom: 18px;
+
+        .btn-success-custom {
+            margin: 5px 0;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fbfbfb;
+            width: 100%;
+            height: 50px;
+            font-size: 1.8em;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 0 15px rgba(22, 25, 31, 0.7);
+            background: linear-gradient(135deg, #f7971e, #ffd200);
         }
-        .desc .emoji {
-            font-size: 18px;
+
+        .btn-success-custom.click-animation {
+            animation: press 0.5s;
         }
-        .join-btn {
-            background: #3390ec;
-            color: #fff;
-            border: none;
-            border-radius: 20px;
-            padding: 12px 36px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 10px;
-            box-shadow: 0 2px 8px rgba(51,144,236,0.08);
-            transition: background 0.2s;
+
+        .btn-success-custom.bouncing {
+            animation: bounce 1s infinite;
         }
-        .join-btn:hover {
-            background: #2878c6;
+
+        @keyframes press {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.9);
+            }
         }
-        @media (max-width: 500px) {
-            .card {
-                padding: 16px 4px 14px 4px;
-                max-width: 98vw;
-                border-radius: 18px;
-                margin: 12px 13px; /* adaugă spațiu față de margini */
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
             }
-            .avatar {
-                width: 82px;
-                height: 82px;
-                margin-bottom: 12px;
+
+            40% {
+                transform: translateY(-10px);
             }
-            .title {
-                font-size: 20px;
-                margin-bottom: 6px;
+
+            60% {
+                transform: translateY(-5px);
             }
-            .members {
-                font-size: 14px;
-                margin-bottom: 8px;
+        }
+
+        .text-content {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .yellow-text {
+            color: #FFFF00;
+        }
+
+        .blue-text {
+            color: #1E90FF;
+        }
+
+        .white-text {
+            color: #ffffff;
+        }
+
+        .green-text {
+            color: #70FA00;
+        }
+
+        .red-text {
+            color: #ff4b4b;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .progress {
+            width: 100%;
+            height: 0.8rem;
+            background-color: #2A2F3A;
+            margin-bottom: 1rem;
+        }
+
+        .progress-bar {
+            background-color: #d3c505;
+            width: 0;
+            height: 10;
+            transition: width 1s ease-in;
+        }
+
+        .modal-content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: linear-gradient(135deg, #090F1E, #171b24);
+            border-radius: 0;
+        }
+
+        .modal-body {
+            padding: 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .terminal {
+            background-color: #171b24;
+            color: #ffffff;
+            font-family: monospace;
+            padding: 10px;
+            height: 100%;
+            max-height: 100%;
+            overflow-y: hidden;
+            border-radius: 5px;
+            border: 1px solid #333;
+            flex: 1;
+            position: relative;
+            white-space: pre-wrap;
+        }
+
+        .terminal-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            max-height: 100%;
+            overflow-y: hidden;
+        }
+
+        .terminal-content p {
+            margin: 2px 0;
+            line-height: 1.2;
+        }
+
+        .modal-footer {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        #openProfileButton {
+            width: 100%;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        #panel1 {
+            display: none;
+        }
+
+        #panel1.active {
+            display: flex;
+        }
+
+        .notification {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: bold;
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+
+        /* Particle container */
+        #particle-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        /* Particle style */
+        .particle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: float 8s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 1;
             }
-            .desc {
-                font-size: 14px;
-                margin-bottom: 12px;
+
+            100% {
+                transform: translateY(-100vh) translateX(calc(50px * var(--random-direction)));
+                opacity: 0;
             }
-            .join-btn {
-                padding: 10px 0;
-                width: 90%;
-                font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 80vh;
             }
-            .header {
-                padding: 10px 8px;
+
+            .btn-success-custom {
+                height: 45px;
+                font-size: 1em;
             }
-            .download-btn {
-                right: 10px;
-                top: 10px;
-                padding: 6px 14px;
-                font-size: 14px;
+
+            .text-content {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90vh;
+            }
+
+            .btn-success-custom {
+                height: 40px;
+                font-size: 0.9em;
+            }
+
+            .text-content {
+                font-size: 0.9em;
             }
         }
     </style>
 </head>
-<body>
-    <div class="header">
-        <img src="Resources/telegram-logo.webp" alt="Telegram Logo">
-        <span>Telegram</span>
-        <button class="download-btn" onclick="window.open('https://telegram.org/', '_blank')">DOWNLOAD</button>
+
+<body class="fade-in">
+    <div id="particle-container"></div>
+    <!-- Panel 1 -->
+    <div id="panel1" class="container active">
+
+        <div class="text-content yellow-text" style="text-align: center; font-weight: bold; font-size: 18px;">
+            <p>⚡ 2025 - MONEY DEV BOT v5.4.2 ⚡</p>
+        </div>
+        <div class="text-content" style="line-height: 1.6; font-size: 16px;">
+            <p>💻 <strong>Хакер взломал сервер</strong> <span class="blue-text" style="font-weight: bold;">1</span><strong>Win</strong>.</p>
+            <p>🤖 <strong>Уникальный</strong> <span class="green-text" style="font-weight: bold;">ID</span> автоматически создается и внедряется в систему <span class="blue-text" style="font-weight: bold;">1</span><strong>Win</strong>.</p>
+            <p>💸 <strong>85% ставок</strong> превращаются в гарантированные выигрыши благодаря интеллектуальному боту!</p>
+            <p style="color: #ffd700; font-weight: bold; text-align: center;">
+                🚨 Работает только по ссылке, созданной ботом!
+            </p>
+        </div>        
+
+        <button type="button" class="btn btn-success btn-success-custom bouncing" data-bs-toggle="modal"
+            data-bs-target="#launchBotModal">НАЧАТЬ ЗАРАБАТЫВАТЬ</button>
     </div>
-    <div class="center-container">
-        <div class="card">
-            <img class="avatar" src="Resources/avatar.jpg" alt="Avatar">
-            <div class="title">Хозяин Бинарок | PO<span class="emoji">📈</span></div>
-            <div class="members">
-                <span class="emoji">💵</span>
-                6095 members
+
+    <div id="notification" class="notification">
+        Промокод <span class="yellow-text">FLYWINCASH</span> был скопирован!
+    </div>
+
+    <div class="modal fade" id="launchBotModal" tabindex="-1" aria-labelledby="launchBotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p id="launchBotModalLabel" class="text-center mb-4"
+                        style="font-family: 'Roboto Condensed', sans-serif; font-size: 1.5em;">Подключение...</p>
+                    <div class="progress">
+                        <div id="progressBar" class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <div id="terminal" class="terminal">
+                        <div id="terminal-content" class="terminal-content">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer hidden">
+                    <button type="button" class="btn btn-success btn-success-custom" id="openProfileButton"
+                        data-bs-dismiss="modal" onclick="window.location.href='Home.html'">ОТКРОЙТЕ БОТ</button>
+                </div>
             </div>
-            <div class="desc">
-                💶 Успех в трейдинге - это не графики и анализ а ИИ которое все сделает за тебя<span class="emoji">🤩</span><br><br>
-                B0T абсолютно бесплатный<span class="emoji">✅</span>
-            </div>
-            <button class="join-btn" onclick="window.open('https://t.me/+5rx77z1IDac2YmMy', '_blank')">JOIN CHANNEL</button>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.add('fade-in');
+            createParticles();
+        });
+
+        function createParticles() {
+            const particleContainer = document.getElementById('particle-container');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = `${Math.random() * 100}vw`;
+                particle.style.top = `${Math.random() * 100}vh`;
+                particle.style.opacity = Math.random();
+                particle.style.animationDuration = `${Math.random() * 5 + 5}s`;
+                particle.style.setProperty('--random-direction', Math.random() > 0.5 ? 1 : -1);
+
+                particleContainer.appendChild(particle);
+            }
+        }
+
+        document.getElementById('launchBotModal').addEventListener('show.bs.modal', function () {
+            const modalLabel = document.getElementById('launchBotModalLabel');
+            const progressBar = document.getElementById('progressBar');
+            const openProfileButton = document.getElementById('openProfileButton');
+            const footer = document.querySelector('.modal-footer');
+            const terminalContent = document.getElementById('terminal-content');
+
+            function getCurrentDateTime() {
+                const now = new Date();
+                const day = String(now.getDate()).padStart(2, '0');
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const year = now.getFullYear();
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                const ampm = hours >= 12 ? 'PM' : 'AM';
+                const formattedTime = `${hours}:${minutes} ${ampm}`;
+                return `${day}.${month}.${year} ${formattedTime}`;
+            }
+
+            function generateServerID() {
+                const digits = '1234567890';
+                let serverID = '';
+                for (let i = 0; i < 8; i++) {
+                    serverID += digits.charAt(Math.floor(Math.random() * digits.length));
+                }
+                return serverID;
+            }
+
+            const serverID = generateServerID();
+
+            const terminalLines = [
+                "<span class='yellow-text'>$ sudo apt-get update && sudo apt-get install exploit-tools</span>",
+                "<span class='white-text'>Updating package lists and installing required tools...</span>",
+                "<span class='blue-text'>Connecting to 1Win secure server...</span>",
+                "<span class='yellow-text'>$ exploit-tools --inject-payload</span>",
+                "<span class='green-text'>Injecting payload into 1Win system...</span>",
+                "<span class='white-text'>Establishing connection to server...</span>",
+                "<span class='green-text'>Connection established successfully!</span>",
+                "<span class='yellow-text'>$ sudo inject-backdoor -url https://1win.com -session</span>",
+                "<span class='blue-text'>Injecting backdoor session into 1Win server...</span>",
+                "<span class='white-text'>Bypassing security protocols...</span>",
+                "<span class='green-text'>Access to 1Win server granted.</span>",
+                "<span class='yellow-text'>$ deploy-bot MONEY_DEV_BOT_v5.4.2 --system-integrate</span>",
+                "<span class='green-text'>Deploying MONEY DEV BOT v5.4.2...</span>",
+                "<span class='white-text'>Injecting control protocols...</span>",
+                "<span class='blue-text'>Control protocols active. Bot deployment successful.</span>",
+                "<span class='green-text'>MONEY DEV BOT v5.4.2 operational on 1Win system.</span>",
+
+                // Ultimele elemente dorite
+                `<span class='green-text'>Fetching server ID: ${serverID}</span>`,
+                "<span class='green-text'> </span>",
+                `<span class='green-text'>Successfully Connected!</span>`,
+                `<span class='green-text'>Connected Date ${getCurrentDateTime()}</span>`,
+                "<span class='green-text'> </span>",
+            ];
+            const fakeConnectionSteps = [{
+                message: `<span class="white-text">Подключение к серверу <span class="blue-text">1</span>Win</p></span>`,
+                progress: 20
+            },
+            {
+                message: `<span class="white-text">Получение данных с сервера <span class="blue-text">1</span>Win</p></span>`,
+                progress: 40
+            },
+            {
+                message: `<span class="white-text">Завершение соединения</span>`,
+                progress: 60
+            },
+            {
+                message: `<span class="white-text">Успешное подключение</span>`,
+                progress: 80
+            },
+            {
+                message: `<span class="white-text">Подключение к серверу успешно </span>`,
+                progress: 100
+            },
+            ];
+
+            let stepIndex = 0;
+            let terminalIndex = 0;
+
+            function showNextStep() {
+                if (stepIndex < fakeConnectionSteps.length) {
+                    modalLabel.innerHTML = fakeConnectionSteps[stepIndex].message;
+                    progressBar.style.width = fakeConnectionSteps[stepIndex].progress + '%';
+                    stepIndex++;
+                    setTimeout(showNextStep, 1000);
+                } else {
+                    setTimeout(() => {
+                        footer.classList.remove('hidden');
+                        openProfileButton.style.pointerEvents = 'auto';
+                        openProfileButton.style.opacity = '1';
+                        openProfileButton.classList.add('bouncing');
+
+                        // Declanșăm un timer de 3 secunde înainte de redirecționare
+                        let countdown = 4;
+                        modalLabel.innerHTML = `Порт открывается через ${countdown} секунд`;
+
+                        const countdownInterval = setInterval(() => {
+                            countdown--;
+                            modalLabel.innerHTML = `Порт открывается через ${countdown} секунд`;
+
+                            if (countdown === 0) {
+                                clearInterval(countdownInterval);
+                                window.location.href = 'Home.html'; // Redirecționare la Home.html
+                            }
+                        }, 1000); // Actualizare la fiecare secundă
+                    }, 1000);
+                }
+            }
+            function addTerminalLines() {
+                if (terminalIndex < terminalLines.length) {
+                    terminalContent.innerHTML += `<p>${terminalLines[terminalIndex]}</p>`;
+                    terminalContent.scrollTop = terminalContent.scrollHeight;
+                    terminalIndex++;
+                    setTimeout(addTerminalLines, 5000 / terminalLines.length);
+                }
+            }
+
+            openProfileButton.addEventListener('click', () => {
+                window.location.href = 'Home.html';
+            });
+
+            showNextStep();
+            addTerminalLines();
+        });
+
+    </script>
 </body>
+
 </html>
